@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Element Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      background: linear-gradient(to right, #fff, #f9f9f9);
+      color: #333;
+      display: flex; /* Use flexbox for overall layout */
+      flex-direction: column; /* Stack main card and isotope cards vertically */
+      align-items: center; /* Center content horizontally */
+    }
+
+    .element-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%; /* Make it responsive */
+      margin-bottom: 2rem; /* Space between main card and isotope cards */
+      text-align: center;
+    }
+
+    .element-symbol {
+      font-size: 5rem;
+      font-weight: bold;
+      color: #3eabd3; /* Example color, match your design */
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .element-info p {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+      color: #555;
+      text-align: center; /* Align text left within info */
+      padding-left: 1rem; /* Indent slightly */
+      padding-right: 1rem;
+    }
+
+    .element-info strong {
+      min-width: 120px; /* Align labels */
+      display: inline-block;
+    }
+
+    /* Styles for Isotope Cards */
+    #isotopes-section {
+      width: 100%;
+      max-width: 800px; /* Allow isotope section to be wider if needed */
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    #isotopes-heading {
+      color: #333;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .isotope-cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+      gap: 1.5rem; /* Space between isotope cards */
+      justify-content: center; /* Center cards in the grid */
+      padding: 1rem;
+    }
+
+    .isotope-card {
+      background: #fdfdfd;
+      border: 1px solid #e0e0e0;
+      border-left: 5px solid #3eabd3; /* Accent color for isotope cards */
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      text-align: left;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .isotope-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    .isotope-card h4 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: #3eabd3; /* Match accent color */
+      font-size: 1.3rem;
+    }
+
+    .isotope-card p {
+      margin: 0.4rem 0;
+      color: #666;
+    }
+
+    .isotope-card strong {
+      display: inline-block;
+      min-width: 90px;
+    }
+
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 3rem; /* More space at the bottom */
+      color: #3eabd3;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .element-card {
+        padding: 1.5rem;
+      }
+      .element-symbol {
+        font-size: 4rem;
+      }
+      .element-info p {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .isotope-cards-container {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+        padding: 0.5rem;
+      }
+      .isotope-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="element-card" id="element-card">
+    <div class="element-symbol" id="symbol">?</div>
+    <h2 id="name">Loading...</h2>
+    <div class="element-info">
+      <p><strong>Atomic Number:</strong> <span id="number"></span></p>
+      <p><strong>Atomic Mass:</strong> <span id="mass"></span></p>
+      <p><strong>Group:</strong> <span id="group"></span></p>
+      <p><strong>Category:</strong> <span id="category"></span></p>
+
+      <p id="density-row"><strong>Density:</strong> <span id="density"></span></p>
+      <p id="melting-point-row"><strong>Melting Point:</strong> <span id="melting-point"></span></p>
+      <p id="boiling-point-row"><strong>Boiling Point:</strong> <span id="boiling-point"></span></p>
+      <p id="appearance-row"><strong>Appearance:</strong> <span id="appearance"></span></p>
+      <p><strong>Discovered by:</strong> <span id="discovered"></span></p>
+      <p><strong>Discovery Year:</strong> <span id="discovery-year"></span></p>
+
+
+      <h3 id="isotopes-heading" style="display: none;">Isotopes</h3>
+      <div id="isotopes-cards-container" class="isotope-cards-container">
+        </div>
+
+      <div id="key-properties-section" style="display: none;">
+        <p><strong>Key Properties:</strong></p>
+        <ul id="key-properties-list"></ul>
+      </div>
+      <div id="uses-section" style="display: none;">
+        <p><strong>Uses:</strong></p>
+        <ul id="uses-list"></ul>
+      </div>
+    </div>
+  </div>
+  <a href="index.html" class="back">← Back to Periodic Table</a>
+
+  <script>
+    async function loadElementData() {
+      const params = new URLSearchParams(window.location.search);
+      const symbol = params.get("symbol");
+
+      if (!symbol) {
+        document.getElementById("name").textContent = "Element Not Found";
+        return;
+      }
+
+      const response = await fetch("elements.json");
+      const elements = await response.json();
+      const element = elements.find(el => el.symbol.toLowerCase() === symbol.toLowerCase());
+
+      if (!element) {
+        document.getElementById("name").textContent = "Element Not Found";
+        return;
+      }
+
+      document.getElementById("symbol").textContent = element.symbol;
+      document.getElementById("name").textContent = element.name;
+      document.getElementById("number").textContent = element.atomicNumber || "N/A";
+      document.getElementById("mass").textContent = element.atomicMass || "N/A";
+      document.getElementById("group").textContent = element.group || "N/A";
+      document.getElementById("category").textContent = element.category || "N/A";
+
+      // --- Handling Discovered By, Year, and Location from a single string ---
+      let discoveredByText = element.discoveredBy || "N/A";
+      let discoveryYearText = "N/A";
+
+      if (element.discoveredBy) {
+        const yearMatch = element.discoveredBy.match(/\((\d{4})\)/);
+        if (yearMatch && yearMatch[1]) {
+          discoveryYearText = yearMatch[1];
+          discoveredByText = element.discoveredBy.replace(/\s*\(\d{4}\)\s*/, '').trim();
+        }
+      }
+
+      document.getElementById("discovered").textContent = discoveredByText;
+      document.getElementById("discovery-year").textContent = discoveryYearText;
+
+
+      // --- Populate main element properties ---
+      const setElementTextAndShow = (id, value, parentRowId = null, unit = '') => {
+        const elementSpan = document.getElementById(id);
+        const parentRow = parentRowId ? document.getElementById(parentRowId) : null;
+        if (value !== null && value !== undefined && value !== "") { // Also check for empty string
+          elementSpan.textContent = `${value}${unit}`;
+          if (parentRow) parentRow.style.display = "block"; // Use block for <p> tags
+        } else {
+          elementSpan.textContent = "N/A";
+          if (parentRow) parentRow.style.display = "none";
+        }
+      };
+
+      // These calls are now in the new order
+      setElementTextAndShow("density", element.density, "density-row", " g/cm³");
+      setElementTextAndShow("melting-point", element.meltingPoint, "melting-point-row", " °C");
+      setElementTextAndShow("boiling-point", element.boilingPoint, "boiling-point-row", " °C");
+      setElementTextAndShow("appearance", element.appearance, "appearance-row");
+
+
+      // --- Populate Isotope Cards ---
+      const isotopesCardsContainer = document.getElementById("isotopes-cards-container");
+      const isotopesHeading = document.getElementById("isotopes-heading");
+      isotopesCardsContainer.innerHTML = ""; // Clear previous content
+
+      if (element.isotopes && element.isotopes.length > 0) {
+        isotopesHeading.style.display = "block"; // Show the "Isotopes" heading
+        element.isotopes.forEach(isotope => {
+          const isotopeCard = document.createElement("div");
+          isotopeCard.className = "isotope-card"; // Apply isotope card styling
+
+          const isotopeName = document.createElement("h4");
+          isotopeName.textContent = isotope.isotope || "Isotope";
+          isotopeCard.appendChild(isotopeName);
+
+          if (isotope.abundance) {
+            const abundanceP = document.createElement("p");
+            abundanceP.innerHTML = `<strong>Abundance:</strong> ${isotope.abundance}`;
+            isotopeCard.appendChild(abundanceP);
+          }
+
+          if (isotope.halfLife) {
+            const halfLifeP = document.createElement("p");
+            halfLifeP.innerHTML = `<strong>Half-life:</strong> ${isotope.halfLife}`;
+            isotopeCard.appendChild(halfLifeP);
+          }
+
+          isotopesCardsContainer.appendChild(isotopeCard);
+        });
+      } else {
+        isotopesHeading.style.display = "none"; // Hide heading if no isotopes
+      }
+
+
+      // --- Handling Key Properties and Uses (as before) ---
+      const keyPropertiesSection = document.getElementById("key-properties-section");
+      const keyPropertiesList = document.getElementById("key-properties-list");
+      keyPropertiesList.innerHTML = "";
+      if (element.key_properties && element.key_properties.length > 0) {
+        keyPropertiesSection.style.display = "block";
+        element.key_properties.forEach(prop => {
+          const listItem = document.createElement("li");
+          if (typeof prop === 'string') {
+            listItem.textContent = prop;
+          } else if (typeof prop === 'object' && prop !== null) {
+            listItem.textContent = Object.entries(prop).map(([key, value]) => `${key.replace(/_/g, ' ')}: ${value}`).join(', ');
+          }
+          keyPropertiesList.appendChild(listItem);
+        });
+      } else {
+        keyPropertiesSection.style.display = "none";
+      }
+
+      const usesSection = document.getElementById("uses-section");
+      const usesList = document.getElementById("uses-list");
+      usesList.innerHTML = "";
+      if (element.uses && element.uses.length > 0) {
+        usesSection.style.display = "block";
+        element.uses.forEach(use => {
+          const listItem = document.createElement("li");
+          listItem.textContent = use;
+          usesList.appendChild(listItem);
+        });
+      } else {
+        usesSection.style.display = "none";
+      }
+
+      // Add a default color if not present in your JSON or handle it in CSS
+      document.querySelector(".element-card").style.borderTop = `10px solid ${element.color || '#ccc'}`;
+    }
+
+    loadElementData();
+  </script>
+</body>
+</html>

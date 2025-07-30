@@ -1,0 +1,3576 @@
+[
+  {
+    "symbol": "H",
+    "name": "Hydrogen",
+    "atomicNumber": 1,
+    "atomicMass": "1.008",
+    "density": 0.08988,
+    "meltingPoint": 13.99,
+    "boilingPoint": 20.271,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Hydrogen-1",
+        "abundance": "99.9885%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hydrogen-2 (Deuterium)",
+        "abundance": "0.0115%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hydrogen-3 (Tritium)",
+        "abundance": "trace",
+        "halfLife": "12.32 years"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Henry Cavendish (1766)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "He",
+    "name": "Helium",
+    "atomicNumber": 2,
+    "atomicMass": "4.002602(2)",
+    "density": 0.1786,
+    "meltingPoint": 0.95,
+    "boilingPoint": 4.222,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Helium-3",
+        "abundance": "0.000137%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Helium-4",
+        "abundance": "99.999863%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Pierre Janssen (1868)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Li",
+    "name": "Lithium",
+    "atomicNumber": 3,
+    "atomicMass": "6.94",
+    "density": 0.534,
+    "meltingPoint": 453.65,
+    "boilingPoint": 1615,
+    "appearance": "silvery-white",
+    "isotopes": [
+      {
+        "isotope": "Lithium-6",
+        "abundance": "7.59%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Lithium-7",
+        "abundance": "92.41%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Johan August Arfwedson (1817)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Be",
+    "name": "Beryllium",
+    "atomicNumber": 4,
+    "atomicMass": "9.0121831(5)",
+    "density": 1.85,
+    "meltingPoint": 1560,
+    "boilingPoint": 2742,
+    "appearance": "white-grey metallic",
+    "isotopes": [
+      {
+        "isotope": "Beryllium-9",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Louis Nicolas Vauquelin (1798)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "B",
+    "name": "Boron",
+    "atomicNumber": 5,
+    "atomicMass": "10.81",
+    "density": 2.08,
+    "meltingPoint": 2349,
+    "boilingPoint": 4200,
+    "appearance": "black crystalline",
+    "isotopes": [
+      {
+        "isotope": "Boron-10",
+        "abundance": "19.9%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Boron-11",
+        "abundance": "80.1%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Joseph Louis Gay-Lussac (1808)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "C",
+    "name": "Carbon",
+    "atomicNumber": 6,
+    "atomicMass": "12.011",
+    "density": 2.267,
+    "meltingPoint": 3773,
+    "boilingPoint": 4000,
+    "appearance": "black (graphite), colorless (diamond)",
+    "isotopes": [
+      {
+        "isotope": "Carbon-12",
+        "abundance": "98.93%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Carbon-13",
+        "abundance": "1.07%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Carbon-14",
+        "abundance": "trace",
+        "halfLife": "5730 years"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "N",
+    "name": "Nitrogen",
+    "atomicNumber": 7,
+    "atomicMass": "14.007",
+    "density": 1.251,
+    "meltingPoint": 63.15,
+    "boilingPoint": 77.36,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Nitrogen-14",
+        "abundance": "99.632%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Nitrogen-15",
+        "abundance": "0.368%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Daniel Rutherford (1772)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "O",
+    "name": "Oxygen",
+    "atomicNumber": 8,
+    "atomicMass": "15.999",
+    "density": 1.429,
+    "meltingPoint": 54.36,
+    "boilingPoint": 90.2,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Oxygen-16",
+        "abundance": "99.757%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Oxygen-17",
+        "abundance": "0.038%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Oxygen-18",
+        "abundance": "0.205%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Carl Wilhelm Scheele (1772)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "F",
+    "name": "Fluorine",
+    "atomicNumber": 9,
+    "atomicMass": "18.998403163(6)",
+    "density": 1.696,
+    "meltingPoint": 53.53,
+    "boilingPoint": 85.03,
+    "appearance": "pale yellow gas",
+    "isotopes": [
+      {
+        "isotope": "Fluorine-19",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Henri Moissan (1886)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Ne",
+    "name": "Neon",
+    "atomicNumber": 10,
+    "atomicMass": "20.1797(6)",
+    "density": 0.9,
+    "meltingPoint": 24.56,
+    "boilingPoint": 27.07,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Neon-20",
+        "abundance": "90.48%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neon-21",
+        "abundance": "0.27%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neon-22",
+        "abundance": "9.25%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Morris Travers & William Ramsay (1898)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Na",
+    "name": "Sodium",
+    "atomicNumber": 11,
+    "atomicMass": "22.98976928(2)",
+    "density": 0.968,
+    "meltingPoint": 370.944,
+    "boilingPoint": 1156,
+    "appearance": "silvery white metallic",
+    "isotopes": [
+      {
+        "isotope": "Sodium-23",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Humphry Davy (1807)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "atomicNumber": 12,
+    "atomicMass": "24.305",
+    "density": 1.738,
+    "meltingPoint": 923,
+    "boilingPoint": 1363,
+    "appearance": "silvery white metallic",
+    "isotopes": [
+      {
+        "isotope": "Magnesium-24",
+        "abundance": "78.99%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Magnesium-25",
+        "abundance": "10.00%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Magnesium-26",
+        "abundance": "11.01%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Joseph Black (1755)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Al",
+    "name": "Aluminum",
+    "atomicNumber": 13,
+    "atomicMass": "26.9815385(7)",
+    "density": 2.7,
+    "meltingPoint": 933.47,
+    "boilingPoint": 2792,
+    "appearance": "silvery white metallic",
+    "isotopes": [
+      {
+        "isotope": "Aluminum-27",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Hans Christian Ørsted (1825)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Si",
+    "name": "Silicon",
+    "atomicNumber": 14,
+    "atomicMass": "28.085",
+    "density": 2.329,
+    "meltingPoint": 1687,
+    "boilingPoint": 3538,
+    "appearance": "dark grey metallic",
+    "isotopes": [
+      {
+        "isotope": "Silicon-28",
+        "abundance": "92.23%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Silicon-29",
+        "abundance": "4.68%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Silicon-30",
+        "abundance": "3.09%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Jöns Jacob Berzelius (1823)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "P",
+    "name": "Phosphorus",
+    "atomicNumber": 15,
+    "atomicMass": "30.973761998(5)",
+    "density": 1.823,
+    "meltingPoint": 317.3,
+    "boilingPoint": 553.7,
+    "appearance": "colorless, waxy white, yellowish or red-black solid",
+    "isotopes": [
+      {
+        "isotope": "Phosphorus-31",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Hennig Brand (1669)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "S",
+    "name": "Sulfur",
+    "atomicNumber": 16,
+    "atomicMass": "32.06",
+    "density": 2.07,
+    "meltingPoint": 388.36,
+    "boilingPoint": 717.8,
+    "appearance": "lemon yellow crystalline solid",
+    "isotopes": [
+      {
+        "isotope": "Sulfur-32",
+        "abundance": "94.99%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-33",
+        "abundance": "0.75%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-34",
+        "abundance": "4.25%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-36",
+        "abundance": "0.01%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "atomicNumber": 17,
+    "atomicMass": "35.45",
+    "density": 3.2,
+    "meltingPoint": 172.17,
+    "boilingPoint": 239.11,
+    "appearance": "pale yellow-green gas",
+    "isotopes": [
+      {
+        "isotope": "Chlorine-35",
+        "abundance": "75.76%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Chlorine-37",
+        "abundance": "24.24%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Carl Wilhelm Scheele (1774)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Ar",
+    "name": "Argon",
+    "atomicNumber": 18,
+    "atomicMass": "39.948(1)",
+    "density": 1.784,
+    "meltingPoint": 83.8,
+    "boilingPoint": 87.302,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Argon-36",
+        "abundance": "0.336%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Argon-38",
+        "abundance": "0.063%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Argon-40",
+        "abundance": "99.600%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Lord Rayleigh & William Ramsay (1894)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "K",
+    "name": "Potassium",
+    "atomicNumber": 19,
+    "atomicMass": "39.0983(1)",
+    "density": 0.862,
+    "meltingPoint": 336.7,
+    "boilingPoint": 1032,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Potassium-39",
+        "abundance": "93.2581%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Potassium-40",
+        "abundance": "0.0117%",
+        "halfLife": "1.248×10^9 years"
+      },
+      {
+        "isotope": "Potassium-41",
+        "abundance": "6.7302%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Humphry Davy (1807)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Ca",
+    "name": "Calcium",
+    "atomicNumber": 20,
+    "atomicMass": "40.078(4)",
+    "density": 1.55,
+    "meltingPoint": 1115,
+    "boilingPoint": 1757,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Calcium-40",
+        "abundance": "96.941%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-42",
+        "abundance": "0.647%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-43",
+        "abundance": "0.135%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-44",
+        "abundance": "2.086%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-46",
+        "abundance": "0.004%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-48",
+        "abundance": "0.187%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Humphry Davy (1808)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Sc",
+    "name": "Scandium",
+    "atomicNumber": 21,
+    "atomicMass": "44.955908(5)",
+    "density": 2.989,
+    "meltingPoint": 1814,
+    "boilingPoint": 3109,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Scandium-45",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Lars Fredrik Nilson (1879)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ti",
+    "name": "Titanium",
+    "atomicNumber": 22,
+    "atomicMass": "47.867(1)",
+    "density": 4.506,
+    "meltingPoint": 1941,
+    "boilingPoint": 3560,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Titanium-46",
+        "abundance": "8.25%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Titanium-47",
+        "abundance": "7.44%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Titanium-48",
+        "abundance": "73.72%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Titanium-49",
+        "abundance": "5.41%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Titanium-50",
+        "abundance": "5.18%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "4 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "William Gregor (1791)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "V",
+    "name": "Vanadium",
+    "atomicNumber": 23,
+    "atomicMass": "50.9415(1)",
+    "density": 6.11,
+    "meltingPoint": 2183,
+    "boilingPoint": 3680,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Vanadium-50",
+        "abundance": "0.250%",
+        "halfLife": "1.5×10^17 years"
+      },
+      {
+        "isotope": "Vanadium-51",
+        "abundance": "99.750%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "5 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Andrés Manuel del Río (1801)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Cr",
+    "name": "Chromium",
+    "atomicNumber": 24,
+    "atomicMass": "51.9961(6)",
+    "density": 7.19,
+    "meltingPoint": 2180,
+    "boilingPoint": 2944,
+    "appearance": "silvery-metallic",
+    "isotopes": [
+      {
+        "isotope": "Chromium-50",
+        "abundance": "4.345%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Chromium-52",
+        "abundance": "83.789%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Chromium-53",
+        "abundance": "9.501%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Chromium-54",
+        "abundance": "2.365%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "6 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Louis Nicolas Vauquelin (1797)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Mn",
+    "name": "Manganese",
+    "atomicNumber": 25,
+    "atomicMass": "54.938044(3)",
+    "density": 7.47,
+    "meltingPoint": 1519,
+    "boilingPoint": 2334,
+    "appearance": "silvery-metallic",
+    "isotopes": [
+      {
+        "isotope": "Manganese-55",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "7 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Carl Wilhelm Scheele (1774)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Fe",
+    "name": "Iron",
+    "atomicNumber": 26,
+    "atomicMass": "55.845(2)",
+    "density": 7.874,
+    "meltingPoint": 1811,
+    "boilingPoint": 3134,
+    "appearance": "lustrous metallic with a grayish tinge",
+    "isotopes": [
+      {
+        "isotope": "Iron-54",
+        "abundance": "5.845%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Iron-56",
+        "abundance": "91.754%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Iron-57",
+        "abundance": "2.119%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Iron-58",
+        "abundance": "0.282%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "8 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Co",
+    "name": "Cobalt",
+    "atomicNumber": 27,
+    "atomicMass": "58.933194(4)",
+    "density": 8.9,
+    "meltingPoint": 1768,
+    "boilingPoint": 3200,
+    "appearance": "hard, lustrous, silver-gray metal",
+    "isotopes": [
+      {
+        "isotope": "Cobalt-59",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "9 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Georg Brandt (1735)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ni",
+    "name": "Nickel",
+    "atomicNumber": 28,
+    "atomicMass": "58.6934(4)",
+    "density": 8.908,
+    "meltingPoint": 1728,
+    "boilingPoint": 3003,
+    "appearance": "lustrous, silvery-white metal",
+    "isotopes": [
+      {
+        "isotope": "Nickel-58",
+        "abundance": "68.0769%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Nickel-60",
+        "abundance": "26.2231%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Nickel-61",
+        "abundance": "1.1399%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Nickel-62",
+        "abundance": "3.6345%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Nickel-64",
+        "abundance": "0.9256%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "10 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Axel Fredrik Cronstedt (1751)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Cu",
+    "name": "Copper",
+    "atomicNumber": 29,
+    "atomicMass": "63.546(3)",
+    "density": 8.96,
+    "meltingPoint": 1357.77,
+    "boilingPoint": 2835,
+    "appearance": "reddish-orange metallic",
+    "isotopes": [
+      {
+        "isotope": "Copper-63",
+        "abundance": "69.17%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Copper-65",
+        "abundance": "30.83%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "11 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Zn",
+    "name": "Zinc",
+    "atomicNumber": 30,
+    "atomicMass": "65.38(2)",
+    "density": 7.14,
+    "meltingPoint": 692.68,
+    "boilingPoint": 1180,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Zinc-64",
+        "abundance": "48.63%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zinc-66",
+        "abundance": "27.90%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zinc-67",
+        "abundance": "4.10%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zinc-68",
+        "abundance": "18.75%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zinc-70",
+        "abundance": "0.62%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "12 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "India (before 1000 BCE)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ga",
+    "name": "Gallium",
+    "atomicNumber": 31,
+    "atomicMass": "69.723(1)",
+    "density": 5.904,
+    "meltingPoint": 302.9146,
+    "boilingPoint": 2477,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Gallium-69",
+        "abundance": "60.108%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gallium-71",
+        "abundance": "39.892%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Lecoq de Boisbaudran (1875)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Ge",
+    "name": "Germanium",
+    "atomicNumber": 32,
+    "atomicMass": "72.630(8)",
+    "density": 5.323,
+    "meltingPoint": 1211.4,
+    "boilingPoint": 3106,
+    "appearance": "grayish-white",
+    "isotopes": [
+      {
+        "isotope": "Germanium-70",
+        "abundance": "20.37%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Germanium-72",
+        "abundance": "27.31%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Germanium-73",
+        "abundance": "7.76%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Germanium-74",
+        "abundance": "36.72%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Germanium-76",
+        "abundance": "7.83%",
+        "halfLife": "1.8×10^21 years"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Clemens Winkler (1886)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "As",
+    "name": "Arsenic",
+    "atomicNumber": 33,
+    "atomicMass": "74.921595(6)",
+    "density": 5.727,
+    "meltingPoint": 1090,
+    "boilingPoint": 887,
+    "appearance": "metallic gray, steel gray, or tin-white",
+    "isotopes": [
+      {
+        "isotope": "Arsenic-75",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Albertus Magnus (1250)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Se",
+    "name": "Selenium",
+    "atomicNumber": 34,
+    "atomicMass": "78.971(8)",
+    "density": 4.819,
+    "meltingPoint": 494,
+    "boilingPoint": 958,
+    "appearance": "gray metallic (most stable form), also red and black amorphous forms",
+    "isotopes": [
+      {
+        "isotope": "Selenium-74",
+        "abundance": "0.89%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Selenium-76",
+        "abundance": "9.36%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Selenium-77",
+        "abundance": "7.63%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Selenium-78",
+        "abundance": "23.77%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Selenium-80",
+        "abundance": "49.61%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Selenium-82",
+        "abundance": "8.73%",
+        "halfLife": "9.2×10^19 years"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Jöns Jacob Berzelius (1817)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Br",
+    "name": "Bromine",
+    "atomicNumber": 35,
+    "atomicMass": "79.904",
+    "density": 3.1028,
+    "meltingPoint": 265.9,
+    "boilingPoint": 332,
+    "appearance": "reddish-brown liquid",
+    "isotopes": [
+      {
+        "isotope": "Bromine-79",
+        "abundance": "50.69%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Bromine-81",
+        "abundance": "49.31%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Antoine Jérôme Balard (1826)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Kr",
+    "name": "Krypton",
+    "atomicNumber": 36,
+    "atomicMass": "83.798(2)",
+    "density": 3.749,
+    "meltingPoint": 115.78,
+    "boilingPoint": 119.93,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Krypton-78",
+        "abundance": "0.355%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Krypton-80",
+        "abundance": "2.286%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Krypton-82",
+        "abundance": "11.58%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Krypton-83",
+        "abundance": "11.49%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Krypton-84",
+        "abundance": "57.00%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Krypton-86",
+        "abundance": "17.37%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Morris Travers & William Ramsay (1898)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "atomicNumber": 37,
+    "atomicMass": "85.4678(3)",
+    "density": 1.532,
+    "meltingPoint": 312.45,
+    "boilingPoint": 961,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Rubidium-85",
+        "abundance": "72.17%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Rubidium-87",
+        "abundance": "27.83%",
+        "halfLife": "4.92×10^10 years"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Robert Bunsen & Gustav Kirchhoff (1861)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Sr",
+    "name": "Strontium",
+    "atomicNumber": 38,
+    "atomicMass": "87.62(1)",
+    "density": 2.64,
+    "meltingPoint": 1050,
+    "boilingPoint": 1655,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Strontium-84",
+        "abundance": "0.56%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Strontium-86",
+        "abundance": "9.86%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Strontium-87",
+        "abundance": "7.00%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Strontium-88",
+        "abundance": "82.58%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Adair Crawford (1790)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Y",
+    "name": "Yttrium",
+    "atomicNumber": 39,
+    "atomicMass": "88.90584(2)",
+    "density": 4.472,
+    "meltingPoint": 1799,
+    "boilingPoint": 3609,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Yttrium-89",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Johan Gadolin (1794)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "atomicNumber": 40,
+    "atomicMass": "91.224(2)",
+    "density": 6.52,
+    "meltingPoint": 2128,
+    "boilingPoint": 4650,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Zirconium-90",
+        "abundance": "51.45%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zirconium-91",
+        "abundance": "11.22%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zirconium-92",
+        "abundance": "17.15%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zirconium-94",
+        "abundance": "17.38%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Zirconium-96",
+        "abundance": "2.80%",
+        "halfLife": "2.0×10^19 years"
+      }
+    ],
+    "group": "4 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Martin Heinrich Klaproth (1789)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Nb",
+    "name": "Niobium",
+    "atomicNumber": 41,
+    "atomicMass": "92.90637(2)",
+    "density": 8.57,
+    "meltingPoint": 2750,
+    "boilingPoint": 5017,
+    "appearance": "metallic gray",
+    "isotopes": [
+      {
+        "isotope": "Niobium-93",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "5 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Charles Hatchett (1801)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "atomicNumber": 42,
+    "atomicMass": "95.95(1)",
+    "density": 10.28,
+    "meltingPoint": 2896,
+    "boilingPoint": 4912,
+    "appearance": "gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Molybdenum-92",
+        "abundance": "14.77%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-94",
+        "abundance": "9.23%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-95",
+        "abundance": "15.90%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-96",
+        "abundance": "16.68%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-97",
+        "abundance": "9.56%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-98",
+        "abundance": "24.39%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Molybdenum-100",
+        "abundance": "9.46%",
+        "halfLife": "8.5×10^18 years"
+      }
+    ],
+    "group": "6 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Carl Wilhelm Scheele (1778)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Tc",
+    "name": "Technetium",
+    "atomicNumber": 43,
+    "atomicMass": "[98]",
+    "density": 11.5,
+    "meltingPoint": 2430,
+    "boilingPoint": 4538,
+    "appearance": "silvery-gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Technetium-97",
+        "abundance": "synthetic",
+        "halfLife": "2.6×10^6 years"
+      },
+      {
+        "isotope": "Technetium-98",
+        "abundance": "synthetic",
+        "halfLife": "4.2×10^6 years"
+      },
+      {
+        "isotope": "Technetium-99",
+        "abundance": "synthetic",
+        "halfLife": "2.11×10^5 years"
+      }
+    ],
+    "group": "7 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Carlo Perrier & Emilio Segrè (1937)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ru",
+    "name": "Ruthenium",
+    "atomicNumber": 44,
+    "atomicMass": "101.07(2)",
+    "density": 12.45,
+    "meltingPoint": 2523,
+    "boilingPoint": 4423,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Ruthenium-96",
+        "abundance": "5.54%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-98",
+        "abundance": "1.87%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-99",
+        "abundance": "12.76%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-100",
+        "abundance": "12.60%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-101",
+        "abundance": "17.06%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-102",
+        "abundance": "31.55%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ruthenium-104",
+        "abundance": "18.62%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "8 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Karl Ernst Claus (1844)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "atomicNumber": 45,
+    "atomicMass": "102.90550(2)",
+    "density": 12.41,
+    "meltingPoint": 2237,
+    "boilingPoint": 3968,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Rhodium-103",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "9 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "William Hyde Wollaston (1803)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Pd",
+    "name": "Palladium",
+    "atomicNumber": 46,
+    "atomicMass": "106.42(1)",
+    "density": 12.023,
+    "meltingPoint": 1828.05,
+    "boilingPoint": 3236,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Palladium-102",
+        "abundance": "1.02%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Palladium-104",
+        "abundance": "11.14%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Palladium-105",
+        "abundance": "22.33%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Palladium-106",
+        "abundance": "27.33%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Palladium-108",
+        "abundance": "26.46%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Palladium-110",
+        "abundance": "11.72%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "10 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "William Hyde Wollaston (1803)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ag",
+    "name": "Silver",
+    "atomicNumber": 47,
+    "atomicMass": "107.8682(2)",
+    "density": 10.49,
+    "meltingPoint": 1234.93,
+    "boilingPoint": 2435,
+    "appearance": "lustrous white metal",
+    "isotopes": [
+      {
+        "isotope": "Silver-107",
+        "abundance": "51.839%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Silver-109",
+        "abundance": "48.161%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "11 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "atomicNumber": 48,
+    "atomicMass": "112.414(4)",
+    "density": 8.65,
+    "meltingPoint": 594.22,
+    "boilingPoint": 1040,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Cadmium-106",
+        "abundance": "1.25%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-108",
+        "abundance": "0.89%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-110",
+        "abundance": "12.49%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-111",
+        "abundance": "12.80%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-112",
+        "abundance": "24.13%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-113",
+        "abundance": "12.22%",
+        "halfLife": "7.7×10^15 years"
+      },
+      {
+        "isotope": "Cadmium-114",
+        "abundance": "28.73%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cadmium-116",
+        "abundance": "7.49%",
+        "halfLife": "2.8×10^19 years"
+      }
+    ],
+    "group": "12 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Friedrich Stromeyer (1817)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "In",
+    "name": "Indium",
+    "atomicNumber": 49,
+    "atomicMass": "114.818(1)",
+    "density": 7.31,
+    "meltingPoint": 429.7485,
+    "boilingPoint": 2345,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Indium-113",
+        "abundance": "4.29%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Indium-115",
+        "abundance": "95.71%",
+        "halfLife": "4.41×10^14 years"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Ferdinand Reich & Hieronymous Richter (1863)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Sn",
+    "name": "Tin",
+    "atomicNumber": 50,
+    "atomicMass": "118.710(7)",
+    "density": 7.287,
+    "meltingPoint": 505.08,
+    "boilingPoint": 2875,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Tin-112",
+        "abundance": "0.97%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-114",
+        "abundance": "0.66%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-115",
+        "abundance": "0.34%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-116",
+        "abundance": "14.54%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-117",
+        "abundance": "7.68%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-118",
+        "abundance": "24.22%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-119",
+        "abundance": "8.59%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-120",
+        "abundance": "32.58%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-122",
+        "abundance": "4.63%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-124",
+        "abundance": "5.79%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tin-126",
+        "abundance": "trace",
+        "halfLife": "2.3×10^5 years"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Sb",
+    "name": "Antimony",
+    "atomicNumber": 51,
+    "atomicMass": "121.760(1)",
+    "density": 6.697,
+    "meltingPoint": 903.78,
+    "boilingPoint": 1860,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Antimony-121",
+        "abundance": "57.21%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Antimony-123",
+        "abundance": "42.79%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Te",
+    "name": "Tellurium",
+    "atomicNumber": 52,
+    "atomicMass": "127.60(3)",
+    "density": 6.24,
+    "meltingPoint": 722.66,
+    "boilingPoint": 1261,
+    "appearance": "silvery-white",
+    "isotopes": [
+      {
+        "isotope": "Tellurium-120",
+        "abundance": "0.09%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tellurium-122",
+        "abundance": "2.55%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tellurium-123",
+        "abundance": "0.89%",
+        "halfLife": "2.5×10^15 years"
+      },
+      {
+        "isotope": "Tellurium-124",
+        "abundance": "4.74%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tellurium-125",
+        "abundance": "7.07%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tellurium-126",
+        "abundance": "18.84%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tellurium-128",
+        "abundance": "31.74%",
+        "halfLife": "2.2×10^24 years"
+      },
+      {
+        "isotope": "Tellurium-130",
+        "abundance": "34.08%",
+        "halfLife": "7.9×10^20 years"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Franz-Joseph Müller von Reichenstein (1782)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "I",
+    "name": "Iodine",
+    "atomicNumber": 53,
+    "atomicMass": "126.90447(3)",
+    "density": 4.933,
+    "meltingPoint": 386.85,
+    "boilingPoint": 457.4,
+    "appearance": "lustrous metallic gray, violet-black nonmetallic solid",
+    "isotopes": [
+      {
+        "isotope": "Iodine-127",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Bernard Courtois (1811)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Xe",
+    "name": "Xenon",
+    "atomicNumber": 54,
+    "atomicMass": "131.293(6)",
+    "density": 5.894,
+    "meltingPoint": 161.35,
+    "boilingPoint": 165.05,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Xenon-124",
+        "abundance": "0.09%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-126",
+        "abundance": "0.09%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-128",
+        "abundance": "1.91%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-129",
+        "abundance": "26.4%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-130",
+        "abundance": "4.07%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-131",
+        "abundance": "21.2%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-132",
+        "abundance": "26.9%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-134",
+        "abundance": "10.4%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Xenon-136",
+        "abundance": "8.86%",
+        "halfLife": "2.11×10^21 years"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Morris Travers & William Ramsay (1898)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Cs",
+    "name": "Cesium",
+    "atomicNumber": 55,
+    "atomicMass": "132.90545196(6)",
+    "density": 1.879,
+    "meltingPoint": 301.59,
+    "boilingPoint": 944,
+    "appearance": "silvery-gold metallic",
+    "isotopes": [
+      {
+        "isotope": "Cesium-133",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Robert Bunsen & Gustav Kirchhoff (1860)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Ba",
+    "name": "Barium",
+    "atomicNumber": 56,
+    "atomicMass": "137.327(7)",
+    "density": 3.51,
+    "meltingPoint": 1000,
+    "boilingPoint": 2170,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Barium-130",
+        "abundance": "0.106%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-132",
+        "abundance": "0.101%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-134",
+        "abundance": "2.417%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-135",
+        "abundance": "6.592%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-136",
+        "abundance": "7.854%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-137",
+        "abundance": "11.232%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Barium-138",
+        "abundance": "71.700%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Carl Wilhelm Scheele (1774)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "La",
+    "name": "Lanthanum",
+    "atomicNumber": 57,
+    "atomicMass": "138.90547(7)",
+    "density": 6.162,
+    "meltingPoint": 1193,
+    "boilingPoint": 3737,
+    "appearance": "silvery-white",
+    "isotopes": [
+      {
+        "isotope": "Lanthanum-138",
+        "abundance": "0.09%",
+        "halfLife": "1.02×10^11 years"
+      },
+      {
+        "isotope": "Lanthanum-139",
+        "abundance": "99.91%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Carl Gustaf Mosander (1839)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Ce",
+    "name": "Cerium",
+    "atomicNumber": 58,
+    "atomicMass": "140.116(1)",
+    "density": 6.77,
+    "meltingPoint": 1068,
+    "boilingPoint": 3716,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Cerium-136",
+        "abundance": "0.185%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cerium-138",
+        "abundance": "0.251%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cerium-140",
+        "abundance": "88.450%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Cerium-142",
+        "abundance": "11.114%",
+        "halfLife": "5×10^16 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Martin Heinrich Klaproth (1803)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "atomicNumber": 59,
+    "atomicMass": "140.90766(2)",
+    "density": 6.77,
+    "meltingPoint": 1204,
+    "boilingPoint": 3793,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Praseodymium-141",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Carl Auer von Welsbach (1885)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "atomicNumber": 60,
+    "atomicMass": "144.242(3)",
+    "density": 7.01,
+    "meltingPoint": 1297,
+    "boilingPoint": 3347,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Neodymium-142",
+        "abundance": "27.15%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neodymium-143",
+        "abundance": "12.18%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neodymium-144",
+        "abundance": "23.80%",
+        "halfLife": "2.29×10^15 years"
+      },
+      {
+        "isotope": "Neodymium-145",
+        "abundance": "8.30%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neodymium-146",
+        "abundance": "17.19%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neodymium-148",
+        "abundance": "5.76%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Neodymium-150",
+        "abundance": "5.76%",
+        "halfLife": "2.26×10^18 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Carl Auer von Welsbach (1885)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Pm",
+    "name": "Promethium",
+    "atomicNumber": 61,
+    "atomicMass": "[145]",
+    "density": 7.264,
+    "meltingPoint": 1315,
+    "boilingPoint": 3273,
+    "appearance": "metallic",
+    "isotopes": [
+      {
+        "isotope": "Promethium-145",
+        "abundance": "synthetic",
+        "halfLife": "17.7 years"
+      },
+      {
+        "isotope": "Promethium-147",
+        "abundance": "synthetic",
+        "halfLife": "2.6234 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Jacob Marinsky et al. (1945)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Sm",
+    "name": "Samarium",
+    "atomicNumber": 62,
+    "atomicMass": "150.36(2)",
+    "density": 7.52,
+    "meltingPoint": 1345,
+    "boilingPoint": 2173,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Samarium-144",
+        "abundance": "3.07%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Samarium-147",
+        "abundance": "14.99%",
+        "halfLife": "1.06×10^11 years"
+      },
+      {
+        "isotope": "Samarium-148",
+        "abundance": "11.24%",
+        "halfLife": "7×10^15 years"
+      },
+      {
+        "isotope": "Samarium-149",
+        "abundance": "13.82%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Samarium-150",
+        "abundance": "7.36%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Samarium-152",
+        "abundance": "26.73%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Samarium-154",
+        "abundance": "22.7%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Lecoq de Boisbaudran (1879)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Eu",
+    "name": "Europium",
+    "atomicNumber": 63,
+    "atomicMass": "151.964(1)",
+    "density": 5.244,
+    "meltingPoint": 1099,
+    "boilingPoint": 1802,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Europium-151",
+        "abundance": "47.81%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Europium-153",
+        "abundance": "52.19%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Eugène-Anatole Demarçay (1901)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "atomicNumber": 64,
+    "atomicMass": "157.25(3)",
+    "density": 7.9,
+    "meltingPoint": 1585,
+    "boilingPoint": 3273,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Gadolinium-152",
+        "abundance": "0.20%",
+        "halfLife": "1.08×10^14 years"
+      },
+      {
+        "isotope": "Gadolinium-154",
+        "abundance": "2.18%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gadolinium-155",
+        "abundance": "14.80%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gadolinium-156",
+        "abundance": "20.47%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gadolinium-157",
+        "abundance": "15.65%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gadolinium-158",
+        "abundance": "24.84%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Gadolinium-160",
+        "abundance": "21.86%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Jean Charles Galissard de Marignac (1880)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Tb",
+    "name": "Terbium",
+    "atomicNumber": 65,
+    "atomicMass": "158.92535(2)",
+    "density": 8.219,
+    "meltingPoint": 1629,
+    "boilingPoint": 3395,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Terbium-159",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Carl Gustaf Mosander (1843)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "atomicNumber": 66,
+    "atomicMass": "162.500(1)",
+    "density": 8.55,
+    "meltingPoint": 1680,
+    "boilingPoint": 2840,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Dysprosium-156",
+        "abundance": "0.056%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-158",
+        "abundance": "0.095%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-160",
+        "abundance": "2.329%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-161",
+        "abundance": "18.889%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-162",
+        "abundance": "25.475%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-163",
+        "abundance": "24.896%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Dysprosium-164",
+        "abundance": "28.269%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Paul Émile Lecoq de Boisbaudran (1886)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Ho",
+    "name": "Holmium",
+    "atomicNumber": 67,
+    "atomicMass": "164.93033(2)",
+    "density": 8.79,
+    "meltingPoint": 1734,
+    "boilingPoint": 2993,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Holmium-165",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Per Teodor Cleve (1878)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Er",
+    "name": "Erbium",
+    "atomicNumber": 68,
+    "atomicMass": "167.259(3)",
+    "density": 9.066,
+    "meltingPoint": 1802,
+    "boilingPoint": 3141,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Erbium-162",
+        "abundance": "0.139%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Erbium-164",
+        "abundance": "1.601%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Erbium-166",
+        "abundance": "33.503%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Erbium-167",
+        "abundance": "22.869%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Erbium-168",
+        "abundance": "26.978%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Erbium-170",
+        "abundance": "14.910%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Carl Gustaf Mosander (1843)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Tm",
+    "name": "Thulium",
+    "atomicNumber": 69,
+    "atomicMass": "168.93422(2)",
+    "density": 9.32,
+    "meltingPoint": 1818,
+    "boilingPoint": 2223,
+    "appearance": "silvery-gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Thulium-169",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Per Teodor Cleve (1879)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "atomicNumber": 70,
+    "atomicMass": "173.045(10)",
+    "density": 6.90,
+    "meltingPoint": 1097,
+    "boilingPoint": 1469,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Ytterbium-168",
+        "abundance": "0.126%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-170",
+        "abundance": "3.04%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-171",
+        "abundance": "14.28%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-172",
+        "abundance": "21.83%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-173",
+        "abundance": "16.13%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-174",
+        "abundance": "31.83%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Ytterbium-176",
+        "abundance": "12.73%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Jean Charles Galissard de Marignac (1878)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "atomicNumber": 71,
+    "atomicMass": "174.9668(1)",
+    "density": 9.84,
+    "meltingPoint": 1925,
+    "boilingPoint": 3675,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Lutetium-175",
+        "abundance": "97.40%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Lutetium-176",
+        "abundance": "2.60%",
+        "halfLife": "3.78×10^10 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Lanthanide",
+    "discoveredBy": "Georges Urbain (1907)",
+    "color": "#ffa500"
+  },
+  {
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "atomicNumber": 72,
+    "atomicMass": "178.49(2)",
+    "density": 13.31,
+    "meltingPoint": 2506,
+    "boilingPoint": 4876,
+    "appearance": "silvery-gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Hafnium-174",
+        "abundance": "0.16%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hafnium-176",
+        "abundance": "5.26%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hafnium-177",
+        "abundance": "18.60%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hafnium-178",
+        "abundance": "27.28%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hafnium-179",
+        "abundance": "13.62%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Hafnium-180",
+        "abundance": "35.08%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "4 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Dirk Coster & Georg von Hevesy (1923)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ta",
+    "name": "Tantalum",
+    "atomicNumber": 73,
+    "atomicMass": "180.94788(2)",
+    "density": 16.69,
+    "meltingPoint": 3290,
+    "boilingPoint": 5731,
+    "appearance": "gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Tantalum-180m",
+        "abundance": "0.012%",
+        "halfLife": ">1.2×10^15 years"
+      },
+      {
+        "isotope": "Tantalum-181",
+        "abundance": "99.988%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "5 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Anders Ekeberg (1802)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "W",
+    "name": "Tungsten",
+    "atomicNumber": 74,
+    "atomicMass": "183.84(1)",
+    "density": 19.25,
+    "meltingPoint": 3695,
+    "boilingPoint": 6203,
+    "appearance": "grayish-white, lustrous metal",
+    "isotopes": [
+      {
+        "isotope": "Tungsten-180",
+        "abundance": "0.12%",
+        "halfLife": "1.8×10^18 years"
+      },
+      {
+        "isotope": "Tungsten-182",
+        "abundance": "26.50%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tungsten-183",
+        "abundance": "14.31%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tungsten-184",
+        "abundance": "30.64%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Tungsten-186",
+        "abundance": "28.43%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "6 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Juan José Elhuyar & Fausto Elhuyar (1783)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Re",
+    "name": "Rhenium",
+    "atomicNumber": 75,
+    "atomicMass": "186.207(1)",
+    "density": 21.02,
+    "meltingPoint": 3459,
+    "boilingPoint": 5869,
+    "appearance": "silvery-white, metallic",
+    "isotopes": [
+      {
+        "isotope": "Rhenium-185",
+        "abundance": "37.40%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Rhenium-187",
+        "abundance": "62.60%",
+        "halfLife": "4.35×10^10 years"
+      }
+    ],
+    "group": "7 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Walter Noddack et al. (1925)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Os",
+    "name": "Osmium",
+    "atomicNumber": 76,
+    "atomicMass": "190.23(3)",
+    "density": 22.59,
+    "meltingPoint": 3306,
+    "boilingPoint": 5285,
+    "appearance": "silvery-blue metallic",
+    "isotopes": [
+      {
+        "isotope": "Osmium-184",
+        "abundance": "0.02%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Osmium-186",
+        "abundance": "1.59%",
+        "halfLife": "2.0×10^15 years"
+      },
+      {
+        "isotope": "Osmium-187",
+        "abundance": "1.64%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Osmium-188",
+        "abundance": "13.24%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Osmium-189",
+        "abundance": "16.15%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Osmium-190",
+        "abundance": "26.26%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Osmium-192",
+        "abundance": "40.78%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "8 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Smithson Tennant (1803)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Ir",
+    "name": "Iridium",
+    "atomicNumber": 77,
+    "atomicMass": "192.217(3)",
+    "density": 22.56,
+    "meltingPoint": 2719,
+    "boilingPoint": 4428,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Iridium-191",
+        "abundance": "37.3%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Iridium-193",
+        "abundance": "62.7%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "9 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Smithson Tennant (1803)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Pt",
+    "name": "Platinum",
+    "atomicNumber": 78,
+    "atomicMass": "195.084(9)",
+    "density": 21.45,
+    "meltingPoint": 2041.4,
+    "boilingPoint": 4098,
+    "appearance": "silvery-white, metallic",
+    "isotopes": [
+      {
+        "isotope": "Platinum-190",
+        "abundance": "0.012%",
+        "halfLife": "6.5×10^11 years"
+      },
+      {
+        "isotope": "Platinum-192",
+        "abundance": "0.782%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Platinum-194",
+        "abundance": "32.967%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Platinum-195",
+        "abundance": "33.832%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Platinum-196",
+        "abundance": "25.242%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Platinum-198",
+        "abundance": "7.163%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "10 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Antonio de Ulloa (1735)",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Au",
+    "name": "Gold",
+    "atomicNumber": 79,
+    "atomicMass": "196.966570(4)",
+    "density": 19.3,
+    "meltingPoint": 1337.33,
+    "boilingPoint": 3129,
+    "appearance": "metallic yellow",
+    "isotopes": [
+      {
+        "isotope": "Gold-197",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "11 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Hg",
+    "name": "Mercury",
+    "atomicNumber": 80,
+    "atomicMass": "200.592(3)",
+    "density": 13.534,
+    "meltingPoint": 234.321,
+    "boilingPoint": 629.88,
+    "appearance": "silvery-white liquid metal",
+    "isotopes": [
+      {
+        "isotope": "Mercury-196",
+        "abundance": "0.15%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-198",
+        "abundance": "9.97%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-199",
+        "abundance": "16.87%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-200",
+        "abundance": "23.10%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-201",
+        "abundance": "13.18%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-202",
+        "abundance": "29.86%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Mercury-204",
+        "abundance": "6.87%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "12 (d-block)",
+    "category": "Transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#8dc234"
+  },
+  {
+    "symbol": "Tl",
+    "name": "Thallium",
+    "atomicNumber": 81,
+    "atomicMass": "204.38(2)",
+    "density": 11.85,
+    "meltingPoint": 577.15,
+    "boilingPoint": 1746,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Thallium-203",
+        "abundance": "29.524%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Thallium-205",
+        "abundance": "70.476%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "William Crookes (1861)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Pb",
+    "name": "Lead",
+    "atomicNumber": 82,
+    "atomicMass": "207.2(1)",
+    "density": 11.34,
+    "meltingPoint": 600.61,
+    "boilingPoint": 2022,
+    "appearance": "metallic gray",
+    "isotopes": [
+      {
+        "isotope": "Lead-204",
+        "abundance": "1.4%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Lead-206",
+        "abundance": "24.1%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Lead-207",
+        "abundance": "22.1%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Lead-208",
+        "abundance": "52.4%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "atomicNumber": 83,
+    "atomicMass": "208.98040(1)",
+    "density": 9.78,
+    "meltingPoint": 544.7,
+    "boilingPoint": 1837,
+    "appearance": "lustrous, crystalline, brittle, white metal with a pinkish tinge",
+    "isotopes": [
+      {
+        "isotope": "Bismuth-209",
+        "abundance": "100%",
+        "halfLife": "1.9×10^19 years"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Po",
+    "name": "Polonium",
+    "atomicNumber": 84,
+    "atomicMass": "[209]",
+    "density": 9.32,
+    "meltingPoint": 527,
+    "boilingPoint": 1237,
+    "appearance": "silvery-gray metallic",
+    "isotopes": [
+      {
+        "isotope": "Polonium-209",
+        "abundance": "synthetic",
+        "halfLife": "102 years"
+      },
+      {
+        "isotope": "Polonium-210",
+        "abundance": "trace",
+        "halfLife": "138.376 days"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Marie Curie (1898)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "At",
+    "name": "Astatine",
+    "atomicNumber": 85,
+    "atomicMass": "[210]",
+    "density": 7.0,
+    "meltingPoint": 575,
+    "boilingPoint": 610,
+    "appearance": "unknown, possibly metallic",
+    "isotopes": [
+      {
+        "isotope": "Astatine-210",
+        "abundance": "synthetic",
+        "halfLife": "8.1 hours"
+      },
+      {
+        "isotope": "Astatine-211",
+        "abundance": "synthetic",
+        "halfLife": "7.21 hours"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Dale R. Corson et al. (1940)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Rn",
+    "name": "Radon",
+    "atomicNumber": 86,
+    "atomicMass": "[222]",
+    "density": 9.73,
+    "meltingPoint": 202,
+    "boilingPoint": 211.3,
+    "appearance": "colorless gas, glows red in a discharge tube",
+    "isotopes": [
+      {
+        "isotope": "Radon-222",
+        "abundance": "trace",
+        "halfLife": "3.823 days"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Friedrich Ernst Dorn (1900)",
+    "color": "#3eabd3"
+  },
+  {
+    "symbol": "Fr",
+    "name": "Francium",
+    "atomicNumber": 87,
+    "atomicMass": "[223]",
+    "density": 1.87,
+    "meltingPoint": 300,
+    "boilingPoint": 950,
+    "appearance": "metallic",
+    "isotopes": [
+      {
+        "isotope": "Francium-223",
+        "abundance": "trace",
+        "halfLife": "22 minutes"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Marguerite Perey (1939)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Ra",
+    "name": "Radium",
+    "atomicNumber": 88,
+    "atomicMass": "[226]",
+    "density": 5.5,
+    "meltingPoint": 900,
+    "boilingPoint": 2010,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Radium-226",
+        "abundance": "trace",
+        "halfLife": "1600 years"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Marie Curie (1898)",
+    "color": "#ff5eb9"
+  },
+  {
+    "symbol": "Ac",
+    "name": "Actinium",
+    "atomicNumber": 89,
+    "atomicMass": "[227]",
+    "density": 10.07,
+    "meltingPoint": 1323,
+    "boilingPoint": 3470,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Actinium-227",
+        "abundance": "trace",
+        "halfLife": "21.77 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Actinide",
+    "discoveredBy": "Friedrich Oskar Giesel (1899)",
+    "color": "#ff8c00"
+  },
+  {
+    "symbol": "Th",
+    "name": "Thorium",
+    "atomicNumber": 90,
+    "atomicMass": "232.0377(4)",
+    "density": 11.72,
+    "meltingPoint": 2028,
+    "boilingPoint": 5061,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Thorium-232",
+        "abundance": "100%",
+        "halfLife": "1.405×10^10 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Actinide",
+    "discoveredBy": "Jöns Jacob Berzelius (1828)",
+    "color": "#ff8c00"
+  },
+  {
+    "symbol": "Pa",
+    "name": "Protactinium",
+    "atomicNumber": 91,
+    "atomicMass": "231.03588(2)",
+    "density": 15.37,
+    "meltingPoint": 1845,
+    "boilingPoint": 4300,
+    "appearance": "bright, silvery-white metallic luster",
+    "isotopes": [
+      {
+        "isotope": "Protactinium-231",
+        "abundance": "trace",
+        "halfLife": "32760 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Actinide",
+    "discoveredBy": "Kasimir Fajans & Oswald Helmuth Göhring (1913)",
+    "color": "#ff8c00"
+  },
+  {
+    "symbol": "U",
+    "name": "Uranium",
+    "atomicNumber": 92,
+    "atomicMass": "238.02891(3)",
+    "density": 19.05,
+    "meltingPoint": 1405.3,
+    "boilingPoint": 4404,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Uranium-234",
+        "abundance": "0.0055%",
+        "halfLife": "245500 years"
+      },
+      {
+        "isotope": "Uranium-235",
+        "abundance": "0.7204%",
+        "halfLife": "7.04×10^8 years"
+      },
+      {
+        "isotope": "Uranium-238",
+        "abundance": "99.2745%",
+        "halfLife": "4.468×10^9 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Actinide",
+    "discoveredBy": "Martin Heinrich Klaproth (1789)",
+    "color": "#ff8c00"
+  },
+  {
+    "symbol": "Np",
+    "name": "Neptunium",
+    "atomicNumber": 93,
+    "atomicMass": "[237]",
+    "density": 20.45,
+    "meltingPoint": 910,
+    "boilingPoint": 4173,
+    "appearance": "silvery-metallic",
+    "isotopes": [
+      {
+        "isotope": "Neptunium-237",
+        "abundance": "synthetic",
+        "halfLife": "2.14×10^6 years"
+      }
+    ],
+    "group": "3 (f-block)",
+    "category": "Actinide",
+    "discoveredBy": "Edwin McMillan & Philip H. Abelson (1940)",
+    "color": "#ff8c00"
+  },
+  
+  {
+    "symbol": "Pu",
+    "name": "Plutonium",
+    "atomicNumber": 94,
+    "atomicMass": "[244]",
+    "density": 19.85,
+    "meltingPoint": 639.4,
+    "boilingPoint": 3228,
+    "appearance": "silvery-white (metallic)",
+    "isotopes": [
+      {
+        "isotope": "Plutonium-239",
+        "abundance": "synthetic",
+        "halfLife": "24,110 years"
+      },
+      {
+        "isotope": "Plutonium-244",
+        "abundance": "synthetic",
+        "halfLife": "80.8 million years"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Glenn T. Seaborg, Edwin M. McMillan, Joseph W. Kennedy, Arthur C. Wahl (1940)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Am",
+    "name": "Americium",
+    "atomicNumber": 95,
+    "atomicMass": "[243]",
+    "density": 12.0,
+    "meltingPoint": 1176,
+    "boilingPoint": 2607,
+    "appearance": "silvery-white (metallic)",
+    "isotopes": [
+      {
+        "isotope": "Americium-241",
+        "abundance": "synthetic",
+        "halfLife": "432.2 years"
+      },
+      {
+        "isotope": "Americium-243",
+        "abundance": "synthetic",
+        "halfLife": "7,370 years"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso (1944)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Cm",
+    "name": "Curium",
+    "atomicNumber": 96,
+    "atomicMass": "[247]",
+    "density": 13.51,
+    "meltingPoint": 1345,
+    "boilingPoint": 3100,
+    "appearance": "silvery",
+    "isotopes": [
+      {
+        "isotope": "Curium-247",
+        "abundance": "synthetic",
+        "halfLife": "15.6 million years"
+      },
+      {
+        "isotope": "Curium-248",
+        "abundance": "synthetic",
+        "halfLife": "348,000 years"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Glenn T. Seaborg, Ralph A. James, Albert Ghiorso (1944)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Bk",
+    "name": "Berkelium",
+    "atomicNumber": 97,
+    "atomicMass": "[247]",
+    "density": 14.78,
+    "meltingPoint": 986,
+    "boilingPoint": null,
+    "appearance": "silvery",
+    "isotopes": [
+      {
+        "isotope": "Berkelium-247",
+        "abundance": "synthetic",
+        "halfLife": "1,380 years"
+      },
+      {
+        "isotope": "Berkelium-249",
+        "abundance": "synthetic",
+        "halfLife": "330 days"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Stanley G. Thompson, Albert Ghiorso, Glenn T. Seaborg (1949)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Cf",
+    "name": "Californium",
+    "atomicNumber": 98,
+    "atomicMass": "[251]",
+    "density": 15.1,
+    "meltingPoint": 900,
+    "boilingPoint": null,
+    "appearance": "silvery",
+    "isotopes": [
+      {
+        "isotope": "Californium-251",
+        "abundance": "synthetic",
+        "halfLife": "898 years"
+      },
+      {
+        "isotope": "Californium-252",
+        "abundance": "synthetic",
+        "halfLife": "2.645 years"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Stanley G. Thompson, Kenneth Street Jr., Albert Ghiorso, Glenn T. Seaborg (1950)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Es",
+    "name": "Einsteinium",
+    "atomicNumber": 99,
+    "atomicMass": "[252]",
+    "density": 8.84,
+    "meltingPoint": 860,
+    "boilingPoint": null,
+    "appearance": "silvery",
+    "isotopes": [
+      {
+        "isotope": "Einsteinium-252",
+        "abundance": "synthetic",
+        "halfLife": "471.7 days"
+      },
+      {
+        "isotope": "Einsteinium-253",
+        "abundance": "synthetic",
+        "halfLife": "20.47 days"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Albert Ghiorso and team (1952)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Fm",
+    "name": "Fermium",
+    "atomicNumber": 100,
+    "atomicMass": "[257]",
+    "density": null,
+    "meltingPoint": 1527,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Fermium-257",
+        "abundance": "synthetic",
+        "halfLife": "100.5 days"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Albert Ghiorso and team (1952)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "atomicNumber": 101,
+    "atomicMass": "[258]",
+    "density": null,
+    "meltingPoint": 827,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Mendelevium-258",
+        "abundance": "synthetic",
+        "halfLife": "51.5 days"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Albert Ghiorso, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin, Stanley G. Thompson (1955)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "No",
+    "name": "Nobelium",
+    "atomicNumber": 102,
+    "atomicMass": "[259]",
+    "density": null,
+    "meltingPoint": 827,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Nobelium-259",
+        "abundance": "synthetic",
+        "halfLife": "58 minutes"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Joint Institute for Nuclear Research (1966), University of California, Berkeley (1966)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Lr",
+    "name": "Lawrencium",
+    "atomicNumber": 103,
+    "atomicMass": "[266]",
+    "density": null,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Lawrencium-266",
+        "abundance": "synthetic",
+        "halfLife": "11 hours (unconfirmed)"
+      },
+      {
+        "isotope": "Lawrencium-262",
+        "abundance": "synthetic",
+        "halfLife": "3.6 hours"
+      }
+    ],
+    "group": "N/A (Actinide)",
+    "category": "Actinide",
+    "discoveredBy": "Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh, Robert M. Latimer (1961)",
+    "color": "#D3D3D3"
+  },
+  {
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "atomicNumber": 104,
+    "atomicMass": "[267]",
+    "density": 23.2,
+    "meltingPoint": 2100,
+    "boilingPoint": 5500,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Rutherfordium-267",
+        "abundance": "synthetic",
+        "halfLife": "1.3 hours"
+      }
+    ],
+    "group": "4 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Joint Institute for Nuclear Research (1964), University of California, Berkeley (1969)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Db",
+    "name": "Dubnium",
+    "atomicNumber": 105,
+    "atomicMass": "[268]",
+    "density": 29.3,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Dubnium-268",
+        "abundance": "synthetic",
+        "halfLife": "29 hours"
+      }
+    ],
+    "group": "5 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Joint Institute for Nuclear Research (1968), University of California, Berkeley (1970)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "atomicNumber": 106,
+    "atomicMass": "[269]",
+    "density": 35.0,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Seaborgium-269",
+        "abundance": "synthetic",
+        "halfLife": "3.1 minutes"
+      }
+    ],
+    "group": "6 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Lawrence Berkeley Laboratory (1974), Joint Institute for Nuclear Research (1974)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "atomicNumber": 107,
+    "atomicMass": "[270]",
+    "density": 37.1,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Bohrium-270",
+        "abundance": "synthetic",
+        "halfLife": "61 seconds"
+      }
+    ],
+    "group": "7 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1981)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Hs",
+    "name": "Hassium",
+    "atomicNumber": 108,
+    "atomicMass": "[277]",
+    "density": 40.7,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Hassium-277",
+        "abundance": "synthetic",
+        "halfLife": "12 minutes"
+      }
+    ],
+    "group": "8 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1984)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "atomicNumber": 109,
+    "atomicMass": "[278]",
+    "density": 37.4,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Meitnerium-278",
+        "abundance": "synthetic",
+        "halfLife": "7.6 seconds"
+      }
+    ],
+    "group": "9 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1982)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "atomicNumber": 110,
+    "atomicMass": "[281]",
+    "density": 34.8,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Darmstadtium-281",
+        "abundance": "synthetic",
+        "halfLife": "1.6 minutes"
+      }
+    ],
+    "group": "10 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1994)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "atomicNumber": 111,
+    "atomicMass": "[282]",
+    "density": 28.7,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Roentgenium-282",
+        "abundance": "synthetic",
+        "halfLife": "100 seconds"
+      }
+    ],
+    "group": "11 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1994)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Cn",
+    "name": "Copernicium",
+    "atomicNumber": 112,
+    "atomicMass": "[285]",
+    "density": 23.7,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Copernicium-285",
+        "abundance": "synthetic",
+        "halfLife": "29 seconds"
+      }
+    ],
+    "group": "12 (d-block)",
+    "category": "Transition Metal",
+    "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1996)",
+    "color": "#ADD8E6"
+  },
+  {
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "atomicNumber": 113,
+    "atomicMass": "[286]",
+    "density": 16.0,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Nihonium-286",
+        "abundance": "synthetic",
+        "halfLife": "20 seconds"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition Metal",
+    "discoveredBy": "RIKEN (2003)",
+    "color": "#90EE90"
+  },
+  {
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "atomicNumber": 114,
+    "atomicMass": "[289]",
+    "density": 14.0,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Flerovium-289",
+        "abundance": "synthetic",
+        "halfLife": "2.6 seconds"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Post-transition Metal",
+    "discoveredBy": "Joint Institute for Nuclear Research (JINR) (1998)",
+    "color": "#90EE90"
+  },
+  {
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "atomicNumber": 115,
+    "atomicMass": "[290]",
+    "density": 13.5,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Moscovium-290",
+        "abundance": "synthetic",
+        "halfLife": "0.8 seconds"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Post-transition Metal",
+    "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2003)",
+    "color": "#90EE90"
+  },
+  {
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "atomicNumber": 116,
+    "atomicMass": "[293]",
+    "density": 12.9,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Livermorium-293",
+        "abundance": "synthetic",
+        "halfLife": "0.06 seconds"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Post-transition Metal",
+    "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2000)",
+    "color": "#90EE90"
+  },
+  {
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "atomicNumber": 117,
+    "atomicMass": "[294]",
+    "density": 7.1,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Tennessine-294",
+        "abundance": "synthetic",
+        "halfLife": "0.051 seconds"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Joint Institute for Nuclear Research (JINR), Oak Ridge National Laboratory (ORNL), Vanderbilt University, Lawrence Livermore National Laboratory (LLNL) (2010)",
+    "color": "#FFFF00"
+  },
+  {
+    "symbol": "Og",
+    "name": "Oganesson",
+    "atomicNumber": 118,
+    "atomicMass": "[294]",
+    "density": 5.0,
+    "meltingPoint": null,
+    "boilingPoint": null,
+    "appearance": null,
+    "isotopes": [
+      {
+        "isotope": "Oganesson-294",
+        "abundance": "synthetic",
+        "halfLife": "0.00089 seconds"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble Gas",
+    "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2006)",
+    "color": "#800080"
+  }
+]
