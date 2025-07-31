@@ -8,7 +8,7 @@
 }
 
 .element:hover {
-  opacity: 1.0; 
+  opacity: 1.0;
 }
 
 .s_group{
@@ -25,10 +25,218 @@
 
 .f_group {
   background-color: #be4d00;
-} 
+}
 
 .a_num {
   font-style: italic;
 }
 
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some padding around the modal */
+}
 
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Centered */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    /* Changed max-width to decrease the pop-up width */
+    max-width: 500px; /* Decreased from 700px to 500px */
+    width: 90%; /* Still responsive, but limits the max width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Max height for scrollability */
+    overflow-y: auto; /* Enable scrolling for content if it overflows */
+}
+
+.close-button {
+    color: #333; /* Darker color for better visibility */
+    font-size: 32px; /* Increased size */
+    font-weight: bold;
+    position: absolute;
+    top: 5px; /* Adjust top position */
+    right: 15px; /* Adjust right position */
+    cursor: pointer;
+    z-index: 101; /* Ensure close button is above content */
+    background-color: transparent; /* Ensure no background interferes */
+    border: none; /* Remove any default button border */
+    padding: 5px; /* Add some padding for easier clicking */
+    transition: color 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000; /* Even darker on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.element-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.element-symbol {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #3eabd3;
+}
+
+.element-symbol sup {
+    font-size: 0.em; /* Make superscript smaller relative to parent */
+    vertical-align: super;
+    line-height: 0; /* Helps prevent extra space */
+}
+
+.element-symbol sub {
+    font-size: 0.3em; /* Make subscript smaller relative to parent */
+    vertical-align: sub;
+    line-height: 0;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.element-info p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #555;
+    text-align: center; /* Align text left within info */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.element-info strong {
+    min-width: 120px;
+    display: inline-block;
+}
+
+/* Styles for Isotope Cards */
+#modal-isotopes-section {
+    width: 100%;
+    /* Keep max-width for isotope section, but note it's within the modal-content's max-width */
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#modal-isotopes-heading {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.isotope-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax for narrower modal */
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.isotope-card {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #3eabd3;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.isotope-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.isotope-card h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #3eabd3;
+    font-size: 1.3rem;
+}
+
+.isotope-card p {
+    margin: 0.4rem 0;
+    color: #666;
+}
+
+.isotope-card strong {
+    display: inline-block;
+    min-width: 90px;
+}
+
+/* Hide the back button in the modal */
+a.back {
+    display: none !important;
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+        max-width: 95%; /* Ensure it's responsive on smaller screens */
+    }
+    .element-card {
+        padding: 1rem;
+    }
+    .element-symbol {
+        font-size: 4rem;
+    }
+    .element-info p {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .isotope-cards-container {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+    .isotope-card {
+        padding: 1rem;
+    }
+    .close-button {
+        font-size: 28px; /* Slightly smaller on small screens */
+        top: 8px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 550px) { /* Adjust for even smaller screens */
+    .modal-content {
+        max-width: 98%;
+        padding: 10px;
+    }
+    .element-symbol {
+        font-size: 3.5rem;
+    }
+    .element-info p strong {
+        min-width: 100px; /* Adjust alignment for very small screens */
+    }
+}
