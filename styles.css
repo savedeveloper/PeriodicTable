@@ -104,7 +104,7 @@
 }
 
 .element-symbol sup {
-    font-size: 0.em; /* Make superscript smaller relative to parent */
+    font-size: 0.3em; /* Make superscript smaller relative to parent */
     vertical-align: super;
     line-height: 0; /* Helps prevent extra space */
 }
