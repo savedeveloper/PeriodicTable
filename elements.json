@@ -28,7 +28,17 @@
     "group": "1 (s-block)",
     "category": "Nonmetal",
     "discoveredBy": "Henry Cavendish (1766)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Rocket fuel",
+      "Production of ammonia",
+      "Refining petroleum"
+    ],
+    "interesting_facts": [
+      "It is the most abundant element in the universe.",
+      "90% of the atoms in the universe are hydrogen atoms.",
+      "It is the lightest element on the periodic table."
+    ]
   },
   {
     "symbol": "He",
@@ -54,7 +64,17 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Pierre Janssen (1868)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Filling balloons and airships",
+      "Coolant for MRI machines",
+      "Creating an inert atmosphere for welding"
+    ],
+    "interesting_facts": [
+      "Helium is the second most abundant element in the universe.",
+      "It was discovered in the sun before it was found on Earth.",
+      "It has the lowest boiling point of any element."
+    ]
   },
   {
     "symbol": "Li",
@@ -80,7 +100,17 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Johan August Arfwedson (1817)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Rechargeable batteries (phones, laptops)",
+      "Mood stabilizer in medicine",
+      "Aerospace alloys"
+    ],
+    "interesting_facts": [
+      "It is the lightest metal on the periodic table.",
+      "Lithium is so reactive it is stored in oil.",
+      "It is the only alkali metal that doesn't form a compound with nitrogen at room temperature."
+    ]
   },
   {
     "symbol": "Be",
@@ -101,7 +131,17 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Louis Nicolas Vauquelin (1798)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Alloys for aircraft and missiles",
+      "X-ray windows",
+      "Nuclear reactors"
+    ],
+    "interesting_facts": [
+      "It is a lightweight and strong metal.",
+      "Beryllium is a key component in the gems emeralds and aquamarines.",
+      "Inhaling beryllium dust is toxic and can cause a lung disease called berylliosis."
+    ]
   },
   {
     "symbol": "B",
@@ -127,7 +167,17 @@
     "group": "13 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Joseph Louis Gay-Lussac (1808)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Borosilicate glass (Pyrex)",
+      "Sports equipment (carbon fiber composites)",
+      "Laundry detergents"
+    ],
+    "interesting_facts": [
+      "It is an essential micronutrient for plants.",
+      "Boron is the only non-metal in its group on the periodic table.",
+      "Boron nitride is a compound of boron that is one of the hardest known materials."
+    ]
   },
   {
     "symbol": "C",
@@ -158,7 +208,17 @@
     "group": "14 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+     "common_uses": [
+      "Diamonds (jewelry, cutting tools)",
+      "Graphite (pencils, lubricants)",
+      "Carbon fiber composites"
+    ],
+    "interesting_facts": [
+      "It is the basis of all known life on Earth.",
+      "Carbon can form a vast number of compounds, more than any other element.",
+      "It has several allotropes, including diamond, graphite, and fullerenes."
+    ]
   },
   {
     "symbol": "N",
@@ -184,7 +244,17 @@
     "group": "15 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Daniel Rutherford (1772)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fertilizers",
+      "Explosives",
+      "Liquid nitrogen for food preservation"
+    ],
+    "interesting_facts": [
+      "It is the most abundant element in Earth's atmosphere, making up about 78%.",
+      "Nitrogen is a crucial component of DNA and amino acids.",
+      "It is a colorless, odorless, and tasteless gas."
+    ]
   },
   {
     "symbol": "O",
@@ -215,7 +285,17 @@
     "group": "16 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Carl Wilhelm Scheele (1772)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Medical applications (breathing support)",
+      "Welding and steel production",
+      "Rocket fuel"
+    ],
+    "interesting_facts": [
+      "It is the most abundant element in Earth's crust.",
+      "Oxygen is crucial for aerobic respiration in most living organisms.",
+      "It makes up about 21% of the air we breathe."
+    ]
   },
   {
     "symbol": "F",
@@ -236,7 +316,17 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Henri Moissan (1886)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Toothpaste (as fluoride)",
+      "Non-stick coatings (Teflon)",
+      "Refrigerants and propellants"
+    ],
+    "interesting_facts": [
+      "It is the most reactive and electronegative of all chemical elements.",
+      "Pure fluorine is a highly toxic, pale yellow gas.",
+      "It is the only element that can react with a noble gas like Xenon."
+    ]
   },
   {
     "symbol": "Ne",
@@ -267,7 +357,17 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Morris Travers & William Ramsay (1898)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Neon signs",
+      "Lasers",
+      "High-voltage indicators"
+    ],
+    "interesting_facts": [
+      "It is a noble gas, meaning it is very unreactive.",
+      "Neon produces a reddish-orange glow when an electric current passes through it.",
+      "The name 'neon' comes from the Greek word 'neos', meaning new."
+    ]
   },
   {
     "symbol": "Na",
@@ -288,7 +388,17 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Humphry Davy (1807)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Table salt (as sodium chloride)",
+      "Streetlights",
+      "Coolant in some nuclear reactors"
+    ],
+    "interesting_facts": [
+      "It is a highly reactive alkali metal that is soft enough to be cut with a knife.",
+      "Sodium reacts violently with water, producing hydrogen gas and heat.",
+      "It is an essential element for nerve function in humans."
+    ]
   },
   {
     "symbol": "Mg",
@@ -319,7 +429,17 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Joseph Black (1755)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Alloys for car parts and aircraft",
+      "Fireworks and flares",
+      "Dietary supplement"
+    ],
+    "interesting_facts": [
+      "It is the lightest structural metal on the periodic table.",
+      "Magnesium burns with a brilliant white light.",
+      "It is a key component of chlorophyll, the substance that gives plants their green color."
+    ]
   },
   {
     "symbol": "Al",
@@ -340,7 +460,17 @@
     "group": "13 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Hans Christian Ørsted (1825)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Beverage cans and foil",
+      "Aircraft parts",
+      "Window frames and other construction"
+    ],
+    "interesting_facts": [
+      "It is the most abundant metal in Earth's crust.",
+      "Aluminum is highly recyclable and requires far less energy to recycle than to produce from ore.",
+      "It is naturally coated with a thin layer of protective oxide, which prevents corrosion."
+    ]
   },
   {
     "symbol": "Si",
@@ -371,7 +501,17 @@
     "group": "14 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Jöns Jacob Berzelius (1823)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Computer chips and transistors",
+      "Glass",
+      "Cement and concrete"
+    ],
+    "interesting_facts": [
+      "It is the second most abundant element in Earth's crust.",
+      "Silicon is a semiconductor, which is vital for the entire electronics industry.",
+      "It is the main component of sand and quartz."
+    ]
   },
   {
     "symbol": "P",
@@ -392,7 +532,17 @@
     "group": "15 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Hennig Brand (1669)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fertilizers",
+      "Matches",
+      "Detergents"
+    ],
+    "interesting_facts": [
+      "It exists in multiple allotropes, including highly reactive white phosphorus and more stable red phosphorus.",
+      "The name 'phosphorus' comes from Greek and means 'light-bringing', as white phosphorus glows in the dark.",
+      "It is an essential element for all life, found in DNA and cell membranes."
+    ]
   },
   {
     "symbol": "S",
@@ -428,7 +578,17 @@
     "group": "16 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fertilizers",
+      "Gunpowder",
+      "Sulfuric acid production"
+    ],
+    "interesting_facts": [
+      "It has a distinctive smell, often associated with volcanic activity or hot springs.",
+      "Sulfur is a crucial component of two amino acids, cysteine and methionine.",
+      "Pure sulfur is a bright yellow, crystalline solid."
+    ]
   },
   {
     "symbol": "Cl",
@@ -454,7 +614,17 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Carl Wilhelm Scheele (1774)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Disinfectant (bleach)",
+      "PVC plastic production",
+      "Water purification"
+    ],
+    "interesting_facts": [
+      "It is a yellowish-green toxic gas in its elemental form.",
+      "Chlorine is a highly reactive halogen.",
+      "It is the 'Cl' in sodium chloride (NaCl), or table salt."
+    ]
   },
   {
     "symbol": "Ar",
@@ -485,7 +655,17 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Lord Rayleigh & William Ramsay (1894)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Inert gas in lightbulbs",
+      "Welding",
+      "Double-glazing in windows"
+    ],
+    "interesting_facts": [
+      "It is a noble gas and is the third most abundant gas in the atmosphere.",
+      "Argon is used to create an inert environment to protect other materials from oxygen.",
+      "The name 'argon' comes from the Greek word for 'lazy' or 'inactive'."
+    ]
   },
   {
     "symbol": "K",
@@ -516,7 +696,17 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Humphry Davy (1807)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Fertilizers",
+      "Soap manufacturing",
+      "Dietary supplement"
+    ],
+    "interesting_facts": [
+      "It is a highly reactive alkali metal that ignites on contact with water.",
+      "Potassium is an essential element for human nerve and muscle function.",
+      "It is found in many foods, including bananas and potatoes."
+    ]
   },
   {
     "symbol": "Ca",
@@ -562,7 +752,381 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Humphry Davy (1808)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Cement and concrete",
+      "Dietary supplement for strong bones and teeth",
+      "Production of steel"
+    ],
+    "interesting_facts": [
+      "It is an essential mineral for humans and animals, making up our bones and teeth.",
+      "Calcium is found in common rocks like limestone, marble, and chalk.",
+      "It is the fifth most abundant element in Earth's crust."
+    ]
+  },
+  {
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "atomicNumber": 12,
+    "atomicMass": "24.305",
+    "density": 1.738,
+    "meltingPoint": 923,
+    "boilingPoint": 1363,
+    "appearance": "silvery white metallic",
+    "isotopes": [
+      {
+        "isotope": "Magnesium-24",
+        "abundance": "78.99%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Magnesium-25",
+        "abundance": "10.00%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Magnesium-26",
+        "abundance": "11.01%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Joseph Black (1755)",
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Alloys for car parts and aircraft",
+      "Fireworks and flares",
+      "Dietary supplement"
+    ],
+    "interesting_facts": [
+      "It is the lightest structural metal on the periodic table.",
+      "Magnesium burns with a brilliant white light.",
+      "It is a key component of chlorophyll, the substance that gives plants their green color."
+    ]
+  },
+  {
+    "symbol": "Al",
+    "name": "Aluminum",
+    "atomicNumber": 13,
+    "atomicMass": "26.9815385(7)",
+    "density": 2.7,
+    "meltingPoint": 933.47,
+    "boilingPoint": 2792,
+    "appearance": "silvery white metallic",
+    "isotopes": [
+      {
+        "isotope": "Aluminum-27",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "13 (p-block)",
+    "category": "Post-transition metal",
+    "discoveredBy": "Hans Christian Ørsted (1825)",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Beverage cans and foil",
+      "Aircraft parts",
+      "Window frames and other construction"
+    ],
+    "interesting_facts": [
+      "It is the most abundant metal in Earth's crust.",
+      "Aluminum is highly recyclable and requires far less energy to recycle than to produce from ore.",
+      "It is naturally coated with a thin layer of protective oxide, which prevents corrosion."
+    ]
+  },
+  {
+    "symbol": "Si",
+    "name": "Silicon",
+    "atomicNumber": 14,
+    "atomicMass": "28.085",
+    "density": 2.329,
+    "meltingPoint": 1687,
+    "boilingPoint": 3538,
+    "appearance": "dark grey metallic",
+    "isotopes": [
+      {
+        "isotope": "Silicon-28",
+        "abundance": "92.23%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Silicon-29",
+        "abundance": "4.68%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Silicon-30",
+        "abundance": "3.09%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "14 (p-block)",
+    "category": "Metalloid",
+    "discoveredBy": "Jöns Jacob Berzelius (1823)",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Computer chips and transistors",
+      "Glass",
+      "Cement and concrete"
+    ],
+    "interesting_facts": [
+      "It is the second most abundant element in Earth's crust.",
+      "Silicon is a semiconductor, which is vital for the entire electronics industry.",
+      "It is the main component of sand and quartz."
+    ]
+  },
+  {
+    "symbol": "P",
+    "name": "Phosphorus",
+    "atomicNumber": 15,
+    "atomicMass": "30.973761998(5)",
+    "density": 1.823,
+    "meltingPoint": 317.3,
+    "boilingPoint": 553.7,
+    "appearance": "colorless, waxy white, yellowish or red-black solid",
+    "isotopes": [
+      {
+        "isotope": "Phosphorus-31",
+        "abundance": "100%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "15 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Hennig Brand (1669)",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fertilizers",
+      "Matches",
+      "Detergents"
+    ],
+    "interesting_facts": [
+      "It exists in multiple allotropes, including highly reactive white phosphorus and more stable red phosphorus.",
+      "The name 'phosphorus' comes from Greek and means 'light-bringing', as white phosphorus glows in the dark.",
+      "It is an essential element for all life, found in DNA and cell membranes."
+    ]
+  },
+  {
+    "symbol": "S",
+    "name": "Sulfur",
+    "atomicNumber": 16,
+    "atomicMass": "32.06",
+    "density": 2.07,
+    "meltingPoint": 388.36,
+    "boilingPoint": 717.8,
+    "appearance": "lemon yellow crystalline solid",
+    "isotopes": [
+      {
+        "isotope": "Sulfur-32",
+        "abundance": "94.99%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-33",
+        "abundance": "0.75%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-34",
+        "abundance": "4.25%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Sulfur-36",
+        "abundance": "0.01%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "16 (p-block)",
+    "category": "Nonmetal",
+    "discoveredBy": "Ancient",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fertilizers",
+      "Gunpowder",
+      "Sulfuric acid production"
+    ],
+    "interesting_facts": [
+      "It has a distinctive smell, often associated with volcanic activity or hot springs.",
+      "Sulfur is a crucial component of two amino acids, cysteine and methionine.",
+      "Pure sulfur is a bright yellow, crystalline solid."
+    ]
+  },
+  {
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "atomicNumber": 17,
+    "atomicMass": "35.45",
+    "density": 3.2,
+    "meltingPoint": 172.17,
+    "boilingPoint": 239.11,
+    "appearance": "pale yellow-green gas",
+    "isotopes": [
+      {
+        "isotope": "Chlorine-35",
+        "abundance": "75.76%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Chlorine-37",
+        "abundance": "24.24%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "17 (p-block)",
+    "category": "Halogen",
+    "discoveredBy": "Carl Wilhelm Scheele (1774)",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Disinfectant (bleach)",
+      "PVC plastic production",
+      "Water purification"
+    ],
+    "interesting_facts": [
+      "It is a yellowish-green toxic gas in its elemental form.",
+      "Chlorine is a highly reactive halogen.",
+      "It is the 'Cl' in sodium chloride (NaCl), or table salt."
+    ]
+  },
+  {
+    "symbol": "Ar",
+    "name": "Argon",
+    "atomicNumber": 18,
+    "atomicMass": "39.948(1)",
+    "density": 1.784,
+    "meltingPoint": 83.8,
+    "boilingPoint": 87.302,
+    "appearance": "colorless gas",
+    "isotopes": [
+      {
+        "isotope": "Argon-36",
+        "abundance": "0.336%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Argon-38",
+        "abundance": "0.063%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Argon-40",
+        "abundance": "99.600%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "18 (p-block)",
+    "category": "Noble gas",
+    "discoveredBy": "Lord Rayleigh & William Ramsay (1894)",
+    "color": "#3eabd3",
+    "common_uses": [
+      "Inert gas in lightbulbs",
+      "Welding",
+      "Double-glazing in windows"
+    ],
+    "interesting_facts": [
+      "It is a noble gas and is the third most abundant gas in the atmosphere.",
+      "Argon is used to create an inert environment to protect other materials from oxygen.",
+      "The name 'argon' comes from the Greek word for 'lazy' or 'inactive'."
+    ]
+  },
+  {
+    "symbol": "K",
+    "name": "Potassium",
+    "atomicNumber": 19,
+    "atomicMass": "39.0983(1)",
+    "density": 0.862,
+    "meltingPoint": 336.7,
+    "boilingPoint": 1032,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Potassium-39",
+        "abundance": "93.2581%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Potassium-40",
+        "abundance": "0.0117%",
+        "halfLife": "1.248×10^9 years"
+      },
+      {
+        "isotope": "Potassium-41",
+        "abundance": "6.7302%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "1 (s-block)",
+    "category": "Alkali metal",
+    "discoveredBy": "Humphry Davy (1807)",
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Fertilizers",
+      "Soap manufacturing",
+      "Dietary supplement"
+    ],
+    "interesting_facts": [
+      "It is a highly reactive alkali metal that ignites on contact with water.",
+      "Potassium is an essential element for human nerve and muscle function.",
+      "It is found in many foods, including bananas and potatoes."
+    ]
+  },
+  {
+    "symbol": "Ca",
+    "name": "Calcium",
+    "atomicNumber": 20,
+    "atomicMass": "40.078(4)",
+    "density": 1.55,
+    "meltingPoint": 1115,
+    "boilingPoint": 1757,
+    "appearance": "silvery-white metallic",
+    "isotopes": [
+      {
+        "isotope": "Calcium-40",
+        "abundance": "96.941%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-42",
+        "abundance": "0.647%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-43",
+        "abundance": "0.135%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-44",
+        "abundance": "2.086%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-46",
+        "abundance": "0.004%",
+        "halfLife": "stable"
+      },
+      {
+        "isotope": "Calcium-48",
+        "abundance": "0.187%",
+        "halfLife": "stable"
+      }
+    ],
+    "group": "2 (s-block)",
+    "category": "Alkaline earth metal",
+    "discoveredBy": "Humphry Davy (1808)",
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Cement and concrete",
+      "Dietary supplement for strong bones and teeth",
+      "Production of steel"
+    ],
+    "interesting_facts": [
+      "It is an essential mineral for humans and animals, making up our bones and teeth.",
+      "Calcium is found in common rocks like limestone, marble, and chalk.",
+      "It is the fifth most abundant element in Earth's crust."
+    ]
   },
   {
     "symbol": "Sc",
@@ -583,7 +1147,17 @@
     "group": "3 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Lars Fredrik Nilson (1879)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Aerospace components (Sc-Al alloys)",
+      "High-intensity discharge lamps",
+      "Sporting goods (e.g., bicycle frames, baseball bats)"
+    ],
+    "interesting_facts": [
+      "It is often used in alloys with aluminum to make them lighter and stronger.",
+      "Scandium is relatively rare and is not found as a free element in nature.",
+      "Its discovery was a key prediction of Dmitri Mendeleev's periodic table."
+    ]
   },
   {
     "symbol": "Ti",
@@ -624,7 +1198,17 @@
     "group": "4 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "William Gregor (1791)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Aerospace industry (aircraft, jet engines)",
+      "Medical implants and prosthetics",
+      "Jewelry and sporting goods"
+    ],
+    "interesting_facts": [
+      "It is as strong as steel but about 45% lighter.",
+      "Titanium is highly resistant to corrosion and is biocompatible.",
+      "The name comes from the Titans of Greek mythology."
+    ]
   },
   {
     "symbol": "V",
@@ -650,7 +1234,17 @@
     "group": "5 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Andrés Manuel del Río (1801)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Steel alloys (improving strength and durability)",
+      "Catalysts in chemical production",
+      "Vanadium redox batteries"
+    ],
+    "interesting_facts": [
+      "Its compounds exhibit a wide variety of beautiful colors.",
+      "The element is named after Vanadis, the Norse goddess of beauty and fertility.",
+      "It is a key element in the active site of some enzymes in living organisms."
+    ]
   },
   {
     "symbol": "Cr",
@@ -686,7 +1280,17 @@
     "group": "6 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Louis Nicolas Vauquelin (1797)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Stainless steel production",
+      "Chrome plating for durability and appearance",
+      "Pigments for paints and dyes"
+    ],
+    "interesting_facts": [
+      "The name comes from the Greek word 'chroma,' meaning 'color,' due to its colorful compounds.",
+      "Chromium is the element responsible for the red color of rubies and the green color of emeralds.",
+      "It can be toxic in its hexavalent form ($CrO_3$). "
+    ]
   },
   {
     "symbol": "Mn",
@@ -707,7 +1311,17 @@
     "group": "7 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Carl Wilhelm Scheele (1774)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Steel production (to improve hardness and strength)",
+      "Alloys",
+      "Dry cell batteries"
+    ],
+    "interesting_facts": [
+      "It is an essential trace mineral for all known living organisms.",
+      "Manganese is found in nodules on the ocean floor, which are a potential future source of the metal.",
+      "It is the main element in ferromanganese, a key component in steel production."
+    ]
   },
   {
     "symbol": "Fe",
@@ -743,7 +1357,17 @@
     "group": "8 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Ancient",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Steel and other alloys",
+      "Construction and machinery",
+      "Essential component of hemoglobin in blood"
+    ],
+    "interesting_facts": [
+      "Iron is the most common element on Earth by mass.",
+      "It is the primary component of Earth's core, both outer and inner.",
+      "Rusting is the process of iron oxidizing when exposed to moisture and air."
+    ]
   },
   {
     "symbol": "Co",
@@ -764,7 +1388,17 @@
     "group": "9 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Georg Brandt (1735)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Rechargeable batteries",
+      "Superalloys for jet engines",
+      "Pigments (cobalt blue)"
+    ],
+    "interesting_facts": [
+      "The name 'cobalt' comes from the German word 'Kobold,' meaning 'goblin,' as miners believed a mischievous spirit was stealing other metals.",
+      "Cobalt-60 is a radioactive isotope used in medical radiation therapy.",
+      "It is an essential component of Vitamin $B_{12}$."
+    ]
   },
   {
     "symbol": "Ni",
@@ -805,7 +1439,17 @@
     "group": "10 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Axel Fredrik Cronstedt (1751)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Stainless steel and other alloys",
+      "Rechargeable batteries",
+      "Electroplating for corrosion resistance"
+    ],
+    "interesting_facts": [
+      "Nickel is highly resistant to corrosion, which makes it perfect for use in coins and plating.",
+      "The name is a shortened form of 'kupfernickel,' or 'copper demon,' a German mining term.",
+      "It is the main element in the Earth's inner core, along with iron."
+    ]
   },
   {
     "symbol": "Cu",
@@ -831,7 +1475,17 @@
     "group": "11 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Ancient",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Electrical wiring",
+      "Pipes and plumbing",
+      "Coinage and cooking utensils"
+    ],
+    "interesting_facts": [
+      "It was one of the first metals ever to be used by humans, starting around 8000 BCE.",
+      "Copper is a great conductor of electricity and heat.",
+      "It has natural antimicrobial properties, which prevent bacteria from growing on its surfaces."
+    ]
   },
   {
     "symbol": "Zn",
@@ -872,7 +1526,17 @@
     "group": "12 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "India (before 1000 BCE)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Galvanizing steel (rust prevention)",
+      "Brass alloys",
+      "Dietary supplement for immune function"
+    ],
+    "interesting_facts": [
+      "It is an essential mineral for humans and plants.",
+      "Zinc is a key component of the brass alloy.",
+      "Zinc oxide ($ZnO$) is used in sunscreens to block UV rays."
+    ]
   },
   {
     "symbol": "Ga",
@@ -898,7 +1562,17 @@
     "group": "13 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Lecoq de Boisbaudran (1875)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Semiconductors (LEDs and laser diodes)",
+      "Analogous to liquid thermometers",
+      "Electronics"
+    ],
+    "interesting_facts": [
+      "It has a melting point just above room temperature, so a solid piece of it can melt in your hand.",
+      "Gallium wets glass and ceramic surfaces, so it cannot be stored in them.",
+      "It was another element whose existence and properties were predicted by Dmitri Mendeleev."
+    ]
   },
   {
     "symbol": "Ge",
@@ -939,7 +1613,17 @@
     "group": "14 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Clemens Winkler (1886)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Fiber optic cables",
+      "Infrared optics",
+      "Semiconductors"
+    ],
+    "interesting_facts": [
+      "It is a metalloid, meaning it has properties of both metals and nonmetals.",
+      "Germanium was used in early transistors, but it was largely replaced by silicon.",
+      "Its high transparency to infrared radiation makes it ideal for use in thermal imaging cameras."
+    ]
   },
   {
     "symbol": "As",
@@ -960,7 +1644,17 @@
     "group": "15 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Albertus Magnus (1250)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Wood preservatives",
+      "Semiconductors",
+      "Historically used in insecticides and rat poison"
+    ],
+    "interesting_facts": [
+      "Arsenic is a notorious poison, and its name is derived from the Greek word for 'yellow orpiment,' a mineral containing arsenic.",
+      "It can exist in several allotropes, including gray, black, and yellow forms.",
+      "In small, controlled doses, it has been used in some medical treatments."
+    ]
   },
   {
     "symbol": "Se",
@@ -1006,7 +1700,17 @@
     "group": "16 (p-block)",
     "category": "Nonmetal",
     "discoveredBy": "Jöns Jacob Berzelius (1817)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Glass manufacturing (to remove color)",
+      "Dietary supplements (antioxidant)",
+      "Toner in photocopiers and laser printers"
+    ],
+    "interesting_facts": [
+      "Selenium's electrical conductivity increases when exposed to light, a property called photoconductivity.",
+      "It is an essential trace element for humans, but it is toxic in large amounts.",
+      "The name 'selenium' comes from the Greek word 'selene,' meaning 'moon,' as it was discovered alongside tellurium, named after Earth."
+    ]
   },
   {
     "symbol": "Br",
@@ -1032,7 +1736,18 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Antoine Jérôme Balard (1826)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Flame retardants",
+      "Pesticides",
+      "Water purification",
+      "Pharmaceuticals"
+    ],
+    "interesting_facts": [
+      "It is the only non-metallic element that is a liquid at room temperature.",
+      "Bromine has a very pungent, unpleasant odor, which is where its name comes from.",
+      "The name 'bromine' comes from the Greek word 'bromos', meaning 'stench'."
+    ]
   },
   {
     "symbol": "Kr",
@@ -1078,7 +1793,17 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Morris Travers & William Ramsay (1898)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Lighting products (e.g., fluorescent lamps, flash photography)",
+      "Excimer lasers",
+      "Medical imaging"
+    ],
+    "interesting_facts": [
+      "It is a noble gas and is generally unreactive.",
+      "Krypton is named after the Greek word 'kryptos', meaning 'the hidden one', because of its low abundance.",
+      "It was once used to define the international standard for the meter."
+    ]
   },
   {
     "symbol": "Rb",
@@ -1104,7 +1829,17 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Robert Bunsen & Gustav Kirchhoff (1861)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Atomic clocks",
+      "Fireworks (produces a purple color)",
+      "Vacuum tubes and photocells"
+    ],
+    "interesting_facts": [
+      "It is a highly reactive alkali metal that ignites spontaneously in air.",
+      "Rubidium must be stored under mineral oil to prevent it from reacting with the atmosphere.",
+      "The name comes from the Latin word 'rubidus', meaning 'deep red', for the color it emits in a flame test."
+    ]
   },
   {
     "symbol": "Sr",
@@ -1140,7 +1875,17 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Adair Crawford (1790)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Fireworks (to produce a bright red color)",
+      "Radioisotopes for medical use (Strontium-89 for bone cancer)",
+      "Signal flares"
+    ],
+    "interesting_facts": [
+      "It is named after a village in Scotland, Strontian, where the mineral strontianite was first found.",
+      "Strontium can be used to make glass for color television screens.",
+      "The radioactive isotope Strontium-90 is a byproduct of nuclear fission and a major health concern."
+    ]
   },
   {
     "symbol": "Y",
@@ -1161,7 +1906,17 @@
     "group": "3 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Johan Gadolin (1794)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Phosphors for television and computer displays",
+      "Alloys to increase strength and corrosion resistance",
+      "Microwave filters in radars"
+    ],
+    "interesting_facts": [
+      "Yttrium is named after the Swedish village Ytterby, a source of many new minerals.",
+      "It is a key component in red phosphors used in old CRT television screens.",
+      "Yttrium-stabilized zirconia is used in dentistry for crowns and bridges."
+    ]
   },
   {
     "symbol": "Zr",
@@ -1202,7 +1957,17 @@
     "group": "4 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Martin Heinrich Klaproth (1789)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Nuclear reactors (fuel cladding)",
+      "Ceramics and abrasive materials",
+      "Surgical instruments"
+    ],
+    "interesting_facts": [
+      "It is a highly corrosion-resistant metal, which is why it is used in nuclear reactors.",
+      "Zirconium is also found in cubic zirconia, a popular diamond simulant.",
+      "The name comes from the mineral zircon, a word of Arabic origin meaning 'golden color'."
+    ]
   },
   {
     "symbol": "Nb",
@@ -1223,7 +1988,18 @@
     "group": "5 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Charles Hatchett (1801)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Superconducting magnets",
+      "Steel alloys (high-strength, low-alloy steel)",
+      "Jet and rocket engine components",
+      "Optical lenses and capacitors"
+    ],
+    "interesting_facts": [
+      "Niobium is named after Niobe, the daughter of the mythological Greek king Tantalus, because of its chemical similarity to tantalum.",
+      "At cryogenic temperatures, niobium becomes a superconductor, meaning it can conduct electricity with zero resistance.",
+      "The world's largest particle accelerators, like the Large Hadron Collider, use niobium-based superconducting magnets to steer particle beams."
+    ]
   },
   {
     "symbol": "Mo",
@@ -1274,7 +2050,18 @@
     "group": "6 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Carl Wilhelm Scheele (1778)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Steel alloys (improves strength, hardness, and corrosion resistance)",
+      "Filaments for electric heaters and light bulbs",
+      "Catalysts in petroleum refining",
+      "Lubricants in high-temperature applications (as molybdenum disulfide)"
+    ],
+    "interesting_facts": [
+      "Molybdenum is a crucial trace element for life and is found in enzymes that help with nitrogen fixation in bacteria.",
+      "Its name comes from the Greek word 'molybdos' meaning lead, as it was often confused with lead ore.",
+      "Molybdenum has one of the highest melting points of all pure elements."
+    ]
   },
   {
     "symbol": "Tc",
@@ -1305,7 +2092,17 @@
     "group": "7 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Carlo Perrier & Emilio Segrè (1937)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Medical imaging (radiopharmaceuticals)",
+      "Corrosion inhibitor for steel",
+      "Radiography"
+    ],
+    "interesting_facts": [
+      "Technetium was the first element to be artificially produced in a lab, filling a gap in the periodic table.",
+      "Due to its radioactivity and short half-life, it's virtually nonexistent on Earth, aside from trace amounts in uranium ore.",
+      "The most stable isotope, Technetium-99, is a gamma-ray emitter, making it perfect for tracing in nuclear medicine to visualize organs like the heart, liver, and brain."
+    ]
   },
   {
     "symbol": "Ru",
@@ -1356,7 +2153,18 @@
     "group": "8 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Karl Ernst Claus (1844)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Electrical contacts and wire",
+      "Alloys for wear-resistant materials",
+      "Catalysts in chemical reactions",
+      "Thin-film resistors in electronics"
+    ],
+    "interesting_facts": [
+      "Ruthenium is a rare and hard transition metal belonging to the platinum group.",
+      "It is an excellent hardener for palladium and platinum, and these alloys are used in electrical contacts.",
+      "Ruthenium can form a number of chemical compounds in a wide range of oxidation states, which is useful in chemical catalysis."
+    ]
   },
   {
     "symbol": "Rh",
@@ -1377,7 +2185,18 @@
     "group": "9 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "William Hyde Wollaston (1803)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Catalytic converters in cars",
+      "Jewelry plating (rhodium plating)",
+      "Crucibles for high-temperature applications",
+      "High-reflectivity mirrors"
+    ],
+    "interesting_facts": [
+      "Rhodium is one of the rarest and most valuable precious metals, often costing more than gold and platinum.",
+      "It is a highly effective catalyst and is a key component in three-way catalytic converters, which reduce harmful emissions from vehicle exhaust.",
+      "The name comes from the Greek word 'rhodon' meaning rose, due to the color of its salt solutions."
+    ]
   },
   {
     "symbol": "Pd",
@@ -1423,7 +2242,19 @@
     "group": "10 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "William Hyde Wollaston (1803)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Catalytic converters",
+      "Jewelry",
+      "Dentistry",
+      "Electronics (capacitors and connectors)",
+      "Hydrogen storage"
+    ],
+    "interesting_facts": [
+      "Palladium has a unique ability to absorb up to 900 times its own volume of hydrogen at room temperature, making it a key element for hydrogen storage research.",
+      "It is one of the six platinum group metals (PGMs) and is less dense and has a lower melting point than the others.",
+      "Palladium is a popular substitute for platinum in jewelry due to its similar appearance and durability, as well as being a more affordable alternative."
+    ]
   },
   {
     "symbol": "Ag",
@@ -1449,7 +2280,19 @@
     "group": "11 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Ancient",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Jewelry and silverware",
+      "Photography",
+      "Electronics (conductive paints and solders)",
+      "Mirrors and reflective coatings",
+      "Currency and investments"
+    ],
+    "interesting_facts": [
+      "Silver has the highest electrical and thermal conductivity of all metals.",
+      "The name 'silver' comes from the Old English word 'seolfor'. Its chemical symbol, Ag, comes from the Latin word 'argentum'.",
+      "Silver has been used for centuries for its antimicrobial properties and is still used in medical applications and water purification."
+    ]
   },
   {
     "symbol": "Cd",
@@ -1505,7 +2348,18 @@
     "group": "12 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Friedrich Stromeyer (1817)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Rechargeable nickel-cadmium batteries",
+      "Pigments for plastics and ceramics (produces yellow, orange, and red colors)",
+      "Protective plating on steel",
+      "Control rods in nuclear reactors"
+    ],
+    "interesting_facts": [
+      "Cadmium is a toxic heavy metal, and its use is highly regulated in many countries.",
+      "It was discovered as an impurity in zinc carbonate and named after the Greek word 'kadmeia' for calamine, a zinc ore.",
+      "Cadmium's high neutron absorption cross-section makes it useful as a neutron absorber in nuclear power plants."
+    ]
   },
   {
     "symbol": "In",
@@ -1531,7 +2385,18 @@
     "group": "13 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Ferdinand Reich & Hieronymous Richter (1863)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Transparent electrodes for LCD screens and touchscreens (indium tin oxide)",
+      "Low-melting-point alloys and solders",
+      "Protective coatings for bearings in high-speed engines",
+      "Semiconductor components"
+    ],
+    "interesting_facts": [
+      "Indium is a very soft metal that can be scratched with a fingernail.",
+      "When bent, it makes a high-pitched 'cry' similar to tin, but for different metallurgical reasons.",
+      "It was named for the brilliant indigo blue line in its atomic emission spectrum."
+    ]
   },
   {
     "symbol": "Sn",
@@ -1602,7 +2467,18 @@
     "group": "14 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Solders for electronics and plumbing",
+      "Tin plating for steel cans (tin cans)",
+      "Bronze alloys",
+      "Glass manufacturing"
+    ],
+    "interesting_facts": [
+      "Tin has the most stable isotopes of any element, with 10 of them being stable.",
+      "Tin is a soft, malleable, and low-melting-point metal. When a bar of tin is bent, a crackling sound known as 'tin cry' can be heard, which is caused by the deformation of its crystal structure.",
+      "Tin has been used by humans for thousands of years, most famously in the bronze age, where it was alloyed with copper to create bronze."
+    ]
   },
   {
     "symbol": "Sb",
@@ -1628,7 +2504,18 @@
     "group": "15 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Flame retardants",
+      "Alloys for batteries, bullets, and solders",
+      "Friction-resistant coatings",
+      "Pewter"
+    ],
+    "interesting_facts": [
+      "Antimony has been known since ancient times and was used as an eye cosmetic (kohl) in ancient Egypt.",
+      "The name 'antimony' is believed to come from the Greek words 'anti' and 'monos', meaning 'not alone', because it's rarely found as a pure element in nature.",
+      "It is a brittle metalloid that is a poor conductor of heat and electricity."
+    ]
   },
   {
     "symbol": "Te",
@@ -1684,7 +2571,18 @@
     "group": "16 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Franz-Joseph Müller von Reichenstein (1782)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Solar panels",
+      "Alloys to improve machinability (e.g., in steel and copper)",
+      "Vulcanization of rubber",
+      "Infrared detectors"
+    ],
+    "interesting_facts": [
+      "Tellurium is one of the rarest solid elements in the Earth's crust, even rarer than gold or platinum.",
+      "It was named from the Latin word 'tellus' meaning 'earth'.",
+      "When exposed to air, tellurium produces a distinctive garlic-like odor that can linger on a person's breath and body for a long time."
+    ]
   },
   {
     "symbol": "I",
@@ -1705,7 +2603,18 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Bernard Courtois (1811)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Antiseptics and disinfectants",
+      "Medical imaging (iodine-131 for thyroid scans and treatments)",
+      "Catalysis in organic chemistry",
+      "Food additive (iodized salt) to prevent goiter"
+    ],
+    "interesting_facts": [
+      "Iodine is a solid at room temperature and sublimes directly into a purple gas when heated.",
+      "The name comes from the Greek word 'iodes' meaning 'violet' or 'purple', referring to the color of its vapor.",
+      "Iodine is an essential nutrient for humans, particularly for the function of the thyroid gland."
+    ]
   },
   {
     "symbol": "Xe",
@@ -1766,7 +2675,18 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Morris Travers & William Ramsay (1898)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "High-intensity lighting (xenon arc lamps for projectors and car headlights)",
+      "Anesthesia",
+      "Ion propulsion systems for satellites",
+      "Flash tubes for cameras"
+    ],
+    "interesting_facts": [
+      "Xenon is a noble gas, but unlike most of them, it can form compounds with highly electronegative elements like fluorine.",
+      "The name comes from the Greek word 'xenos' meaning 'stranger' or 'foreigner'.",
+      "Xenon is used in some of the most powerful lamps and is found in the flash tubes of high-speed cameras, producing a bright, white light."
+    ]
   },
   {
     "symbol": "Cs",
@@ -1787,7 +2707,18 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Robert Bunsen & Gustav Kirchhoff (1860)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Atomic clocks",
+      "Drilling fluids for oil wells",
+      "Vacuum tubes and photocells",
+      "Ion propulsion"
+    ],
+    "interesting_facts": [
+      "Cesium is the most reactive of all the stable elements and will explode on contact with water or ice at any temperature above -116 °C.",
+      "It is one of only five metals that are liquid at or near room temperature.",
+      "The most accurate atomic clocks in the world are based on the vibration of cesium atoms, defining the second with extreme precision."
+    ]
   },
   {
     "symbol": "Ba",
@@ -1838,7 +2769,18 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Carl Wilhelm Scheele (1774)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Barium sulfate as a radiocontrast agent for X-rays (barium meal)",
+      "Pyrotechnics (produces a green color in fireworks)",
+      "Vacuum tubes",
+      "Glass manufacturing"
+    ],
+    "interesting_facts": [
+      "Barium's name comes from the Greek word 'barys' meaning 'heavy', due to the high density of some of its ores.",
+      "Barium is a soft, reactive metal that is toxic to humans.",
+      "Despite its toxicity, a compound of barium, barium sulfate, is safe to ingest because it's insoluble and passes through the digestive system without being absorbed."
+    ]
   },
   {
     "symbol": "La",
@@ -1864,7 +2806,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Carl Gustaf Mosander (1839)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Camera and telescope lenses (lanthanum oxide improves glass's refractive index)",
+      "Mischmetal (a mixture of rare-earth metals) in lighter flints",
+      "Hybrid car batteries (as a component in nickel-metal hydride batteries)"
+    ],
+    "interesting_facts": [
+      "Lanthanum is the first element in the lanthanide series and is considered the prototype for the group.",
+      "Its name comes from the Greek word 'lanthanein', meaning 'to lie hidden', as it was difficult to separate from other rare-earth elements.",
+      "Lanthanum compounds can be used to treat kidney failure by lowering phosphate levels in the blood."
+    ]
   },
   {
     "symbol": "Ce",
@@ -1900,7 +2852,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Martin Heinrich Klaproth (1803)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Automotive catalytic converters",
+      "Polishing powders for glass and optics",
+      "Lighter flints (as part of a mischmetal alloy)",
+      "Self-cleaning ovens"
+    ],
+    "interesting_facts": [
+      "Cerium is the most abundant of the rare-earth elements.",
+      "It was named after the dwarf planet Ceres, which was discovered around the same time as the element.",
+      "Cerium is a powerful reducing agent and can spontaneously ignite when scratched with a knife, especially in its powder form."
+    ]
   },
   {
     "symbol": "Pr",
@@ -1921,7 +2884,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Carl Auer von Welsbach (1885)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Ceramics and glass (produces a yellow color)",
+      "Strong magnets",
+      "Filaments for carbon arc lighting",
+      "Didymium glass (to absorb infrared radiation)"
+    ],
+    "interesting_facts": [
+      "Praseodymium was discovered at the same time as neodymium and was named for the green color of its oxide salt.",
+      "The name comes from the Greek words 'prasios' meaning 'green' and 'didymos' meaning 'twin'.",
+      "Welding goggles often contain praseodymium to filter out the intense yellow light from the sodium in the flame."
+    ]
   },
   {
     "symbol": "Nd",
@@ -1972,7 +2946,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Carl Auer von Welsbach (1885)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "High-performance permanent magnets (neodymium magnets)",
+      "Coloring glass and ceramics (produces violet to red-purple colors)",
+      "Lasers (in Nd:YAG lasers)",
+      "Microphones and headphones"
+    ],
+    "interesting_facts": [
+      "Neodymium magnets are the strongest permanent magnets commercially available and are a critical component in electric motors, hard drives, and wind turbines.",
+      "The name is derived from the Greek words 'neos' and 'didymos', meaning 'new twin', because it was the 'new twin' to praseodymium, from which it was separated.",
+      "Neodymium-doped glass is used to create specific lasers and to produce pink-to-purple-colored glass."
+    ]
   },
   {
     "symbol": "Pm",
@@ -1998,7 +2983,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Jacob Marinsky et al. (1945)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Atomic batteries (promethium-147)",
+      "Luminous paint (in older wristwatches and signs)",
+      "Portable X-ray sources"
+    ],
+    "interesting_facts": [
+      "Promethium is one of the two elements with an atomic number under 83 that has no stable isotopes, making it entirely radioactive.",
+      "Trace amounts of promethium exist in nature from the spontaneous fission of uranium-238 and other radioactive processes, but it is primarily synthesized in labs.",
+      "The element was named after the Greek titan Prometheus, who stole fire from the gods, symbolizing the human ability to create an element artificially."
+    ]
   },
   {
     "symbol": "Sm",
@@ -2049,7 +3044,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Lecoq de Boisbaudran (1879)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Powerful permanent magnets (samarium-cobalt magnets)",
+      "Control rods in nuclear reactors",
+      "Lasers",
+      "Catalysts"
+    ],
+    "interesting_facts": [
+      "Samarium-cobalt magnets are second only to neodymium magnets in strength and have a higher resistance to demagnetization at high temperatures.",
+      "The element was named after the mineral 'samarskite', in which it was first found. The mineral itself was named after a Russian mining engineer, Vasili Samarsky-Bykhovets.",
+      "Samarium has a high neutron absorption capacity, making it excellent for use in nuclear reactor control rods to regulate the nuclear fission rate."
+    ]
   },
   {
     "symbol": "Eu",
@@ -2075,7 +3081,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Eugène-Anatole Demarçay (1901)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Phosphors in television screens and fluorescent lamps (produces red and blue light)",
+      "Anticounterfeiting phosphors on Euro banknotes",
+      "Control rods in nuclear reactors"
+    ],
+    "interesting_facts": [
+      "Europium is the most reactive of all the lanthanide metals and oxidizes quickly in air.",
+      "It was named after the continent of Europe.",
+      "Because of its light-emitting properties, europium is a crucial element in phosphors and is used to create the vibrant red and blue colors in CRT televisions and LED lighting."
+    ]
   },
   {
     "symbol": "Gd",
@@ -2126,7 +3142,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Jean Charles Galissard de Marignac (1880)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "MRI contrast agents",
+      "Neutron absorption (in nuclear reactors)",
+      "Magneto-optical storage devices",
+      "Phosphors"
+    ],
+    "interesting_facts": [
+      "Gadolinium is highly magnetic at room temperature and is a crucial component in many MRI contrast agents, making internal organs and tissues more visible on scans.",
+      "It has one of the highest neutron-capture cross-sections of any element, making it extremely effective at absorbing neutrons.",
+      "The element was named after Johan Gadolin, a Finnish chemist, and the mineral 'gadolinite' in which it was discovered."
+    ]
   },
   {
     "symbol": "Tb",
@@ -2147,7 +3174,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Carl Gustaf Mosander (1843)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Green phosphors for TVs and fluorescent lamps",
+      "High-power magnets",
+      "Solid-state devices (in some lasers and transducers)"
+    ],
+    "interesting_facts": [
+      "Terbium is known for its beautiful phosphorescence, emitting a bright green light when exposed to ultraviolet light.",
+      "Its name is derived from the village of Ytterby, Sweden, which is the source of many rare-earth elements.",
+      "Terbium's green phosphor properties are essential for creating the green color in CRT televisions and modern LED lighting."
+    ]
   },
   {
     "symbol": "Dy",
@@ -2198,7 +3235,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Paul Émile Lecoq de Boisbaudran (1886)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Neodymium-iron-boron magnets (improves thermal stability)",
+      "Data storage",
+      "Lasers",
+      "Reactor control rods"
+    ],
+    "interesting_facts": [
+      "Dysprosium has a high thermal neutron absorption cross-section, making it valuable in nuclear applications.",
+      "The name comes from the Greek word 'dysprositos', meaning 'hard to get', because it was so difficult to isolate from other rare-earth elements.",
+      "Dysprosium is a critical component in the magnets used in electric vehicles and wind turbines, where it helps the magnets maintain their strength at higher temperatures."
+    ]
   },
   {
     "symbol": "Ho",
@@ -2219,7 +3267,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Per Teodor Cleve (1878)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Magnetic pole pieces (to create high magnetic fields)",
+      "Lasers for medical and dental use",
+      "Coloring cubic zirconia"
+    ],
+    "interesting_facts": [
+      "Holmium has the highest magnetic strength of any known element.",
+      "It was named after 'Holmia', the Latin name for Stockholm, Sweden, the native city of its discoverer.",
+      "Holmium-doped YAG lasers are used in medicine for procedures like breaking up kidney stones and treating glaucoma."
+    ]
   },
   {
     "symbol": "Er",
@@ -2265,7 +3323,18 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Carl Gustaf Mosander (1843)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Optical fibers",
+      "Photography and sunglasses (filters ultraviolet and infrared light)",
+      "Dyes for glass and ceramics (produces a pink color)",
+      "Lasers for dermatology"
+    ],
+    "interesting_facts": [
+      "Erbium is often used in optical amplifiers for fiber optic cables, where it strengthens light signals without having to convert them back to an electrical signal.",
+      "Like many other rare-earth elements, erbium was named after the village of Ytterby, Sweden.",
+      "Erbium-doped glass is used to make beautiful pink glass and crystal, and it is also used in sunglasses to absorb UV and infrared light."
+    ]
   },
   {
     "symbol": "Tm",
@@ -2286,7 +3355,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Per Teodor Cleve (1879)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Portable X-ray sources",
+      "Ceramic magnetic materials (ferrites)",
+      "Lasers for medical applications"
+    ],
+    "interesting_facts": [
+      "Thulium is the second rarest of the lanthanides, after promethium.",
+      "It was named after 'Thule', the ancient Greek name for a mythical country in the far north, believed to be Scandinavia.",
+      "Thulium-based lasers are used in medicine for delicate surgical procedures and are effective at cutting and coagulating tissue with minimal damage to surrounding areas."
+    ]
   },
   {
     "symbol": "Yb",
@@ -2337,7 +3416,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Jean Charles Galissard de Marignac (1878)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Stainless steel alloys",
+      "Stress gauges",
+      "Gamma ray detectors"
+    ],
+    "interesting_facts": [
+      "Ytterbium is named after the village of Ytterby, Sweden, where it was discovered.",
+      "It is a soft, malleable, and ductile element that is easily attacked by acids.",
+      "It can be used as a dopant in fiber optic cables and as a radiation source in portable X-ray machines."
+    ]
   },
   {
     "symbol": "Lu",
@@ -2363,7 +3452,17 @@
     "group": "3 (f-block)",
     "category": "Lanthanide",
     "discoveredBy": "Georges Urbain (1907)",
-    "color": "#ffa500"
+    "color": "#ffa500",
+    "common_uses": [
+      "Catalysis in petroleum cracking",
+      "Positron emission tomography (PET) scans",
+      "Dating meteorites"
+    ],
+    "interesting_facts": [
+      "Lutetium is one of the most expensive and rare lanthanides.",
+      "Lutetium-177 is used in targeted radiation therapy for certain types of cancer.",
+      "It is the last element in the lanthanide series and is considered a rare-earth element."
+    ]
   },
   {
     "symbol": "Hf",
@@ -2409,7 +3508,17 @@
     "group": "4 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Dirk Coster & Georg von Hevesy (1923)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Control rods in nuclear reactors",
+      "High-temperature alloys",
+      "Microprocessor manufacturing"
+    ],
+    "interesting_facts": [
+      "Hafnium is very similar to zirconium and they are often found together in nature.",
+      "It has a very high neutron absorption cross-section, making it ideal for nuclear reactor control rods.",
+      "Hafnium oxide is used as a high-k dielectric in modern microprocessors."
+    ]
   },
   {
     "symbol": "Ta",
@@ -2435,7 +3544,17 @@
     "group": "5 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Anders Ekeberg (1802)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Capacitors for mobile phones and electronics",
+      "Surgical implants",
+      "High-temperature furnace parts"
+    ],
+    "interesting_facts": [
+      "Tantalum is highly resistant to corrosion due to the formation of a protective oxide layer.",
+      "The name 'Tantalum' comes from the Greek mythological figure Tantalus, due to the difficulty in dissolving it in acid.",
+      "It is a key material in the electronics industry for creating small, high-capacity capacitors."
+    ]
   },
   {
     "symbol": "W",
@@ -2476,7 +3595,17 @@
     "group": "6 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Juan José Elhuyar & Fausto Elhuyar (1783)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Filaments in incandescent light bulbs",
+      "High-speed cutting tools",
+      "Ammunition and military applications"
+    ],
+    "interesting_facts": [
+      "Tungsten has the highest melting point and the lowest vapor pressure of all metals.",
+      "Its name comes from the Swedish words 'tung sten' meaning 'heavy stone'.",
+      "It is an essential element in the production of hard materials like tungsten carbide."
+    ]
   },
   {
     "symbol": "Re",
@@ -2502,7 +3631,17 @@
     "group": "7 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Walter Noddack et al. (1925)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "High-temperature superalloys for jet engines",
+      "Catalysts in the petroleum industry",
+      "X-ray machines"
+    ],
+    "interesting_facts": [
+      "Rhenium is one of the rarest elements in the Earth's crust.",
+      "It has one of the highest melting points of all elements, second only to tungsten.",
+      "Rhenium alloys are used to create the hottest components of jet engines, such as turbine blades."
+    ]
   },
   {
     "symbol": "Os",
@@ -2553,7 +3692,17 @@
     "group": "8 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Smithson Tennant (1803)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Fountain pen tips",
+      "Electrical contacts",
+      "Catalysts"
+    ],
+    "interesting_facts": [
+      "Osmium is the densest naturally occurring element.",
+      "It is incredibly hard and brittle, making it difficult to work with.",
+      "The name 'Osmium' comes from the Greek word 'osme' meaning 'smell', due to the pungent odor of its volatile oxide."
+    ]
   },
   {
     "symbol": "Ir",
@@ -2579,7 +3728,17 @@
     "group": "9 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Smithson Tennant (1803)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Spark plugs",
+      "Crucibles for high-temperature applications",
+      "Medical implants"
+    ],
+    "interesting_facts": [
+      "Iridium is the most corrosion-resistant metal known.",
+      "It is found in meteorites and is considered a key indicator of asteroid impacts.",
+      "Iridium is named after Iris, the Greek goddess of the rainbow, because its salts are highly colored."
+    ]
   },
   {
     "symbol": "Pt",
@@ -2625,7 +3784,17 @@
     "group": "10 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Antonio de Ulloa (1735)",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Catalytic converters",
+      "Jewelry",
+      "Laboratory equipment"
+    ],
+    "interesting_facts": [
+      "Platinum is a noble metal, meaning it resists corrosion and oxidation.",
+      "It is much rarer than gold.",
+      "The name 'Platinum' comes from the Spanish 'platina', meaning 'little silver'."
+    ]
   },
   {
     "symbol": "Au",
@@ -2646,7 +3815,17 @@
     "group": "11 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Ancient",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Jewelry and coinage",
+      "Electronics and connectors",
+      "Dental fillings"
+    ],
+    "interesting_facts": [
+      "Gold is a highly malleable and ductile metal, with a single ounce able to be hammered into a 300 square foot sheet.",
+      "It is a noble metal and does not corrode or tarnish.",
+      "All the gold ever mined would fit into a cube about 22 meters on a side."
+    ]
   },
   {
     "symbol": "Hg",
@@ -2697,7 +3876,17 @@
     "group": "12 (d-block)",
     "category": "Transition metal",
     "discoveredBy": "Ancient",
-    "color": "#8dc234"
+    "color": "#8dc234",
+    "common_uses": [
+      "Thermometers and barometers (historically)",
+      "Switches and relays",
+      "Fluorescent lamps"
+    ],
+    "interesting_facts": [
+      "Mercury is the only metal that is a liquid at standard temperature and pressure.",
+      "It is highly toxic and its use has been restricted in many applications.",
+      "The Roman god Mercury, known for his speed, is the namesake for the element due to its fluid nature."
+    ]
   },
   {
     "symbol": "Tl",
@@ -2723,7 +3912,17 @@
     "group": "13 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "William Crookes (1861)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Photocells and infrared detectors",
+      "Optics",
+      "Historic use as a rodenticide and insecticide"
+    ],
+    "interesting_facts": [
+      "Thallium is a soft, malleable metal that tarnishes to a bluish-gray color.",
+      "It is extremely toxic and was once known as the 'poisoner's poison'.",
+      "The name 'Thallium' comes from the Greek 'thallos', meaning 'green twig', because of the bright green line in its spectrum."
+    ]
   },
   {
     "symbol": "Pb",
@@ -2759,8 +3958,19 @@
     "group": "14 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Car batteries",
+      "Radiation shielding",
+      "Weighting material"
+    ],
+    "interesting_facts": [
+      "Lead has been used for thousands of years, with the Romans using it for water pipes.",
+      "It is a heavy, soft, and malleable metal with a low melting point.",
+      "The use of lead in paint and gasoline has been phased out due to its toxicity, particularly to children."
+    ]
   },
+
   {
     "symbol": "Bi",
     "name": "Bismuth",
@@ -2780,7 +3990,17 @@
     "group": "15 (p-block)",
     "category": "Post-transition metal",
     "discoveredBy": "Ancient",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Bismuth alloys for fire detection systems and solders",
+      "Cosmetics and pigments",
+      "Pharmaceuticals, especially for treating stomach ailments"
+    ],
+    "interesting_facts": [
+      "Bismuth was long confused with tin and lead.",
+      "It is the most diamagnetic metal, meaning it is strongly repelled by a magnetic field.",
+      "Bismuth has a very low melting point and is known for forming beautiful, iridescent crystals when cooled slowly."
+    ]
   },
   {
     "symbol": "Po",
@@ -2806,7 +4026,16 @@
     "group": "16 (p-block)",
     "category": "Metalloid",
     "discoveredBy": "Marie Curie (1898)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Alpha particle source for research and static eliminators",
+      "Historically used in antistatic brushes"
+    ],
+    "interesting_facts": [
+      "Polonium was the first element discovered by Marie and Pierre Curie.",
+      "Marie Curie named it after her native country, Poland.",
+      "It is an extremely radioactive and toxic element, with Polonium-210 being a key component in certain nuclear weapons."
+    ]
   },
   {
     "symbol": "At",
@@ -2832,7 +4061,15 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Dale R. Corson et al. (1940)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Medical applications, specifically in targeted alpha-particle therapy (TAT) for cancer"
+    ],
+    "interesting_facts": [
+      "Astatine is the rarest naturally occurring element in the Earth's crust.",
+      "Its name comes from the Greek word 'astatos', meaning 'unstable'.",
+      "Only a few grams of astatine have ever been produced, and its properties are mostly theoretical."
+    ]
   },
   {
     "symbol": "Rn",
@@ -2853,7 +4090,16 @@
     "group": "18 (p-block)",
     "category": "Noble gas",
     "discoveredBy": "Friedrich Ernst Dorn (1900)",
-    "color": "#3eabd3"
+    "color": "#3eabd3",
+    "common_uses": [
+      "Radiation therapy (historically)",
+      "Geological and hydrological studies"
+    ],
+    "interesting_facts": [
+      "Radon is a colorless, odorless, and tasteless radioactive gas.",
+      "It is a significant health hazard, as it can accumulate in buildings and cause lung cancer.",
+      "Radon is produced from the decay of uranium and thorium in rocks and soil."
+    ]
   },
   {
     "symbol": "Fr",
@@ -2874,7 +4120,15 @@
     "group": "1 (s-block)",
     "category": "Alkali metal",
     "discoveredBy": "Marguerite Perey (1939)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "No practical uses due to its extreme rarity and instability"
+    ],
+    "interesting_facts": [
+      "Francium is the second-rarest element in the Earth's crust after astatine.",
+      "It is the least electronegative element and the heaviest alkali metal.",
+      "The longest-lived isotope has a half-life of only 22 minutes, so it is difficult to study its properties."
+    ]
   },
   {
     "symbol": "Ra",
@@ -2895,7 +4149,17 @@
     "group": "2 (s-block)",
     "category": "Alkaline earth metal",
     "discoveredBy": "Marie Curie (1898)",
-    "color": "#ff5eb9"
+    "color": "#ff5eb9",
+    "common_uses": [
+      "Historically used in luminous paints for watches and dials",
+      "Cancer therapy (historically)",
+      "Source of radon gas for research"
+    ],
+    "interesting_facts": [
+      "Radium is a highly radioactive element that glows faintly in the dark.",
+      "It was once thought to have health benefits and was added to products like tonics and toothpaste.",
+      "The name 'Radium' comes from the Latin word 'radius', meaning 'ray', due to its radioactivity."
+    ]
   },
   {
     "symbol": "Ac",
@@ -2916,7 +4180,16 @@
     "group": "3 (f-block)",
     "category": "Actinide",
     "discoveredBy": "Friedrich Oskar Giesel (1899)",
-    "color": "#ff8c00"
+    "color": "#ff8c00",
+    "common_uses": [
+      "As a neutron source for research",
+      "Therapeutic radiopharmaceutical for cancer treatment"
+    ],
+    "interesting_facts": [
+      "Actinium is approximately 150 times more radioactive than radium.",
+      "Its name comes from the Greek word 'aktis', meaning 'ray' or 'beam', because of its radioactivity.",
+      "It is one of the first elements in the actinide series, which gives its name to the entire group."
+    ]
   },
   {
     "symbol": "Th",
@@ -2937,7 +4210,17 @@
     "group": "3 (f-block)",
     "category": "Actinide",
     "discoveredBy": "Jöns Jacob Berzelius (1828)",
-    "color": "#ff8c00"
+    "color": "#ff8c00",
+    "common_uses": [
+      "Gas lantern mantles",
+      "Nuclear fuel in some reactor designs",
+      "Welding electrodes"
+    ],
+    "interesting_facts": [
+      "Thorium is a radioactive element, but its most common isotope has a very long half-life, making it less dangerous than some others.",
+      "It is named after Thor, the Norse god of thunder.",
+      "Thorium is a promising alternative to uranium for nuclear power generation due to its abundance and lower waste production."
+    ]
   },
   {
     "symbol": "Pa",
@@ -2958,7 +4241,15 @@
     "group": "3 (f-block)",
     "category": "Actinide",
     "discoveredBy": "Kasimir Fajans & Oswald Helmuth Göhring (1913)",
-    "color": "#ff8c00"
+    "color": "#ff8c00",
+    "common_uses": [
+      "No practical uses due to its rarity and radioactivity"
+    ],
+    "interesting_facts": [
+      "Protactinium is one of the rarest and most expensive naturally occurring elements.",
+      "Its name means 'before actinium' because it decays into actinium.",
+      "It is a highly toxic and radioactive element."
+    ]
   },
   {
     "symbol": "U",
@@ -2989,7 +4280,17 @@
     "group": "3 (f-block)",
     "category": "Actinide",
     "discoveredBy": "Martin Heinrich Klaproth (1789)",
-    "color": "#ff8c00"
+    "color": "#ff8c00",
+    "common_uses": [
+      "Nuclear power generation",
+      "Nuclear weapons",
+      "Counterweights for aircraft and missiles"
+    ],
+    "interesting_facts": [
+      "Uranium is the heaviest naturally occurring element.",
+      "It is named after the planet Uranus, which had been discovered just before the element.",
+      "Uranium-235 is the only naturally occurring fissile isotope, meaning it can sustain a nuclear chain reaction."
+    ]
   },
   {
     "symbol": "Np",
@@ -3010,9 +4311,17 @@
     "group": "3 (f-block)",
     "category": "Actinide",
     "discoveredBy": "Edwin McMillan & Philip H. Abelson (1940)",
-    "color": "#ff8c00"
+    "color": "#ff8c00",
+    "common_uses": [
+      "Neutron source for research",
+      "Component in certain nuclear detectors"
+    ],
+    "interesting_facts": [
+      "Neptunium was the first synthetic transuranic element to be discovered.",
+      "It is named after the planet Neptune, which is the next planet after Uranus.",
+      "Neptunium is highly radioactive and its most stable isotope has a half-life of over 2 million years."
+    ]
   },
-  
   {
     "symbol": "Pu",
     "name": "Plutonium",
@@ -3037,7 +4346,17 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Glenn T. Seaborg, Edwin M. McMillan, Joseph W. Kennedy, Arthur C. Wahl (1940)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Nuclear weapons",
+      "Power source for spacecraft and pacemakers",
+      "Nuclear reactors"
+    ],
+    "interesting_facts": [
+      "Plutonium is named after the dwarf planet Pluto, the next celestial body after Neptune.",
+      "It is a highly toxic and radioactive element, and its dust can be inhaled and cause cancer.",
+      "Plutonium-238 is used in radioisotope thermoelectric generators (RTGs) to power spacecraft like Voyager and Cassini."
+    ]
   },
   {
     "symbol": "Am",
@@ -3063,7 +4382,16 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso (1944)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Smoke detectors",
+      "Portable gamma ray sources for medical diagnostics"
+    ],
+    "interesting_facts": [
+      "Americium is named after the Americas.",
+      "Americium-241 is the most common isotope and is used in household smoke detectors.",
+      "It is a highly radioactive element and must be handled with extreme care."
+    ]
   },
   {
     "symbol": "Cm",
@@ -3089,7 +4417,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Glenn T. Seaborg, Ralph A. James, Albert Ghiorso (1944)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research applications, primarily as a source of alpha particles"
+    ],
+    "interesting_facts": [
+      "Curium is named after the scientists Marie and Pierre Curie.",
+      "It is a highly radioactive, silvery-white metal that glows in the dark.",
+      "Curium-248 is a potential fuel for fusion-fission hybrid reactors."
+    ]
   },
   {
     "symbol": "Bk",
@@ -3115,7 +4451,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Stanley G. Thompson, Albert Ghiorso, Glenn T. Seaborg (1949)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research applications, specifically in the synthesis of new elements"
+    ],
+    "interesting_facts": [
+      "Berkelium is named after the city of Berkeley, California, where it was first synthesized at the Lawrence Berkeley National Laboratory.",
+      "It is a highly radioactive element, with no known practical applications outside of scientific research.",
+      "Berkelium-249 was used as the target material to create tennessine, element 117."
+    ]
   },
   {
     "symbol": "Cf",
@@ -3141,7 +4485,17 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Stanley G. Thompson, Kenneth Street Jr., Albert Ghiorso, Glenn T. Seaborg (1950)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Neutron source for nuclear reactors and cancer treatment",
+      "Moisture gauges",
+      "Analysis of materials for metal fatigue"
+    ],
+    "interesting_facts": [
+      "Californium is named after the state and the University of California, Berkeley.",
+      "Californium-252 is an extremely powerful neutron emitter and is used in a wide range of applications, from starting nuclear reactors to treating certain types of cancer.",
+      "It is a highly radioactive element and is produced in very small quantities."
+    ]
   },
   {
     "symbol": "Es",
@@ -3167,7 +4521,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Albert Ghiorso and team (1952)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Einsteinium was discovered in the debris of the first hydrogen bomb test.",
+      "It is named in honor of Albert Einstein.",
+      "Only microscopic amounts of einsteinium have been produced, and its properties are not well-known."
+    ]
   },
   {
     "symbol": "Fm",
@@ -3188,7 +4550,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Albert Ghiorso and team (1952)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Fermium was also discovered in the debris of the first hydrogen bomb test.",
+      "It is named after the physicist Enrico Fermi, who developed the first nuclear reactor.",
+      "It is the last element that can be created by neutron bombardment, and it is the heaviest element that can be produced in macroscopic amounts."
+    ]
   },
   {
     "symbol": "Md",
@@ -3209,7 +4579,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Albert Ghiorso, Glenn T. Seaborg, Bernard G. Harvey, Gregory R. Choppin, Stanley G. Thompson (1955)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Mendelevium was named after Dmitri Mendeleev, the creator of the periodic table.",
+      "It was the first element to be synthesized one atom at a time.",
+      "Its discovery helped to confirm the location of the actinide series in the periodic table."
+    ]
   },
   {
     "symbol": "No",
@@ -3230,7 +4608,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Joint Institute for Nuclear Research (1966), University of California, Berkeley (1966)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Nobelium is named in honor of Alfred Nobel, the inventor of dynamite and founder of the Nobel Prizes.",
+      "Its discovery was disputed for a time, with both American and Russian scientists claiming credit.",
+      "It is a highly radioactive element with a very short half-life."
+    ]
   },
   {
     "symbol": "Lr",
@@ -3256,7 +4642,15 @@
     "group": "N/A (Actinide)",
     "category": "Actinide",
     "discoveredBy": "Albert Ghiorso, Torbjørn Sikkeland, Almon E. Larsh, Robert M. Latimer (1961)",
-    "color": "#D3D3D3"
+    "color": "#D3D3D3",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Lawrencium is the last element of the actinide series.",
+      "It is named after Ernest O. Lawrence, the inventor of the cyclotron.",
+      "It is a highly radioactive and unstable element, with its properties being inferred from its position in the periodic table."
+    ]
   },
   {
     "symbol": "Rf",
@@ -3277,7 +4671,15 @@
     "group": "4 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Joint Institute for Nuclear Research (1964), University of California, Berkeley (1969)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Rutherfordium is the first transactinide element and is named after Ernest Rutherford.",
+      "Its discovery was also a source of controversy between American and Russian scientists.",
+      "It is a very heavy, synthetic, and highly radioactive element, with its longest-lived isotope having a half-life of only a few hours."
+    ]
   },
   {
     "symbol": "Db",
@@ -3298,7 +4700,15 @@
     "group": "5 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Joint Institute for Nuclear Research (1968), University of California, Berkeley (1970)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Dubnium is named after the Russian city of Dubna, where the Joint Institute for Nuclear Research is located.",
+      "It is a synthetic, highly radioactive element with no practical applications.",
+      "Its chemical properties are thought to be similar to those of its lighter homolog, tantalum."
+    ]
   },
   {
     "symbol": "Sg",
@@ -3319,7 +4729,15 @@
     "group": "6 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Lawrence Berkeley Laboratory (1974), Joint Institute for Nuclear Research (1974)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Seaborgium is named after the American chemist Glenn T. Seaborg, who was involved in the discovery of many transuranic elements.",
+      "It was the first element named after a living person.",
+      "It is a synthetic, highly radioactive element with a very short half-life."
+    ]
   },
   {
     "symbol": "Bh",
@@ -3340,7 +4758,15 @@
     "group": "7 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1981)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Bohrium is named after the Danish physicist Niels Bohr.",
+      "Its discovery helped to confirm the periodic law for very heavy elements.",
+      "It is a synthetic, highly radioactive element with a very short half-life."
+    ]
   },
   {
     "symbol": "Hs",
@@ -3361,7 +4787,15 @@
     "group": "8 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1984)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Hassium is named after the German state of Hesse, where its discovery was made.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "Hassium is predicted to be a dense and noble metal, similar to osmium."
+    ]
   },
   {
     "symbol": "Mt",
@@ -3382,7 +4816,15 @@
     "group": "9 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1982)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Meitnerium is named after the physicist Lise Meitner, who contributed to the discovery of nuclear fission.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "The element's properties are mostly theoretical due to the small number of atoms that have been produced."
+    ]
   },
   {
     "symbol": "Ds",
@@ -3403,7 +4845,15 @@
     "group": "10 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1994)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Darmstadtium is named after the city of Darmstadt, Germany, where the GSI Helmholtz Centre for Heavy Ion Research is located.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "It is expected to be a solid metal at room temperature."
+    ]
   },
   {
     "symbol": "Rg",
@@ -3424,7 +4874,15 @@
     "group": "11 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1994)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Roentgenium is named after Wilhelm Conrad Röntgen, who discovered X-rays.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "Its properties are expected to be similar to those of gold, but it is too unstable to be studied in bulk."
+    ]
   },
   {
     "symbol": "Cn",
@@ -3445,7 +4903,15 @@
     "group": "12 (d-block)",
     "category": "Transition Metal",
     "discoveredBy": "Gesellschaft für Schwerionenforschung (GSI) (1996)",
-    "color": "#ADD8E6"
+    "color": "#ADD8E6",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Copernicium is named after the astronomer Nicolaus Copernicus.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "It is predicted to be a volatile metal, possibly a liquid at room temperature."
+    ]
   },
   {
     "symbol": "Nh",
@@ -3466,7 +4932,15 @@
     "group": "13 (p-block)",
     "category": "Post-transition Metal",
     "discoveredBy": "RIKEN (2003)",
-    "color": "#90EE90"
+    "color": "#90EE90",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Nihonium is named after the Japanese word for Japan, 'Nihon'.",
+      "It was the first element to be discovered in an Asian country.",
+      "It is a synthetic, highly radioactive element with a very short half-life."
+    ]
   },
   {
     "symbol": "Fl",
@@ -3487,7 +4961,15 @@
     "group": "14 (p-block)",
     "category": "Post-transition Metal",
     "discoveredBy": "Joint Institute for Nuclear Research (JINR) (1998)",
-    "color": "#90EE90"
+    "color": "#90EE90",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Flerovium is named after the Russian physicist Georgi Flyorov, who founded the JINR.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "It is predicted to be a volatile metal with properties similar to lead."
+    ]
   },
   {
     "symbol": "Mc",
@@ -3508,7 +4990,15 @@
     "group": "15 (p-block)",
     "category": "Post-transition Metal",
     "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2003)",
-    "color": "#90EE90"
+    "color": "#90EE90",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Moscovium is named after the Moscow Oblast region of Russia.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "Only a few atoms of moscovium have ever been synthesized."
+    ]
   },
   {
     "symbol": "Lv",
@@ -3529,7 +5019,15 @@
     "group": "16 (p-block)",
     "category": "Post-transition Metal",
     "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2000)",
-    "color": "#90EE90"
+    "color": "#90EE90",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Livermorium is named after the Lawrence Livermore National Laboratory in California.",
+      "It is a synthetic, highly radioactive element with a very short half-life.",
+      "Its properties are expected to be similar to those of polonium."
+    ]
   },
   {
     "symbol": "Ts",
@@ -3550,7 +5048,15 @@
     "group": "17 (p-block)",
     "category": "Halogen",
     "discoveredBy": "Joint Institute for Nuclear Research (JINR), Oak Ridge National Laboratory (ORNL), Vanderbilt University, Lawrence Livermore National Laboratory (LLNL) (2010)",
-    "color": "#FFFF00"
+    "color": "#FFFF00",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Tennessine is named after the state of Tennessee, home to ORNL and Vanderbilt University.",
+      "It is a synthetic, highly radioactive element and is the second-heaviest element ever created.",
+      "It is predicted to be a solid at room temperature and is the only halogen in its period."
+    ]
   },
   {
     "symbol": "Og",
@@ -3571,6 +5077,15 @@
     "group": "18 (p-block)",
     "category": "Noble Gas",
     "discoveredBy": "Joint Institute for Nuclear Research (JINR) (2006)",
-    "color": "#800080"
+    "color": "#800080",
+    "common_uses": [
+      "Research purposes"
+    ],
+    "interesting_facts": [
+      "Oganesson is named after the nuclear physicist Yuri Oganessian.",
+      "It is the heaviest element in the periodic table.",
+      "It is a synthetic, highly radioactive element and its properties are largely unknown due to its short half-life and small quantity."
+    ]
   }
+
 ]
