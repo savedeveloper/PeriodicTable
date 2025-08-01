@@ -1,10 +1,16 @@
 const modal = document.getElementById("elementModal");
 const closeButton = document.querySelector(".close-button");
-const elementLinks = document.querySelectorAll(".element a");
+const elementLinks = document.querySelectorAll(".element");
+const sBlockBtn = document.getElementById("s-block-btn");
+const pBlockBtn = document.getElementById("p-block-btn");
+const dBlockBtn = document.getElementById("d-block-btn");
+const fBlockBtn = document.getElementById("f-block-btn");
+const resetBtn = document.getElementById("reset-btn");
+const allElements = document.querySelectorAll(".element");
 
 // Open the modal
 function openModal() {
-    modal.style.display = "flex"; // Changed from "block" to "flex" for centering
+    modal.style.display = "flex";
 }
 
 // Close the modal
@@ -22,6 +28,29 @@ window.addEventListener("click", (event) => {
     }
 });
 
+// Highlights Block
+function highlightBlock(blockClass) {
+    // First, reset all highlighting and active classes
+    allElements.forEach(element => {
+        element.classList.remove('s_group_active', 'p_group_active', 'd_group_active', 'f_group_active');
+        element.classList.remove('dim-element');
+    });
+
+    // If a block is specified, highlight it with the new color and dim the others
+    if (blockClass) {
+        allElements.forEach(element => {
+            if (element.classList.contains(blockClass)) {
+                // Add the new, distinct color class
+                element.classList.add(`${blockClass}_active`);
+            } else {
+                // Dim the elements outside the selected block
+                element.classList.add('dim-element');
+            }
+        });
+    }
+
+}
+
 // Function to load and display element data in the modal
 async function loadElementDataIntoModal(symbol) {
     const response = await fetch("elements.json");
@@ -36,16 +65,11 @@ async function loadElementDataIntoModal(symbol) {
     // Update the element symbol with superscript atomic number and subscript atomic mass
     const atomicNumberForSymbol = element.atomicNumber || ""; // Use empty string if N/A
     const atomicMassForSymbol = element.atomicMass || ""; // Use empty string if N/A
-    
-    // --- MODIFIED LINE BELOW ---
-    document.getElementById("modal-symbol").innerHTML = 
+
+    document.getElementById("modal-symbol").innerHTML =
         `<sup class="atomic-num-symbol">${atomicNumberForSymbol}</sup>${element.symbol}<sub class="atomic-mass-symbol">${atomicMassForSymbol}</sub>`;
-    // --- END MODIFIED LINE ---
 
     document.getElementById("modal-name").textContent = element.name;
-    
-    // The lines to update modal-number and modal-mass are (correctly) not present here
-
 
     document.getElementById("modal-group").textContent = element.group || "N/A";
     document.getElementById("modal-category").textContent = element.category || "N/A";
@@ -113,6 +137,18 @@ async function loadElementDataIntoModal(symbol) {
         isotopesHeading.style.display = "none";
     }
 
+    let detailLink = document.getElementById('modal-detail-link');
+    if (!detailLink) {
+        // If the link doesn't exist, create it
+        detailLink = document.createElement('a');
+        detailLink.id = 'modal-detail-link';
+        detailLink.className = 'detail-link-btn';
+        document.querySelector('.modal-content').appendChild(detailLink);
+    }
+    // Set the link's URL to the new details page with the element's symbol
+    detailLink.href = `element-details.html?symbol=${element.symbol}`;
+    detailLink.textContent = `View more about ${element.name}`;
+
     const keyPropertiesSection = document.getElementById("modal-key-properties-section");
     const keyPropertiesList = document.getElementById("modal-key-properties-list");
     keyPropertiesList.innerHTML = "";
@@ -147,11 +183,36 @@ async function loadElementDataIntoModal(symbol) {
 }
 
 // Add click event listeners to all element links
-elementLinks.forEach(link => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default link behavior
-        const symbol = link.dataset.symbol; // Get the symbol from data-symbol attribute
-        loadElementDataIntoModal(symbol);
-        openModal();
+elementLinks.forEach(elementBox => {
+    elementBox.addEventListener("click", (event) => {
+        // Find the 'a' tag within the clicked 'td' element
+        const symbolLink = elementBox.querySelector("a");
+        if (symbolLink) {
+            event.preventDefault(); // Prevent default link behavior
+            const symbol = symbolLink.dataset.symbol;
+            loadElementDataIntoModal(symbol);
+            openModal();
+        }
     });
+});
+
+// Event Listeners for buttons
+sBlockBtn.addEventListener("click", () => {
+    highlightBlock("s_group");
+});
+
+pBlockBtn.addEventListener("click", () => {
+    highlightBlock("p_group");
+});
+
+dBlockBtn.addEventListener("click", () => {
+    highlightBlock("d_group");
+});
+
+fBlockBtn.addEventListener("click", () => {
+    highlightBlock("f_group");
+});
+
+resetBtn.addEventListener("click", () => {
+    highlightBlock(null); // Reset all highlighting
 });
