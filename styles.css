@@ -31,6 +31,64 @@
   font-style: italic;
 }
 
+/* Style for the block buttons */
+.block-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.block-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #346e66;
+    border-radius: 5px;
+    background-color: #20ceb4;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.block-btn:hover {
+    background-color: #3ead9d;
+}
+
+.dim-element {
+    opacity: 0.25 !important;
+    filter: saturate(0.5); /* Desaturate elements that are not selected */
+    transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+/* Base style for highlighted elements to ensure a smooth transition */
+.element.highlighted {
+    transition: all 0.4s ease-in-out;
+}
+
+/* New colors for when a block is active/selected */
+.s_group_active {
+    background-color: #bf538d !important; /* A brighter pink */
+    transform: scale(1.05);
+    opacity: 1.0 !important;
+}
+
+.p_group_active {
+    background-color: #7e8cb6 !important; /* A royal blue */
+    transform: scale(1.05);
+    opacity: 1.0 !important;
+}
+
+.d_group_active {
+    background-color: #32CD32 !important; /* A lime green */
+    transform: scale(1.05);
+    opacity: 1.0 !important;
+}
+
+.f_group_active {
+    background-color: #d06139 !important; /* A vibrant orange-red */
+    transform: scale(1.05);
+    opacity: 1.0 !important;
+}
+
 /* Modal Styles */
 .modal {
     display: none; /* Hidden by default */
@@ -42,7 +100,6 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding: 20px; /* Add some padding around the modal */
@@ -85,7 +142,9 @@
     text-decoration: none;
     cursor: pointer;
 }
-
+/* #elementModel{
+    display: none;
+} */
 
 .element-card {
     background: white;
@@ -104,7 +163,7 @@
 }
 
 .element-symbol sup {
-    font-size: 0.3em; /* Make superscript smaller relative to parent */
+    font-size: 0.em; /* Make superscript smaller relative to parent */
     vertical-align: super;
     line-height: 0; /* Helps prevent extra space */
 }
@@ -195,6 +254,57 @@ h2 {
 /* Hide the back button in the modal */
 a.back {
     display: none !important;
+}
+
+/* Styling for the new detail page link button */
+.detail-link-btn {
+    /* Use a gradient for a modern look */
+    background: linear-gradient(45deg, #3498db, #5dade2);
+    
+    /* Make the button stand out with a subtle shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    /* Center the button text and icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 12px 25px;
+    margin-top: 30px; /* Add more space from the elements above */
+    
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+    border-radius: 50px; /* A pill shape for a friendly, modern feel */
+    border: none;
+    
+    /* Smooth transitions for all properties */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.detail-link-btn:hover {
+    /* Reverse the gradient on hover for a dynamic effect */
+    background: linear-gradient(45deg, #5dade2, #3498db);
+    
+    /* Lift the button and make the shadow more pronounced */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    
+    /* Translate the button slightly on hover */
+    transform: translateY(-3px);
+}
+
+/* Add a style for an icon inside the button */
+.detail-link-btn i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Make the icon move a little on hover */
+.detail-link-btn:hover i {
+    transform: translateX(3px);
 }
 
 /* Responsive adjustments for modal */
