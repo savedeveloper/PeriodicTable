@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Element Details</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,8 +34,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .header-section {
@@ -52,13 +62,17 @@
             margin-top: 5px;
         }
 
-        .facts-section, .uses-section {
+        .facts-section,
+        .uses-section,
+        .compounds-section {
             margin-top: 30px;
             border-top: 1px solid #e0e0e0;
             padding-top: 25px;
         }
 
-        .facts-section h2, .uses-section h2 {
+        .facts-section h2,
+        .uses-section h2,
+        .compounds-section h2 {
             font-size: 1.8rem;
             color: #2980b9;
             display: flex;
@@ -66,12 +80,19 @@
             gap: 10px;
         }
 
-        .facts-section ul, .uses-section ul {
+        .facts-section ul,
+        .uses-section ul,
+        .compounds-section ul {
+            /* Apply these list styles to the compounds section too */
             list-style: none;
             padding: 0;
         }
 
-        .facts-section li, .uses-section li {
+        /* Styles for the list items (the boxes) */
+        .facts-section li,
+        .uses-section li,
+        .compounds-section li {
+            /* Apply these styles to the compounds list items */
             background-color: #ecf0f1;
             padding: 15px;
             border-radius: 8px;
@@ -79,6 +100,29 @@
             line-height: 1.6;
             font-size: 1.1rem;
             border-left: 5px solid #2980b9;
+        }
+
+        /* Specific styles for the compound list items to format content correctly */
+        .compounds-section li strong {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            display: block;
+            /* Ensures the name is on its own line */
+        }
+
+        .compounds-section li .formula {
+            font-size: 1.1rem;
+            color: #555;
+            display: block;
+            /* Ensures the formula is on its own line */
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .compounds-section li .properties {
+            font-size: 1rem;
+            color: #777;
+            line-height: 1.5;
         }
 
         .back-link {
@@ -90,12 +134,13 @@
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .back-link:hover {
             color: #2980b9;
         }
     </style>
 </head>
+
 <body>
     <div class="details-container">
         <div class="header-section">
@@ -112,10 +157,16 @@
             <h2><i class="fas fa-tools"></i> Common Uses</h2>
             <ul id="uses-list"></ul>
         </div>
-        
-        <a href="index.html" class="back-link">← Back to Periodic Table</a>
+
+        <div class="compounds-section">
+            <h2><i class="fas fa-flask"></i> Compounds</h2>
+            <ul id="compounds-list"></ul>
+        </div>
+
+        <a href="index.html" class="back-link">Back to Periodic Table</a>
     </div>
 
     <script src="element-details.js"></script>
 </body>
+
 </html>
