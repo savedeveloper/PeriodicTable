@@ -1,5 +1,4 @@
 // This script will run on the element-details.html page
-
 document.addEventListener('DOMContentLoaded', () => {
     // Function to parse the URL and get the element symbol
     const getElementSymbolFromUrl = () => {
@@ -51,6 +50,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     usesList.innerHTML = '<li>No common uses available.</li>';
                 }
+
+                // Populate compounds
+                const compoundsList = document.getElementById('compounds-list');
+                compoundsList.innerHTML = ''; // Clear previous content
+
+                if (element.compounds && element.compounds.length > 0) {
+                    element.compounds.forEach(compound => {
+                        const listItem = document.createElement('li');
+
+                        // Compound Name
+                        const compoundName = document.createElement('strong');
+                        compoundName.textContent = compound.compound;
+
+                        // Compound Formula
+                        const compoundFormula = document.createElement('span');
+                        compoundFormula.className = 'formula';
+                        // Use innerHTML so MathJax can process the LaTeX string
+                        compoundFormula.innerHTML = compound.formula;
+
+                        // Compound Properties
+                        const compoundProperties = document.createElement('p');
+                        compoundProperties.className = 'properties';
+                        compoundProperties.textContent = compound.properties;
+
+                        // Append the elements to the list item
+                        listItem.appendChild(compoundName);
+                        listItem.appendChild(compoundFormula);
+                        listItem.appendChild(compoundProperties);
+
+                        compoundsList.appendChild(listItem);
+                    });
+                } else {
+                    compoundsList.innerHTML = '<li>No known compounds listed.</li>';
+                }
+
+                    MathJax.typesetPromise([compoundsList]).then(() => {
+                    // Optional: Code to run after typesetting is complete.
+                    console.log('MathJax typeset complete for compounds list.');
+                });
+
             } else {
                 console.error(`Element with symbol ${symbol} not found.`);
             }
