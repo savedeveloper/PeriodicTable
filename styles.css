@@ -1,37 +1,44 @@
+/* --- Base Element Styles --- */
 .element {
-  padding: 15px;
-  font-family: verdana;
-  font-size: 125%;
-  border-spacing: 2px;
-  opacity: 0.5;
-  transition: transform .2s;
+    padding: 15px;
+    font-family: verdana;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
+    border-spacing: 2px;
+    opacity: 0.5;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    transition: transform .2s, opacity .4s; /* Added opacity to transition */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .element:hover {
-  opacity: 1.0;
+    opacity: 1.0;
+    cursor: pointer;
 }
 
-.s_group{
-  background-color: #ff5eb9;
+.s_group {
+    background-color: #ff5eb9;
 }
 
-.p_group{
-  background-color: #3eabd3;
+.p_group {
+    background-color: #3eabd3;
 }
 
-.d_group{
-  background-color: #8dc234 ;
+.d_group {
+    background-color: #8dc234;
 }
 
 .f_group {
-  background-color: #be4d00;
+    background-color: #dc854a;
 }
 
 .a_num {
-  font-style: italic;
+    font-style: italic;
 }
 
-/* Style for the block buttons */
+/* --- Block Buttons --- */
 .block-buttons {
     display: flex;
     justify-content: center;
@@ -53,98 +60,208 @@
     background-color: #3ead9d;
 }
 
-.dim-element {
-    opacity: 0.25 !important;
-    filter: saturate(0.5); /* Desaturate elements that are not selected */
-    transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
+/* --- Block Highlight Styles --- */
+.s_group_active,
+.p_group_active,
+.d_group_active,
+.f_group_active {
+    border: 2px solid red !important;
+    transform: scale(1.05);
+    opacity: 1.0 !important;
 }
 
-/* Base style for highlighted elements to ensure a smooth transition */
+.s_group_active:hover {
+    background-color: #bb2b7d;
+    color: #fff;
+    opacity: 1.0 !important;
+}
+
+.p_group_active:hover {
+    background-color: #1081a9;
+    color: #fff;
+    opacity: 1.0 !important;
+}
+
+.d_group_active:hover {
+    background-color: #68931d;
+    color: #fff;
+    opacity: 1.0 !important;
+}
+
+.f_group_active:hover {
+    background-color: #c16122;
+    color: #fff;
+    opacity: 1.0 !important;
+}
+
 .element.highlighted {
     transition: all 0.4s ease-in-out;
 }
 
-/* New colors for when a block is active/selected */
-.s_group_active {
-    background-color: #bf538d !important; /* A brighter pink */
-    transform: scale(1.05);
-    opacity: 1.0 !important;
+.dim-element {
+    opacity: 0.25 !important;
+    filter: saturate(0.5);
+    transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
 }
 
-.p_group_active {
-    background-color: #7e8cb6 !important; /* A royal blue */
-    transform: scale(1.05);
-    opacity: 1.0 !important;
+/* --- Search Container & Results Styles --- */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.d_group_active {
-    background-color: #32CD32 !important; /* A lime green */
-    transform: scale(1.05);
-    opacity: 1.0 !important;
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    font-family: verdana;
 }
 
-.f_group_active {
-    background-color: #d06139 !important; /* A vibrant orange-red */
-    transform: scale(1.05);
-    opacity: 1.0 !important;
+#searchInput:focus {
+    border-color: #3eabd3;
+    box-shadow: 0 0 8px rgba(62, 171, 211, 0.5);
 }
 
-/* Modal Styles */
+.element.highlighted {
+    border: 5px solid red !important;
+    transition: border-color 0.5s ease, transform 0.2s ease;
+    transform: scale(1.05); /* Optional: make it stand out more */
+}
+
+#clearBtn {
+    background-color: #ff5eb9;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#clearBtn:hover {
+    background-color: #bb2b7d;
+    transform: scale(1.1);
+}
+
+#resultsContainer {
+    display: none; /* Initially hidden */
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Style for the individual element cards in the search results */
+.element-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+}
+
+.element-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.element-card .element-symbol {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3eabd3;
+}
+
+.element-card .element-name {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #333;
+}
+
+.element-card .element-atomic-number {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.no-results {
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* --- Modal Styles --- */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 100;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 20px; /* Add some padding around the modal */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: auto; /* Centered */
+    margin: auto;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    /* Changed max-width to decrease the pop-up width */
-    max-width: 500px; /* Decreased from 700px to 500px */
-    width: 90%; /* Still responsive, but limits the max width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
     position: relative;
     display: flex;
     flex-direction: column;
-    max-height: 90vh; /* Max height for scrollability */
-    overflow-y: auto; /* Enable scrolling for content if it overflows */
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .close-button {
-    color: #333; /* Darker color for better visibility */
-    font-size: 32px; /* Increased size */
+    color: #333;
+    font-size: 32px;
     font-weight: bold;
     position: absolute;
-    top: 5px; /* Adjust top position */
-    right: 15px; /* Adjust right position */
+    top: 5px;
+    right: 15px;
     cursor: pointer;
-    z-index: 101; /* Ensure close button is above content */
-    background-color: transparent; /* Ensure no background interferes */
-    border: none; /* Remove any default button border */
-    padding: 5px; /* Add some padding for easier clicking */
-    transition: color 0.2s ease-in-out; /* Smooth transition for hover */
+    z-index: 101;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    transition: color 0.2s ease-in-out;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #000; /* Even darker on hover */
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-/* #elementModel{
-    display: none;
-} */
 
 .element-card {
     background: white;
@@ -153,7 +270,6 @@
     padding: 1rem;
     width: 100%;
     text-align: center;
-   
 }
 
 .element-symbol {
@@ -163,13 +279,13 @@
 }
 
 .element-symbol sup {
-    font-size: 0.em; /* Make superscript smaller relative to parent */
+    font-size: 0.em;
     vertical-align: super;
-    line-height: 0; /* Helps prevent extra space */
+    line-height: 0;
 }
 
 .element-symbol sub {
-    font-size: 0.3em; /* Make subscript smaller relative to parent */
+    font-size: 0.3em;
     vertical-align: sub;
     line-height: 0;
 }
@@ -184,7 +300,7 @@ h2 {
     margin: 0.5rem 0;
     line-height: 1.5;
     color: #555;
-    text-align: center; /* Align text left within info */
+    text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -194,10 +310,8 @@ h2 {
     display: inline-block;
 }
 
-/* Styles for Isotope Cards */
 #modal-isotopes-section {
     width: 100%;
-    /* Keep max-width for isotope section, but note it's within the modal-content's max-width */
     margin-top: 2rem;
     text-align: center;
 }
@@ -212,7 +326,7 @@ h2 {
 
 .isotope-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax for narrower modal */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     justify-content: center;
     padding: 1rem;
@@ -223,7 +337,7 @@ h2 {
     border: 1px solid #e0e0e0;
     border-left: 5px solid #3eabd3;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     padding: 1.5rem;
     text-align: left;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -231,7 +345,7 @@ h2 {
 
 .isotope-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .isotope-card h4 {
@@ -251,102 +365,99 @@ h2 {
     min-width: 90px;
 }
 
-/* Hide the back button in the modal */
 a.back {
     display: none !important;
 }
 
-/* Styling for the new detail page link button */
 .detail-link-btn {
-    /* Use a gradient for a modern look */
     background: linear-gradient(45deg, #3498db, #5dade2);
-    
-    /* Make the button stand out with a subtle shadow */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    
-    /* Center the button text and icon */
     display: flex;
     align-items: center;
     justify-content: center;
-    
     padding: 12px 25px;
-    margin-top: 30px; /* Add more space from the elements above */
-    
+    margin-top: 30px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    
-    border-radius: 50px; /* A pill shape for a friendly, modern feel */
+    border-radius: 50px;
     border: none;
-    
-    /* Smooth transitions for all properties */
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .detail-link-btn:hover {
-    /* Reverse the gradient on hover for a dynamic effect */
     background: linear-gradient(45deg, #5dade2, #3498db);
-    
-    /* Lift the button and make the shadow more pronounced */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    
-    /* Translate the button slightly on hover */
     transform: translateY(-3px);
 }
 
-/* Add a style for an icon inside the button */
 .detail-link-btn i {
     margin-left: 10px;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
 }
 
-/* Make the icon move a little on hover */
 .detail-link-btn:hover i {
     transform: translateX(3px);
 }
 
-/* Responsive adjustments for modal */
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
         padding: 15px;
-        max-width: 95%; /* Ensure it's responsive on smaller screens */
+        max-width: 95%;
     }
+
     .element-card {
         padding: 1rem;
     }
+
     .element-symbol {
         font-size: 4rem;
     }
+
     .element-info p {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+
     .isotope-cards-container {
         grid-template-columns: 1fr;
         padding: 0.5rem;
     }
+
     .isotope-card {
         padding: 1rem;
     }
+
     .close-button {
-        font-size: 28px; /* Slightly smaller on small screens */
+        font-size: 28px;
         top: 8px;
         right: 12px;
     }
+
+    .periodic-table {
+        padding: 5px;
+    }
+
+    .element {
+        font-size: clamp(0.6rem, 1.5vw, 1rem);
+        padding: 10px;
+    }
 }
 
-@media (max-width: 550px) { /* Adjust for even smaller screens */
+@media (max-width: 550px) {
     .modal-content {
         max-width: 98%;
         padding: 10px;
     }
+
     .element-symbol {
         font-size: 3.5rem;
     }
+
     .element-info p strong {
-        min-width: 100px; /* Adjust alignment for very small screens */
+        min-width: 100px;
     }
 }
