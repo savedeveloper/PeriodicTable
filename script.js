@@ -7,6 +7,33 @@ const dBlockBtn = document.getElementById("d-block-btn");
 const fBlockBtn = document.getElementById("f-block-btn");
 const resetBtn = document.getElementById("reset-btn");
 const allElements = document.querySelectorAll(".element");
+const searchInput = document.getElementById('searchInput');
+const resultsContainer = document.getElementById('resultsContainer');
+const clearBtn = document.getElementById('clearBtn');
+const toggleSearchBtn = document.getElementById('toggleSearchBtn'); // New button
+const searchContainer = document.getElementById('searchContainer'); // Assuming you have a container for search elements
+
+let elementsData = []; // This will hold our data once it's loaded
+
+// Asynchronously load the JSON data
+async function loadElementsData() {
+    try {
+        const response = await fetch('elements.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        elementsData = await response.json();
+        console.log('Elements data loaded successfully.');
+        // Initial render, showing all elements when the page loads
+        renderElements(elementsData);
+    } catch (error) {
+        console.error('Could not load elements data:', error);
+        resultsContainer.innerHTML = '<p class="error">Failed to load periodic table data.</p>';
+    }
+}
+
+// Call the function to load the data when the script starts
+document.addEventListener("DOMContentLoaded", loadElementsData);
 
 // Open the modal
 function openModal() {
@@ -18,65 +45,50 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// Event listener for close button
-closeButton.addEventListener("click", closeModal);
-
-// Close modal when clicking outside the modal content
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        closeModal();
-    }
-});
+// Handles the click on an element card in the search results
+function handleElementClick(symbol) {
+    loadElementDataIntoModal(symbol);
+    openModal();
+}
 
 // Highlights Block
 function highlightBlock(blockClass) {
-    // First, reset all highlighting and active classes
     allElements.forEach(element => {
+        // Reset all highlighting and active classes
         element.classList.remove('s_group_active', 'p_group_active', 'd_group_active', 'f_group_active');
         element.classList.remove('dim-element');
-    });
 
-    // If a block is specified, highlight it with the new color and dim the others
-    if (blockClass) {
-        allElements.forEach(element => {
+        if (blockClass) {
             if (element.classList.contains(blockClass)) {
-                // Add the new, distinct color class
                 element.classList.add(`${blockClass}_active`);
             } else {
-                // Dim the elements outside the selected block
                 element.classList.add('dim-element');
             }
-        });
-    }
-
+        }
+    });
 }
 
 // Function to load and display element data in the modal
 async function loadElementDataIntoModal(symbol) {
-    const response = await fetch("elements.json");
-    const elements = await response.json();
-    const element = elements.find(el => el.symbol.toLowerCase() === symbol.toLowerCase());
-
+    const element = elementsData.find(el => el.symbol.toLowerCase() === symbol.toLowerCase());
+    
     if (!element) {
         document.getElementById("modal-name").textContent = "Element Not Found";
         return;
     }
 
     // Update the element symbol with superscript atomic number and subscript atomic mass
-    const atomicNumberForSymbol = element.atomicNumber || ""; // Use empty string if N/A
-    const atomicMassForSymbol = element.atomicMass || ""; // Use empty string if N/A
-
+    const atomicNumberForSymbol = element.atomicNumber || "";
+    const atomicMassForSymbol = element.atomicMass || "";
     document.getElementById("modal-symbol").innerHTML =
         `<sup class="atomic-num-symbol">${atomicNumberForSymbol}</sup>${element.symbol}<sub class="atomic-mass-symbol">${atomicMassForSymbol}</sub>`;
-
+    
     document.getElementById("modal-name").textContent = element.name;
-
     document.getElementById("modal-group").textContent = element.group || "N/A";
     document.getElementById("modal-category").textContent = element.category || "N/A";
 
     let discoveredByText = element.discoveredBy || "N/A";
     let discoveryYearText = "N/A";
-
     if (element.discoveredBy) {
         const yearMatch = element.discoveredBy.match(/\((\d{4})\)/);
         if (yearMatch && yearMatch[1]) {
@@ -108,29 +120,24 @@ async function loadElementDataIntoModal(symbol) {
     const isotopesCardsContainer = document.getElementById("modal-isotopes-cards-container");
     const isotopesHeading = document.getElementById("modal-isotopes-heading");
     isotopesCardsContainer.innerHTML = "";
-
     if (element.isotopes && element.isotopes.length > 0) {
         isotopesHeading.style.display = "block";
         element.isotopes.forEach(isotope => {
             const isotopeCard = document.createElement("div");
             isotopeCard.className = "isotope-card";
-
             const isotopeName = document.createElement("h4");
             isotopeName.textContent = isotope.isotope || "Isotope";
             isotopeCard.appendChild(isotopeName);
-
             if (isotope.abundance) {
                 const abundanceP = document.createElement("p");
                 abundanceP.innerHTML = `<strong>Abundance:</strong> ${isotope.abundance}`;
                 isotopeCard.appendChild(abundanceP);
             }
-
             if (isotope.halfLife) {
                 const halfLifeP = document.createElement("p");
                 halfLifeP.innerHTML = `<strong>Half-life:</strong> ${isotope.halfLife}`;
                 isotopeCard.appendChild(halfLifeP);
             }
-
             isotopesCardsContainer.appendChild(isotopeCard);
         });
     } else {
@@ -139,13 +146,11 @@ async function loadElementDataIntoModal(symbol) {
 
     let detailLink = document.getElementById('modal-detail-link');
     if (!detailLink) {
-        // If the link doesn't exist, create it
         detailLink = document.createElement('a');
         detailLink.id = 'modal-detail-link';
         detailLink.className = 'detail-link-btn';
         document.querySelector('.modal-content').appendChild(detailLink);
     }
-    // Set the link's URL to the new details page with the element's symbol
     detailLink.href = `element-details.html?symbol=${element.symbol}`;
     detailLink.textContent = `View more about ${element.name}`;
 
@@ -185,10 +190,9 @@ async function loadElementDataIntoModal(symbol) {
 // Add click event listeners to all element links
 elementLinks.forEach(elementBox => {
     elementBox.addEventListener("click", (event) => {
-        // Find the 'a' tag within the clicked 'td' element
         const symbolLink = elementBox.querySelector("a");
         if (symbolLink) {
-            event.preventDefault(); // Prevent default link behavior
+            event.preventDefault();
             const symbol = symbolLink.dataset.symbol;
             loadElementDataIntoModal(symbol);
             openModal();
@@ -196,23 +200,153 @@ elementLinks.forEach(elementBox => {
     });
 });
 
-// Event Listeners for buttons
+// Event listeners for buttons
+closeButton.addEventListener("click", closeModal);
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 sBlockBtn.addEventListener("click", () => {
     highlightBlock("s_group");
 });
-
 pBlockBtn.addEventListener("click", () => {
     highlightBlock("p_group");
 });
-
 dBlockBtn.addEventListener("click", () => {
     highlightBlock("d_group");
 });
-
 fBlockBtn.addEventListener("click", () => {
     highlightBlock("f_group");
 });
-
 resetBtn.addEventListener("click", () => {
-    highlightBlock(null); // Reset all highlighting
+    highlightBlock(null);
+});
+
+// This function filters the elements based on the search query
+function filterElements(query) {
+    if (!query) {
+        return elementsData;
+    }
+    const lowerCaseQuery = query.toLowerCase();
+    return elementsData.filter(element => {
+        const nameMatch = element.name.toLowerCase().includes(lowerCaseQuery);
+        const symbolMatch = element.symbol.toLowerCase().includes(lowerCaseQuery);
+        const atomicNumberMatch = String(element.atomicNumber).includes(lowerCaseQuery);
+        const atomicMassMatch = String(element.atomicMass).includes(lowerCaseQuery);
+        const categoryMatch = (element.category || '').toLowerCase().includes(lowerCaseQuery);
+        return nameMatch || symbolMatch || atomicNumberMatch || atomicMassMatch || categoryMatch;
+    });
+}
+
+// This function renders the results to the HTML
+function renderElements(elements) {
+    resultsContainer.innerHTML = '';
+    if (elements.length === 0) {
+        resultsContainer.innerHTML = '<p class="no-results">No elements found.</p>';
+        return;
+    }
+    elements.forEach(element => {
+        const elementCard = document.createElement('div');
+        elementCard.classList.add('element-card');
+        elementCard.innerHTML = `
+            <div class="element-symbol">${element.symbol}</div>
+            <div class="element-name">${element.name}</div>
+            <div class="element-atomic-number">${element.atomicNumber}</div>
+        `;
+        elementCard.addEventListener('click', () => {
+            handleElementClick(element.symbol);
+        });
+        resultsContainer.appendChild(elementCard);
+    });
+}
+
+function highlightPeriodicTableElement(symbol) {
+    // First, remove any existing highlights from all elements
+    allElements.forEach(element => {
+        element.style.border = ''; // Remove the border
+        element.classList.remove('highlighted');
+    });
+
+    // If a symbol is provided, find and highlight the corresponding element
+    if (symbol) {
+        const elementToHighlight = document.querySelector(`[data-symbol="${symbol}"]`);
+        
+        if (elementToHighlight) {
+            // Get the parent cell to apply the highlight
+            const parentCell = elementToHighlight.closest('.element');
+            if (parentCell) {
+                parentCell.style.border = '2px solid red'; // Apply the red border
+                parentCell.classList.add('highlighted');
+                
+                // Optional: Scroll the element into view
+                parentCell.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    }
+}
+
+
+// Event listener for the search input
+searchInput.addEventListener('input', (event) => {
+    const query = event.target.value;
+    const filteredResults = filterElements(query);
+    renderElements(filteredResults);
+});
+
+// Event listener for the clear button
+clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    renderElements(elementsData);
+});
+
+// This listener handles the search as you type
+searchInput.addEventListener('input', (event) => {
+    const query = event.target.value.toLowerCase().trim();
+    
+    if (query === '') {
+        // If search is empty, remove all highlights
+        highlightPeriodicTableElement(null);
+        resultsContainer.innerHTML = ''; // Clear search results display
+        return;
+    }
+
+    // This is where you would do your live filtering if you wanted it.
+    // For now, we'll just remove any results so the table is clear.
+    resultsContainer.innerHTML = '';
+});
+
+
+// Event listener for the 'Enter' key press
+searchInput.addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault(); 
+        
+        const query = searchInput.value.toLowerCase().trim();
+        
+        if (query === '') {
+            // If search is empty, remove all highlights and clear results
+            highlightPeriodicTableElement(null);
+            resultsContainer.innerHTML = '';
+            return;
+        }
+
+        // Find the element data based on the query
+        const matchingElement = elementsData.find(el => 
+            el.symbol.toLowerCase() === query ||
+            el.name.toLowerCase() === query
+        );
+        
+        if (matchingElement) {
+            // If a match is found, highlight it on the periodic table
+            highlightPeriodicTableElement(matchingElement.symbol);
+            
+            // You can also display a simple confirmation message in the resultsContainer
+            resultsContainer.innerHTML = `<p class="search-info">Element '${matchingElement.name}' highlighted.</p>`;
+        } else {
+            // If no match, show a 'not found' message and remove any highlights
+            highlightPeriodicTableElement(null); // This resets any existing highlights
+            resultsContainer.innerHTML = '<p class="no-results">Element not found.</p>';
+        }
+    }
 });
