@@ -1,17 +1,23 @@
 /* --- Base Element Styles --- */
 .element {
-    padding: 15px;
-    font-family: verdana;
-    font-size: clamp(0.75rem, 2vw, 1.25rem);
-    border-spacing: 2px;
-    opacity: 0.5;
-    text-align: center;
-    aspect-ratio: 1 / 1;
-    transition: transform .2s, opacity .4s; /* Added opacity to transition */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-width: 45px;
+    max-width: 90px;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    padding: clamp(6px, 1.2vw, 15px);
+    opacity: 0.7;
 }
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 4px;
+    width: auto;
+    max-width: 1600px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 
 .element:hover {
     opacity: 1.0;
@@ -19,19 +25,19 @@
 }
 
 .s_group {
-    background-color: #ff5eb9;
+    background-color: #dc66a9;
 }
 
 .p_group {
-    background-color: #3eabd3;
+    background-color: #54badf;
 }
 
 .d_group {
-    background-color: #8dc234;
+    background-color: #a5de42;
 }
 
 .f_group {
-    background-color: #dc854a;
+    background-color: #de8245;
 }
 
 .a_num {
@@ -40,20 +46,21 @@
 
 /* --- Block Buttons --- */
 .block-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 35%;
 }
 
 .block-btn {
-    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border: 1px solid #346e66;
     border-radius: 5px;
     background-color: #20ceb4;
     transition: background-color 0.2s, color 0.2s;
+    flex: 1 1 auto;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: 8px 15px;
 }
 
 .block-btn:hover {
@@ -114,9 +121,6 @@
 }
 
 #searchInput {
-    width: 100%;
-    max-width: 500px;
-    padding: 12px 20px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 25px;
@@ -124,7 +128,10 @@
     transition: all 0.3s ease;
     background-color: #fff;
     font-family: verdana;
+    width: 50%;
+   font-size: clamp(0.8rem, 2vw, 1rem);
 }
+
 
 #searchInput:focus {
     border-color: #3eabd3;
@@ -208,6 +215,64 @@
     color: #888;
     margin-top: 50px;
     text-align: center;
+}
+
+/* --- Search Suggestions Container --- */
+#suggestionsContainer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: verdana;
+}
+
+.suggestion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #181010;
+    border: 1px solid #841e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 5px 0;
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020202;
+}
+
+.suggestion-item:hover {
+    background-color: #c1b8b8;
+}
+
+.suggestion-symbol {
+    font-weight: bold;
+    color: #3eabd3;
+}
+
+.suggestion-name {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.suggestion-atomic-number {
+    font-size: 0.8em;
+    color: #888;
 }
 
 /* --- Modal Styles --- */
@@ -447,17 +512,24 @@ a.back {
     }
 }
 
-@media (max-width: 550px) {
-    .modal-content {
-        max-width: 98%;
-        padding: 10px;
+@media (max-width: 480px) {
+    .periodic-table {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        gap: 2px;
+        padding: 4px;
     }
 
-    .element-symbol {
-        font-size: 3.5rem;
+    .element {
+        font-size: 0.7rem;
+        padding: 5px;
     }
 
-    .element-info p strong {
-        min-width: 100px;
+    .block-btn {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    #searchInput {
+        padding: 8px 12px;
     }
 }
