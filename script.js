@@ -1,3 +1,4 @@
+// @ts-nocheck
 const DOM = {
     modal: document.getElementById("elementModal"),
     closeButton: document.querySelector(".close-button"),
@@ -13,6 +14,8 @@ const DOM = {
     clearBtn: document.getElementById('clearBtn'),
     searchContainer: document.getElementById('searchContainer'),
     suggestionsContainer: document.getElementById('suggestionsContainer'),
+    hoverSymbolContainer: document.getElementById('hover-symbol-container'),
+    hoverSymbol3d: document.getElementById('hover-symbol-3d'),
 };
 
 let elementsData = []; // This will hold our data once it's loaded
@@ -26,7 +29,7 @@ async function loadElementsData() {
         }
         elementsData = await response.json();
         console.log('Elements data loaded successfully.');
-    
+
     } catch (error) {
         console.error('Could not load elements data:', error);
         DOM.resultsContainer.innerHTML = '<p class="error">Failed to load periodic table data.</p>';
@@ -42,6 +45,42 @@ function openModal() {
 function closeModal() {
     DOM.modal.style.display = "none";
 }
+
+// Function to handle the hover effects
+function setup3DHoverEffects() {
+    DOM.allElements.forEach(elementBox => {
+        elementBox.addEventListener('mouseenter', () => {
+            const symbolLink = elementBox.querySelector("a");
+            if (!symbolLink) return;
+
+            const symbol = symbolLink.dataset.symbol;
+            const element = elementsData.find(el => el.symbol === symbol);
+            
+            if (!element) return; // Exit if element data is not found
+
+            // Create a structured HTML with symbol and details on separate lines
+            const hoverContent = `
+                <div class="element-hover-content">
+                    <span class="hover-symbol-3d">${element.symbol}</span>
+                    <div class="hover-details">
+                        <div class="hover-atomic-number">A.N = ${element.atomicNumber}</div>
+                        <div class="hover-atomic-mass">A.M = ${element.atomicMass}</div>
+                    </div>
+                </div>
+            `;
+
+            DOM.hoverSymbol3d.innerHTML = hoverContent;
+            DOM.hoverSymbolContainer.style.opacity = '1';
+        });
+
+        elementBox.addEventListener('mouseleave', () => {
+            // Hide the container
+            DOM.hoverSymbolContainer.style.opacity = '0';
+        });
+    });
+}
+
+
 
 // Highlights a specific block on the periodic table.
 function highlightBlock(blockClass) {
@@ -64,7 +103,7 @@ function highlightBlock(blockClass) {
 // Function to load and display element data in the modal
 function loadElementDataIntoModal(symbol) {
     const element = elementsData.find(el => el.symbol.toLowerCase() === symbol.toLowerCase());
-    
+
     if (!element) {
         document.getElementById("modal-name").textContent = "Element Not Found";
         return;
@@ -75,7 +114,7 @@ function loadElementDataIntoModal(symbol) {
     const atomicMassForSymbol = element.atomicMass || "";
     document.getElementById("modal-symbol").innerHTML =
         `<sup class="atomic-num-symbol">${atomicNumberForSymbol}</sup>${element.symbol}<sub class="atomic-mass-symbol">${atomicMassForSymbol}</sub>`;
-    
+
     document.getElementById("modal-name").textContent = element.name;
     document.getElementById("modal-group").textContent = element.group || "N/A";
     document.getElementById("modal-category").textContent = element.category || "N/A";
@@ -188,15 +227,15 @@ function filterElements(query) {
     const lowerCaseQuery = query.toLowerCase();
 
     // First, try to find an exact match by name or symbol
-    const exactMatch = elementsData.find(element => 
+    const exactMatch = elementsData.find(element =>
         element.symbol.toLowerCase() === lowerCaseQuery ||
         element.name.toLowerCase() === lowerCaseQuery
     );
     if (exactMatch) {
         return [exactMatch];
     }
-    
-   
+
+
     return elementsData.filter(element => {
         const nameMatch = element.name.toLowerCase().startsWith(lowerCaseQuery);
         const symbolMatch = element.symbol.toLowerCase().startsWith(lowerCaseQuery);
@@ -237,7 +276,7 @@ function highlightPeriodicTableElement(symbol) {
 
     if (symbol) {
         const elementToHighlight = document.querySelector(`[data-symbol="${symbol}"]`);
-        
+
         if (elementToHighlight) {
             const parentCell = elementToHighlight.closest('.element');
             if (parentCell) {
@@ -293,7 +332,7 @@ const handleCategorySearch = (query) => {
         highlightPeriodicTableElement(null); // Clear previous highlights
 
         const filteredElements = elementsData.filter(element => {
-            const categoryMatch = targetCategories.some(targetCat => 
+            const categoryMatch = targetCategories.some(targetCat =>
                 (element.category || '').toLowerCase().includes(targetCat)
             );
             return categoryMatch;
@@ -345,13 +384,13 @@ function handleSearch(query) {
 
 function showSuggestions(query) {
     DOM.suggestionsContainer.innerHTML = '';
-    
+
     if (query.length < 2) {
         return;
     }
 
     const lowerCaseQuery = query.toLowerCase();
-    const suggestions = elementsData.filter(element => 
+    const suggestions = elementsData.filter(element =>
         element.name.toLowerCase().startsWith(lowerCaseQuery) ||
         element.symbol.toLowerCase().startsWith(lowerCaseQuery)
     );
@@ -368,6 +407,8 @@ function showSuggestions(query) {
         DOM.suggestionsContainer.appendChild(suggestionItem);
     });
 }
+
+
 
 // Event listeners
 function setupEventListeners() {
@@ -429,8 +470,10 @@ function setupEventListeners() {
     });
 }
 
+
 // Initialize the script
 document.addEventListener("DOMContentLoaded", async () => {
     await loadElementsData();
     setupEventListeners();
+    setup3DHoverEffects();
 });
