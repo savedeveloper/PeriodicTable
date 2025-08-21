@@ -7,17 +7,78 @@
     opacity: 0.7;
 }
 
-.periodic-table {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    gap: 4px;
-    width: auto;
-    max-width: 1600px;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
+.blank {
+    position: relative;
+    /* make the blank cell a positioning parent */
 }
 
+/* Container for the new layout */
+.element-hover-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    font-weight: normal;
+}
+
+.hover-symbol-3d {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 15px; 
+    text-shadow: 
+        1px 1px 0 #999,
+        2px 2px 0 #888,
+        3px 3px 0 #777,
+        4px 4px 0 #666,
+        5px 5px 0 #555,
+        6px 6px 0 #444,
+        7px 7px 0 #333,
+        8px 8px 0 #222,
+        9px 9px 0 #111,
+        10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hover-details {
+    display: flex;
+    flex-direction: column; 
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.hover-atomic-number, .hover-atomic-mass {
+    text-shadow: none; 
+}
+
+#hover-symbol-container {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(to bottom right, rgba(176, 2, 251, 0.7), rgba(107, 25, 142, 0.7));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Periodic_table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.Periodic_table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
 
 .element:hover {
     opacity: 1.0;
@@ -129,7 +190,7 @@
     background-color: #fff;
     font-family: verdana;
     width: 50%;
-   font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 
@@ -141,7 +202,8 @@
 .element.highlighted {
     border: 5px solid red !important;
     transition: border-color 0.5s ease, transform 0.2s ease;
-    transform: scale(1.05); /* Optional: make it stand out more */
+    transform: scale(1.05);
+    /* Optional: make it stand out more */
 }
 
 #clearBtn {
@@ -158,7 +220,7 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #clearBtn:hover {
@@ -167,7 +229,8 @@
 }
 
 #resultsContainer {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
@@ -233,7 +296,7 @@
     background-color: #181010;
     border: 1px solid #841e1e;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 100%;
     left: 0;
@@ -467,6 +530,7 @@ a.back {
     transform: translateX(3px);
 }
 
+
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
@@ -531,5 +595,29 @@ a.back {
 
     #searchInput {
         padding: 8px 12px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .periodic-table {
+        margin-left: auto;
+        margin-right: 0;
+        /* stick right */
+        justify-content: flex-end;
+        padding: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .periodic-table {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        gap: 2px;
+        margin-left: auto;
+        margin-right: 0;
+        /* stick right */
+        justify-content: flex-end;
+        padding: 4px;
     }
 }
