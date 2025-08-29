@@ -1,3 +1,32 @@
+body {
+    background-color: #0d1117;
+    font-family: 'Verdana', sans-serif;
+    color: #e6e6e6;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at 10% 20%, rgba(255, 127, 80, 0.2), transparent),
+                radial-gradient(circle at 90% 80%, rgba(138, 43, 226, 0.2), transparent),
+                radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.2), transparent);
+    background-size: 200% 200%;
+    animation: move-gradient 30s infinite alternate;
+}
+
+@keyframes move-gradient {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
 /* --- Base Element Styles --- */
 .element {
     min-width: 45px;
@@ -9,7 +38,12 @@
 
 .blank {
     position: relative;
-    /* make the blank cell a positioning parent */
+    border: none;
+}
+
+.Periodic_table td.blank {
+    border: none;
+    background-color: transparent;
 }
 
 /* Container for the new layout */
@@ -61,7 +95,7 @@
     opacity: 0;
     width: 250px;
     height: 100px;
-    background: linear-gradient(to bottom right, rgba(176, 2, 251, 0.7), rgba(107, 25, 142, 0.7));
+    background: linear-gradient(to bottom right, rgba(169, 79, 207, 0.7), rgba(107, 25, 142, 0.7));
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -78,6 +112,7 @@
 .Periodic_table {
     border-collapse: collapse;
     margin: 20px auto;
+    border: none;
 }
 
 .element:hover {
@@ -580,6 +615,10 @@ a.back {
     .periodic-table {
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
         gap: 2px;
+        margin-left: auto;
+        margin-right: 0;
+        /* stick right */
+        justify-content: flex-end;
         padding: 4px;
     }
 
