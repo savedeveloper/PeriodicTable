@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <h1>Periodic Table</h1>
+
+    <div class="block-buttons">
+        <button id="s-block-btn" class="block-btn">S-Block</button>
+        <button id="p-block-btn" class="block-btn">P-Block</button>
+        <button id="d-block-btn" class="block-btn">D-Block</button>
+        <button id="f-block-btn" class="block-btn">F-Block</button>
+        <button id="reset-btn" class="block-btn">Reset</button>
+    </div>
+
+    <div id="searchContainer">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for element...">
+            <button id="clearBtn">X</button>
+        </div>
+        <div id="suggestionsContainer"></div>
+        <div id="resultsContainer">
+        </div>
+    </div>
+
+    <div id="periodicTableContainer">
+        <table class="Periodic_table">
+            <tr class="period_1">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="H">H <sub class="a_num">1</sub></a>
+                    </div>
+                </td>
+                <td colspan="16" class="blank"></td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="He">He<sub class="a_num">2</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_2">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Li">Li <sub class="a_num">3</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Be">Be <sub class="a_num">4</sub></a>
+                    </div>
+                </td>
+                <td colspan="10" class="blank"></td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="B">B<sub class="a_num">5</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="C">C<sub class="a_num">6</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="N">N<sub class="a_num">7</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="O">O<sub class="a_num">8</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="F">F<sub class="a_num">9</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ne">Ne<sub class="a_num">10</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_3">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Na">Na<sub class="a_num">11</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Mg">Mg<sub class="a_num">12</sub></a>
+                    </div>
+                </td>
+                <td colspan="10" class="blank"></td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Al">Al<sub class="a_num">13</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Si">Si<sub class="a_num">14</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="P">P<sub class="a_num">15</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="S">S<sub class="a_num">16</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cl">Cl<sub class="a_num">17</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ar">Ar<sub class="a_num">18</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_4">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="K">K<sub class="a_num">19</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ca">Ca<sub class="a_num">20</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sc">Sc<sub class="a_num">21</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ti">Ti<sub class="a_num">22</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="V">V<sub class="a_num">23</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cr">Cr<sub class="a_num">24</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Mn">Mn<sub class="a_num">25</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Fe">Fe<sub class="a_num">26</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Co">Co<sub class="a_num">27</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ni">Ni<sub class="a_num">28</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cu">Cu<sub class="a_num">29</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Zn">Zn<sub class="a_num">30</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ga">Ga<sub class="a_num">31</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ge">Ge<sub class="a_num">32</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="As">As<sub class="a_num">33</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Se">Se<sub class="a_num">34</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Br">Br<sub class="a_num">35</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Kr">Kr<sub class="a_num">36</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_5">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Rb">Rb<sub class="a_num">37</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sr">Sr<sub class="a_num">38</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Y">Y<sub class="a_num">39</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Zr">Zr<sub class="a_num">40</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Nb">Nb<sub class="a_num">41</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Mo">Mo<sub class="a_num">42</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Tc">Tc<sub class="a_num">43</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ru">Ru<sub class="a_num">44</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Rh">Rh<sub class="a_num">45</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pd">Pd<sub class="a_num">46</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ag">Ag<sub class="a_num">47</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cd">Cd<sub class="a_num">48</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="In">In<sub class="a_num">49</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sn">Sn<sub class="a_num">50</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sb">Sb<sub class="a_num">51</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Te">Te<sub class="a_num">52</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="I">I<sub class="a_num">53</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Xe">Xe<sub class="a_num">54</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_6">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cs">Cs<sub class="a_num">55</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ba">Ba<sub class="a_num">56</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="La">La<sub class="a_num">57</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Hf">Hf<sub class="a_num">72</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ta">Ta<sub class="a_num">73</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="W">W<sub class="a_num">74</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Re">Re<sub class="a_num">75</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Os">Os<sub class="a_num">76</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ir">Ir<sub class="a_num">77</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pt">Pt<sub class="a_num">78</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Au">Au<sub class="a_num">79</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Hg">Hg<sub class="a_num">80</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Tl">Tl<sub class="a_num">81</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pb">Pb<sub class="a_num">82</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Bi">Bi<sub class="a_num">83</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Po">Po<sub class="a_num">84</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="At">At<sub class="a_num">85</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Rn">Rn<sub class="a_num">86</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="period_7">
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Fr">Fr<sub class="a_num">87</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element s_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ra">Ra<sub class="a_num">88</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ac">Ac<sub class="a_num">89</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Rf">Rf<sub class="a_num">104</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Db">Db<sub class="a_num">105</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sg">Sg<sub class="a_num">106</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Bh">Bh<sub class="a_num">107</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Hs">Hs<sub class="a_num">108</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Mt">Mt<sub class="a_num">109</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ds">Ds<sub class="a_num">110</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Rg">Rg<sub class="a_num">111</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element d_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cn">Cn<sub class="a_num">112</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Nh">Nh<sub class="a_num">113</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Fl">Fl<sub class="a_num">114</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Mc">Mc<sub class="a_num">115</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Lv">Lv<sub class="a_num">116</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ts">Ts<sub class="a_num">117</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element p_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Og">Og<sub class="a_num">118</sub></a>
+                    </div>
+                </td>
+            </tr>
+            <tr class="blank">
+                <td style="height: 30px;" colspan="18" class="blank"></td>
+            </tr>
+            <tr class="f_period_6">
+                <td colspan="2" class="blank"></td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ce">Ce <sub class="a_num">58</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pr">Pr <sub class="a_num">59</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Nd">Nd <sub class="a_num">60</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pm">Pm <sub class="a_num">61</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Sm">Sm <sub class="a_num">62</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Eu">Eu <sub class="a_num">63</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Gd">Gd <sub class="a_num">64</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Tb">Tb <sub class="a_num">65</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Dy">Dy <sub class="a_num">66</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Ho">Ho <sub class="a_num">67</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Er">Er <sub class="a_num">68</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Tm">Tm <sub class="a_num">69</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Yb">Yb <sub class="a_num">70</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Lu">Lu <sub class="a_num">71</sub></a>
+                    </div>
+                </td>
+                <td colspan="2" class="blank"></td>
+            </tr>
+            <tr class="f_period_7">
+                <td colspan="2" class="blank"></td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Th">Th <sub class="a_num">90</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pa">Pa <sub class="a_num">91</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="U">U <sub class="a_num">92</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Np">Np <sub class="a_num">93</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Pu">Pu <sub class="a_num">94</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Am">Am <sub class="a_num">95</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cm">Cm <sub class="a_num">96</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Bk">Bk <sub class="a_num">97</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Cf">Cf <sub class="a_num">98</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Es">Es <sub class="a_num">99</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Fm">Fm <sub class="a_num">100</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Md">Md <sub class="a_num">101</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="No">No <sub class="a_num">102</sub></a>
+                    </div>
+                </td>
+                <td colspan="1" class="element f_group">
+                    <div class="element-content-wrapper">
+                        <a href="#" data-symbol="Lr">Lr <sub class="a_num">103</sub></a>
+                    </div>
+                </td>
+                <td colspan="2" class="blank"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="hover-symbol-container">
+        <div id="hover-symbol-3d"></div>
+    </div>
+
+    <div id="elementModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="element-card" id="modal-element-card">
+                <div class="element-symbol" id="modal-symbol">?</div>
+                <h2 id="modal-name">Loading...</h2>
+                <div class="element-info">
+                    <p><strong>Group:</strong> <span id="modal-group"></span></p>
+                    <p><strong>Category:</strong> <span id="modal-category"></span></p>
+                    <p id="modal-density-row"><strong>Density:</strong> <span id="modal-density"></span></p>
+                    <p id="modal-melting-point-row"><strong>Melting Point:</strong> <span
+                            id="modal-melting-point"></span></p>
+                    <p id="modal-boiling-point-row"><strong>Boiling Point:</strong> <span
+                            id="modal-boiling-point"></span></p>
+                    <p id="modal-appearance-row"><strong>Appearance:</strong> <span id="modal-appearance"></span></p>
+                    <p><strong>Discovered by:</strong> <span id="modal-discovered"></span></p>
+                    <p><strong>Discovery Year:</strong> <span id="modal-discovery-year"></span></p>
+                    <h3 id="modal-isotopes-heading" style="display: none;">Isotopes</h3>
+                    <div id="modal-isotopes-cards-container" class="isotope-cards-container">
+                    </div>
+                    <div id="modal-key-properties-section" style="display: none;">
+                        <p><strong>Key Properties:</strong></p>
+                        <ul id="modal-key-properties-list"></ul>
+                    </div>
+                    <div id="modal-uses-section" style="display: none;">
+                        <p><strong>Uses:</strong></p>
+                        <ul id="modal-uses-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="elements.json"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
