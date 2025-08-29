@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Quiz</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .quiz-container {
+            background-color: #161b22;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .header-section span {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        #question-display {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            min-height: 50px;
+            font-weight: 500;
+        }
+        .answers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .answer-btn {
+            background-color: #21262d;
+            border: 2px solid #30363d;
+            color: #c9d1d9;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .answer-btn:hover:not(:disabled) {
+            background-color: #2e353e;
+            border-color: #58a6ff;
+            transform: translateY(-2px);
+        }
+        .answer-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        .answer-btn.correct {
+            background-color: #238636;
+            border-color: #3fb950;
+        }
+        .answer-btn.wrong {
+            background-color: #da3633;
+            border-color: #f85149;
+        }
+        .controls {
+            margin-top: 1.5rem;
+        }
+        #next-btn, #start-btn, #restart-btn {
+            background-color: #58a6ff;
+            color: #0d1117;
+            font-weight: bold;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
+        }
+        #next-btn:hover, #start-btn:hover, #restart-btn:hover {
+            background-color: #79c0ff;
+        }
+        .hidden {
+            display: none;
+        }
+        .results-container h2 {
+            font-size: 2rem;
+            color: #b1e0f0;
+        }
+        .results-container p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen">
+            <h2>Test Your Knowledge!</h2>
+            <p>Ready to challenge your knowledge of the periodic table?</p>
+            <p>You will have 10 seconds to answer each question.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-content" class="hidden">
+            <div class="header-section">
+                <span id="score-display">Score: 0</span>
+                <span id="timer-display">Time: 10</span>
+            </div>
+            <div id="question-display">Question will appear here.</div>
+            <div class="answers-grid" id="answers-container">
+                <button class="answer-btn" data-answer="1"></button>
+                <button class="answer-btn" data-answer="2"></button>
+                <button class="answer-btn" data-answer="3"></button>
+                <button class="answer-btn" data-answer="4"></button>
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+        </div>
+        
+        <div id="results-screen" class="hidden">
+            <h2>Quiz Complete!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the atomic number of Iron?",
+                options: ["24", "26", "28", "30"],
+                correct: "26"
+            },
+            {
+                question: "Which element has the symbol 'K'?",
+                options: ["Potassium", "Krypton", "Calcium", "Cadmium"],
+                correct: "Potassium"
+            },
+            {
+                question: "Which of these is a noble gas?",
+                options: ["Oxygen", "Chlorine", "Neon", "Hydrogen"],
+                correct: "Neon"
+            },
+            {
+                question: "What is the symbol for Gold?",
+                options: ["Ag", "Au", "Go", "Gd"],
+                correct: "Au"
+            },
+            {
+                question: "Which element is the primary component of the sun?",
+                options: ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
+                correct: "Hydrogen"
+            },
+            {
+                question: "What is the symbol for lead?",
+                options: ["Fe", "Pb", "Sn", "Pd"],
+                correct: "Pb"
+            },
+            {
+                question: "Which of these is a halogen?",
+                options: ["Fluorine", "Argon", "Sodium", "Carbon"],
+                correct: "Fluorine"
+            },
+            {
+                question: "What is the atomic number of Oxygen?",
+                options: ["6", "7", "8", "9"],
+                correct: "8"
+            },
+            {
+                question: "Which element is a liquid at room temperature?",
+                options: ["Mercury", "Tin", "Copper", "Lithium"],
+                correct: "Mercury"
+            },
+            {
+                question: "What is the symbol for Sodium?",
+                options: ["Na", "So", "S", "Ni"],
+                correct: "Na"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let timer;
+        let timeRemaining = 10;
+        let questionOrder = [];
+
+        const startScreen = document.getElementById('start-screen');
+        const quizContent = document.getElementById('quiz-content');
+        const resultsScreen = document.getElementById('results-screen');
+
+        const startBtn = document.getElementById('start-btn');
+        const questionDisplay = document.getElementById('question-display');
+        const answersContainer = document.getElementById('answers-container');
+        const nextBtn = document.getElementById('next-btn');
+        const scoreDisplay = document.getElementById('score-display');
+        const timerDisplay = document.getElementById('timer-display');
+        const finalScoreDisplay = document.getElementById('final-score');
+        const restartBtn = document.getElementById('restart-btn');
+
+        startBtn.addEventListener('click', startQuiz);
+        nextBtn.addEventListener('click', nextQuestion);
+        restartBtn.addEventListener('click', restartQuiz);
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function startQuiz() {
+            startScreen.classList.add('hidden');
+            quizContent.classList.remove('hidden');
+            score = 0;
+            currentQuestionIndex = 0;
+            scoreDisplay.textContent = `Score: ${score}`;
+            questionOrder = shuffleArray(questions.map((_, index) => index));
+            showQuestion();
+        }
+
+        function showQuestion() {
+            resetState();
+            const questionData = questions[questionOrder[currentQuestionIndex]];
+            questionDisplay.textContent = questionData.question;
+            
+            const shuffledOptions = shuffleArray([...questionData.options]);
+            const buttons = answersContainer.querySelectorAll('.answer-btn');
+
+            buttons.forEach((button, index) => {
+                const option = shuffledOptions[index];
+                button.textContent = option;
+                button.onclick = () => checkAnswer(option, questionData.correct);
+            });
+
+            startTimer();
+        }
+
+        function startTimer() {
+            timeRemaining = 10;
+            timerDisplay.textContent = `Time: ${timeRemaining}`;
+            timer = setInterval(() => {
+                timeRemaining--;
+                timerDisplay.textContent = `Time: ${timeRemaining}`;
+                if (timeRemaining <= 0) {
+                    clearInterval(timer);
+                    disableButtons();
+                    nextBtn.classList.remove('hidden');
+                }
+            }, 1000);
+        }
+
+        function checkAnswer(selectedAnswer, correctAnswer) {
+            clearInterval(timer);
+            const buttons = answersContainer.querySelectorAll('.answer-btn');
+            
+            buttons.forEach(button => {
+                if (button.textContent === correctAnswer) {
+                    button.classList.add('correct');
+                }
+                if (button.textContent === selectedAnswer && selectedAnswer !== correctAnswer) {
+                    button.classList.add('wrong');
+                }
+                button.disabled = true;
+            });
+
+            if (selectedAnswer === correctAnswer) {
+                score++;
+                scoreDisplay.textContent = `Score: ${score}`;
+            }
+            
+            nextBtn.classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                endQuiz();
+            }
+        }
+
+        function resetState() {
+            clearInterval(timer);
+            nextBtn.classList.add('hidden');
+            const buttons = answersContainer.querySelectorAll('.answer-btn');
+            buttons.forEach(button => {
+                button.classList.remove('correct', 'wrong');
+                button.disabled = false;
+            });
+        }
+
+        function endQuiz() {
+            quizContent.classList.add('hidden');
+            resultsScreen.classList.remove('hidden');
+            finalScoreDisplay.textContent = `You scored ${score} out of ${questions.length}!`;
+        }
+
+        function restartQuiz() {
+            resultsScreen.classList.add('hidden');
+            startQuiz();
+        }
+    </script>
+</body>
+</html>
