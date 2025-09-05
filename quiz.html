@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             height: 100vh;
             margin: 0;
         }
+
         .quiz-container {
             background-color: #161b22;
             padding: 2.5rem;
@@ -27,27 +29,32 @@
             flex-direction: column;
             gap: 1.5rem;
         }
+
         .header-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
         }
+
         .header-section span {
             font-size: 1.25rem;
             font-weight: 600;
         }
+
         #question-display {
             font-size: 1.5rem;
             margin-bottom: 2rem;
             min-height: 50px;
             font-weight: 500;
         }
+
         .answers-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
+
         .answer-btn {
             background-color: #21262d;
             border: 2px solid #30363d;
@@ -58,27 +65,36 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
+
         .answer-btn:hover:not(:disabled) {
             background-color: #2e353e;
             border-color: #58a6ff;
             transform: translateY(-2px);
         }
+
         .answer-btn:disabled {
             cursor: not-allowed;
             opacity: 0.7;
         }
+
         .answer-btn.correct {
             background-color: #238636;
             border-color: #3fb950;
         }
+
         .answer-btn.wrong {
             background-color: #da3633;
             border-color: #f85149;
         }
+
         .controls {
             margin-top: 1.5rem;
         }
-        #next-btn, #start-btn, #restart-btn {
+
+        #next-btn,
+        #start-btn,
+        #restart-btn,
+        #back {
             background-color: #58a6ff;
             color: #0d1117;
             font-weight: bold;
@@ -89,21 +105,28 @@
             font-size: 1rem;
             transition: background-color 0.2s ease;
         }
-        #next-btn:hover, #start-btn:hover, #restart-btn:hover {
+
+        #next-btn:hover,
+        #start-btn:hover,
+        #restart-btn:hover {
             background-color: #79c0ff;
         }
+
         .hidden {
             display: none;
         }
+
         .results-container h2 {
             font-size: 2rem;
             color: #b1e0f0;
         }
+
         .results-container p {
             font-size: 1.25rem;
         }
     </style>
 </head>
+
 <body>
     <div class="quiz-container">
         <div id="start-screen">
@@ -129,11 +152,12 @@
                 <button id="next-btn" class="hidden">Next Question</button>
             </div>
         </div>
-        
+
         <div id="results-screen" class="hidden">
             <h2>Quiz Complete!</h2>
             <p id="final-score"></p>
             <button id="restart-btn">Restart Quiz</button>
+            <button id="back">Periodic Table</button>
         </div>
     </div>
 
@@ -209,10 +233,12 @@
         const timerDisplay = document.getElementById('timer-display');
         const finalScoreDisplay = document.getElementById('final-score');
         const restartBtn = document.getElementById('restart-btn');
+        const backbtn = document.getElementById('back');
 
         startBtn.addEventListener('click', startQuiz);
         nextBtn.addEventListener('click', nextQuestion);
         restartBtn.addEventListener('click', restartQuiz);
+        backbtn.addEventListener('click', backToTable)
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -236,7 +262,7 @@
             resetState();
             const questionData = questions[questionOrder[currentQuestionIndex]];
             questionDisplay.textContent = questionData.question;
-            
+
             const shuffledOptions = shuffleArray([...questionData.options]);
             const buttons = answersContainer.querySelectorAll('.answer-btn');
 
@@ -252,13 +278,17 @@
         function startTimer() {
             timeRemaining = 10;
             timerDisplay.textContent = `Time: ${timeRemaining}`;
+
+            // Clear any existing timer before starting a new one
+            clearInterval(timer);
+
             timer = setInterval(() => {
                 timeRemaining--;
                 timerDisplay.textContent = `Time: ${timeRemaining}`;
                 if (timeRemaining <= 0) {
                     clearInterval(timer);
-                    disableButtons();
-                    nextBtn.classList.remove('hidden');
+                    // Automatically check the answer as incorrect when time runs out
+                    checkAnswer(null, questions[questionOrder[currentQuestionIndex]].correct);
                 }
             }, 1000);
         }
@@ -266,22 +296,25 @@
         function checkAnswer(selectedAnswer, correctAnswer) {
             clearInterval(timer);
             const buttons = answersContainer.querySelectorAll('.answer-btn');
-            
+
             buttons.forEach(button => {
+                // Highlight the correct answer regardless of the user's choice
                 if (button.textContent === correctAnswer) {
                     button.classList.add('correct');
                 }
-                if (button.textContent === selectedAnswer && selectedAnswer !== correctAnswer) {
+                // Highlight the user's selected answer if it's wrong
+                if (selectedAnswer !== null && button.textContent === selectedAnswer && selectedAnswer !== correctAnswer) {
                     button.classList.add('wrong');
                 }
-                button.disabled = true;
+                button.disabled = true; // Disable all buttons after an answer is given
             });
 
-            if (selectedAnswer === correctAnswer) {
+            // Only increment score if a correct answer was selected
+            if (selectedAnswer !== null && selectedAnswer === correctAnswer) {
                 score++;
                 scoreDisplay.textContent = `Score: ${score}`;
             }
-            
+
             nextBtn.classList.remove('hidden');
         }
 
@@ -314,6 +347,11 @@
             resultsScreen.classList.add('hidden');
             startQuiz();
         }
+
+        function backToTable() {
+            window.location.href = 'index.html';
+        }
     </script>
 </body>
+
 </html>
