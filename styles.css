@@ -103,6 +103,25 @@ body {
     padding: 10px;
 }
 
+.test-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #60a581; /* Green background */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.test-button:hover {
+    background-color: #518c6f;
+}
+
 .Periodic_table td {
     text-align: center;
     padding: 10px;
