@@ -16,6 +16,7 @@ const DOM = {
     suggestionsContainer: document.getElementById('suggestionsContainer'),
     hoverSymbolContainer: document.getElementById('hover-symbol-container'),
     hoverSymbol3d: document.getElementById('hover-symbol-3d'),
+    testQuizButton: document.getElementById('test-quiz-btn'), 
 };
 
 let elementsData = []; // This will hold our data once it's loaded
@@ -468,6 +469,12 @@ function setupEventListeners() {
         DOM.suggestionsContainer.innerHTML = '';
         highlightPeriodicTableElement(null);
     });
+
+     if (DOM.testQuizButton) {
+        DOM.testQuizButton.addEventListener('click', () => {
+            window.location.href = 'quiz.html';
+        });
+    }
 }
 
 
